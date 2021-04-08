@@ -1,5 +1,5 @@
 ## Introduction: Come up with a group name, and write a short description about what your group is for/about.
-Our group name is DataMeetsArt. Our group is looking to map public art in Los Angeles County. 
+Our group name is DataMeetsArt. Our group is looking to map public art in Los Angeles County. Although Los Angeles is known to be a culturally rich city, not many people know about the art that surrounds them. We hope to create a website that educates users on LA's rich and diverse art and culture. 
 ## Team members: Introduce each member of the team (include a photo/avatar), their titles, roles, and a short blurb.
 Annmarie Cong: UX/UI for the website<br/>
 Eustina Kim: Map Specialist<br/>
