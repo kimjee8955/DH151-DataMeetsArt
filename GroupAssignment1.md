@@ -2,6 +2,8 @@
 Our group name is ------. Our group is looking at the relationship between COVID-19 and public transportation in LA. 
 ## Team members: Introduce each member of the team (include a photo/avatar), their titles, roles, and a short blurb.
 ## Overview: Introduce the group project by stating what it is that you are investigating, and why this is a matter of importance.
+Our group's project will focus on visualizing the progression of LA public transportation before and during the COVID-19 pandemic.
+
 ## Methodology: Introduce web mapping as a methodology of inquiry, and explain why this medium was chosen.
 We chose web mapping as a method because it can best show changes in public tranpsortation such as how the bus routes changed 
 ## Workflow: Provide a workflow diagram/table that outlines the steps/phases the project will take from start to completion. Include dates/weeks as milestones.
