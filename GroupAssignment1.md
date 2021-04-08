@@ -1,7 +1,7 @@
 ## Introduction: Come up with a group name, and write a short description about what your group is for/about.
 Our group name is Datart. Our group is looking to map public art in Los Angeles County. Although Los Angeles is known to be a culturally rich city, not many people know about the art that surrounds them. We hope to create a website that educates users on LA's rich and diverse art and culture. 
 ## Team members: Introduce each member of the team (include a photo/avatar), their titles, roles, and a short blurb.
-Annmarie Cong: UX/UI for the website<br/>
+Annmarie Cong: UX/UI Designer<br/>
 Eustina Kim: Map Specialist<br/>
 Michelle Lee: Data Specialist<br/>
 ## Overview: Introduce the group project by stating what it is that you are investigating, and why this is a matter of importance.
@@ -9,11 +9,64 @@ Our group's project will focus on introducing public art installations around th
 ## Methodology: Introduce web mapping as a methodology of inquiry, and explain why this medium was chosen.
 We chose web mapping as a method because it can best show the locations of the public art.
 ## Workflow: Provide a workflow diagram/table that outlines the steps/phases the project will take from start to completion. Include dates/weeks as milestones.
+<table>
+  <tr>
+    <th>Week</th>
+    <th>Step/Phase</th> 
+  </tr>
+  <tr>
+    <td>Week 2</td>
+    <td>Complete Project Proposal</td>
+  </tr>
+  <tr>
+    <td>Week 3</td>
+    <td>Do background research/ Find Data</td>
+  </tr>
+  <tr>
+    <td>Week 4</td>
+    <td>Storyboard</td>
+  </tr>
+  <tr>
+    <td>Week 5</td>
+    <td>Clean Data/ Make the map</td>
+  </tr> 
+  <tr>
+    <td>Week 6</td>
+    <td>Prepare for midterm presentation</td>
+  </tr>
+  <tr>
+    <td>Week 7</td>
+    <td>Make data dashboard</td>
+  </tr>
+  <tr>
+    <td>Week 8</td>
+    <td>Design website</td>
+  </tr>
+  <tr>
+    <td>Week 9</td>
+    <td>Add interactive features to map</td>
+  </tr>
+  <tr>
+    <td>Week 10</td>
+    <td>Final touches</td>
+  </tr>
+</table> 
+| Week         | Milestones                          | 
+| :---         |    :----:                           |      
+| Week 2       | Complete Project Proposal           |
+| Week 3       | Do background research/ Find Data   | 
+| Week 4       | Storyboard                          |
+| Week 5       | Clean Data/ Make the map            |
+| Week 6       | Midterm                             |
+| Week 7       | Make data dashboard                 |
+| Week 8       | Design website                      |
+| Week 9       | Add interactive features to map     |
+| Week 10      | Final touches                       |
 Week 2: Complete Project Proposal<br/>
 Week 3: Do background research/ Find Data<br/>
 Week 4: Storyboard<br/>
 Week 5: Clean Data/ Make the map<br/>
-Week 8: Midterm<br/>
+Week 6: Midterm<br/>
 Week 7: Make data dashboard<br/>
 Week 8: Design website<br/>
 Week 9: Add interactive features to map<br/>
