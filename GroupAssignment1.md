@@ -3,6 +3,7 @@ Our group name is ------. Our group is looking at the relationship between COVID
 ## Team members: Introduce each member of the team (include a photo/avatar), their titles, roles, and a short blurb.
 ## Overview: Introduce the group project by stating what it is that you are investigating, and why this is a matter of importance.
 ## Methodology: Introduce web mapping as a methodology of inquiry, and explain why this medium was chosen.
+We chose web mapping as a method because it can best show changes in public tranpsortation such as how the bus routes changed 
 ## Workflow: Provide a workflow diagram/table that outlines the steps/phases the project will take from start to completion. Include dates/weeks as milestones.
 ## Technical scope: Introduce the technologies that project will use (Git, Leaflet, HTML, Javascript, etc) and what role each one will play (a diagram might be helpful)
 ## Geographic scope: Introduce the geographic scale that your project will take (global, USA, California, Los Angeles County, multi-scale, etc)
