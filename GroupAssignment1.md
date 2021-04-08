@@ -1,4 +1,5 @@
 ## Introduction: Come up with a group name, and write a short description about what your group is for/about.
+Our group name is ------. Our group is looking at the relationship between COVID-19 and public transportation in LA. 
 ## Team members: Introduce each member of the team (include a photo/avatar), their titles, roles, and a short blurb.
 ## Overview: Introduce the group project by stating what it is that you are investigating, and why this is a matter of importance.
 ## Methodology: Introduce web mapping as a methodology of inquiry, and explain why this medium was chosen.
