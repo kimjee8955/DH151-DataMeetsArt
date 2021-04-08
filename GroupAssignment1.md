@@ -51,14 +51,17 @@ We chose web mapping as a method because it can best show the locations of the p
     <td>Final touches</td>
   </tr>
 </table> 
+
 ## Technical scope: Introduce the technologies that project will use (Git, Leaflet, HTML, Javascript, etc) and what role each one will play (a diagram might be helpful)
 Git: sharing code between each other
 Leaflet: needed for mapping
 HTML: publishing the map online
 Javascript: need to code in Javascript to work with Leaflet, increase interactivity
 css: stylize the page
+
 ## Geographic scope: Introduce the geographic scale that your project will take (global, USA, California, Los Angeles County, multi-scale, etc)
 Los Angeles County
+
 ## Data: Introduce at least two datasets that will be included in the project (include links as necessary). Make sure the data is "mappable" either by manual data entry, through an API, or by downloading it.
 https://open.streetartcities.com/<br/>
 https://controllerdata.lacity.org/Audits-and-Reports/Public-Art/ejf8-ekfc/data<br/>
