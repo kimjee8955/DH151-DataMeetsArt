@@ -51,26 +51,6 @@ We chose web mapping as a method because it can best show the locations of the p
     <td>Final touches</td>
   </tr>
 </table> 
-| Week         | Milestones                          | 
-| :---         |    :----:                           |      
-| Week 2       | Complete Project Proposal           |
-| Week 3       | Do background research/ Find Data   | 
-| Week 4       | Storyboard                          |
-| Week 5       | Clean Data/ Make the map            |
-| Week 6       | Midterm                             |
-| Week 7       | Make data dashboard                 |
-| Week 8       | Design website                      |
-| Week 9       | Add interactive features to map     |
-| Week 10      | Final touches                       |
-Week 2: Complete Project Proposal<br/>
-Week 3: Do background research/ Find Data<br/>
-Week 4: Storyboard<br/>
-Week 5: Clean Data/ Make the map<br/>
-Week 6: Midterm<br/>
-Week 7: Make data dashboard<br/>
-Week 8: Design website<br/>
-Week 9: Add interactive features to map<br/>
-Week 10: Final touches<br/>
 ## Technical scope: Introduce the technologies that project will use (Git, Leaflet, HTML, Javascript, etc) and what role each one will play (a diagram might be helpful)
 Git: sharing code between each other
 Leaflet: needed for mapping
