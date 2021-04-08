@@ -62,7 +62,7 @@ css: stylize the page
 ## Geographic scope: Introduce the geographic scale that your project will take (global, USA, California, Los Angeles County, multi-scale, etc)
 We will be focusing on the Los Angeles County.
 
-## Data: Introduce at least two datasets that will be included in the project (include links as necessary). Make sure the data is "mappable" either by manual data entry, through an API, or by downloading it.
+## The data we will be using:
 <ul>
   <li>https://open.streetartcities.com/</li>
   <li>https://controllerdata.lacity.org/Audits-and-Reports/Public-Art/ejf8-ekfc/data</li>
