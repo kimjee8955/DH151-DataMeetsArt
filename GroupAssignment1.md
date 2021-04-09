@@ -14,9 +14,9 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
     <td><img src="https://media.discordapp.net/attachments/694477786131202048/829939480735645737/image0.jpg" alt = "avatar_Annmarie" width="250"/></td>
   </tr>
   <tr>
-    <td>UX Designer</td>
-    <td>Map Specialist</td>
-    <td>Data Specialist</td>
+    <td><b>UX Designer</b></td>
+    <td><b>Map Specialist</b></td>
+    <td><b>Data Specialist</b></td>
   </tr>
   <tr>
     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</td>
