@@ -2,6 +2,7 @@
 ## Introduction:
 We are Datart. We will be mapping the public art around the Los Angeles County. Although Los Angeles is known to be a culturally rich city, not many people know about the art that surrounds them. We hope to create a website that bring awareness to users about the diverse arts and culture that encompasses Los Angeles.
 ## Team members: Introduce each member of the team (include a photo/avatar), their titles, roles, and a short blurb.
+<a href="https://unsplash.com/photos/E8H76nY1v6Q" target="_blank"><img src="https://images.unsplash.com/photo-1516822003754-cca485356ecb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt = "Broken Heart" width="250"/></a> 
 Annmarie Cong: UX/UI Designer<br/>
 Eustina Kim: Map Specialist<br/>
 Michelle Lee: Data Specialist<br/>
