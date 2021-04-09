@@ -2,6 +2,23 @@
 ## Introduction:
 We are Datart. We will be mapping the public art around the Los Angeles County. Although Los Angeles is known to be a culturally rich city, not many people know about the art that surrounds them. We hope to create a website that bring awareness to users about the diverse arts and culture that encompasses Los Angeles.
 ## Team members: Introduce each member of the team (include a photo/avatar), their titles, roles, and a short blurb.
+<table>
+  <tr>
+    <th>Annmarie Cong</th>
+    <th>Eustina Kim</th> 
+    <th>Michelle Lee</th>
+  </tr>
+  <tr>
+    <td><img src="https://media.discordapp.net/attachments/694477786131202048/829939480735645737/image0.jpg" alt = "avatar_Annmarie" width="250"/></td>
+    <td><img src="https://media.discordapp.net/attachments/694477786131202048/829939480735645737/image0.jpg" alt = "avatar_Annmarie" width="250"/></td>
+    <td><img src="https://media.discordapp.net/attachments/694477786131202048/829939480735645737/image0.jpg" alt = "avatar_Annmarie" width="250"/></td>
+  </tr>
+  <tr>
+    <td>UX Designer</td>
+    <td>Map Specialist</td>
+    <td>Michelle Lee</td>
+  </tr>
+</table> 
 ### Annmarie Cong
 <img src="https://media.discordapp.net/attachments/694477786131202048/829939480735645737/image0.jpg" alt = "avatar_Annmarie" width="250"/>
 
