@@ -19,13 +19,6 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
     <td>Michelle Lee</td>
   </tr>
 </table> 
-### Annmarie Cong
-<img src="https://media.discordapp.net/attachments/694477786131202048/829939480735645737/image0.jpg" alt = "avatar_Annmarie" width="250"/>
-
-#### UX Designer
-
-### Eustina Kim: Map Specialist<br/>
-### Michelle Lee: Data Specialist<br/>
 ## Overview: Introduce the group project by stating what it is that you are investigating, and why this is a matter of importance.
 Our group's project will focus on introducing public art installations around the Los Angeles area by combining multiple datasets. This is important because the map can be a comprehensive guide to people who want to explore around the city. 
 ## Methodology: Introduce web mapping as a methodology of inquiry, and explain why this medium was chosen.
