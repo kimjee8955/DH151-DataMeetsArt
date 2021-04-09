@@ -18,7 +18,12 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
     <td>Map Specialist</td>
     <td>Michelle Lee</td>
   </tr>
+  <tr>
+    <td>Annmarie is a 4th year Cognitive science major specializing in computing and minoring in digital humanities. She will be responsible for making sure the interactive webmap website is usable and user-friendly.</td>
+    <td>xxx</td>
+    <td>xxx</td>
 </table> 
+
 ## Overview: Introduce the group project by stating what it is that you are investigating, and why this is a matter of importance.
 Our group's project will focus on introducing public art installations around the Los Angeles area by combining multiple datasets. This is important because the map can be a comprehensive guide to people who want to explore around the city. 
 ## Methodology: Introduce web mapping as a methodology of inquiry, and explain why this medium was chosen.
