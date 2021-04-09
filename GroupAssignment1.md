@@ -16,7 +16,7 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
   <tr>
     <td>UX Designer</td>
     <td>Map Specialist</td>
-    <td>Michelle Lee</td>
+    <td>Data Specialist</td>
   </tr>
   <tr>
     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</td>
