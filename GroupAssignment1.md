@@ -24,11 +24,11 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</td>
 </table> 
 
-## Overview: Introduce the group project by stating what it is that you are investigating, and why this is a matter of importance.
+## Overview:
 Our group's project will focus on introducing public art installations around the Los Angeles area by combining multiple datasets. This is important because the map can be a comprehensive guide to people who want to explore around the city. 
 ## Methodology: Introduce web mapping as a methodology of inquiry, and explain why this medium was chosen.
 We chose web mapping as a method because it can best show the locations of the public art.
-## Workflow: Provide a workflow diagram/table that outlines the steps/phases the project will take from start to completion. Include dates/weeks as milestones.
+## Workflow:
 <table>
   <tr>
     <th>Week</th>
