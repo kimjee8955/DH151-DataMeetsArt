@@ -4,6 +4,7 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
 ## Team members: Introduce each member of the team (include a photo/avatar), their titles, roles, and a short blurb.
 ### Annmarie Cong
 <img src="https://media.discordapp.net/attachments/694477786131202048/829939480735645737/image0.jpg" alt = "avatar_Annmarie" width="250"/>
+
 #### UX Designer
 
 ### Eustina Kim: Map Specialist<br/>
