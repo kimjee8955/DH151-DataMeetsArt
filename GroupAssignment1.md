@@ -21,7 +21,7 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
   <tr>
     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
-    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+    <td>Michelle is a third year Statistics major and Digital Humanities minor. She has experience with data analysis and visualization. For this project, she will help with sourcing, cleaning, and processing the data as well as providing insights/ideas to help with the project.</td>
 </table> 
 
 ## Overview:
