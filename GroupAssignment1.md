@@ -25,7 +25,8 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
 </table> 
 
 ## Overview:
-Our group's project will focus on introducing public art installations around the Los Angeles area by combining multiple datasets. This is important because the map can be a comprehensive guide to people who want to explore around the city. 
+Our group's project will focus on introducing public art installations around the Los Angeles area by combining multiple datasets. As we did some initial research, we found that there wasn't a comprehensive resource that visualized and clearly described this information. Thus, we think this is an important because the map can be an illustrative guide to people who want to explore more around the city, especially given that LA is a popular travel destination.
+
 ## Methodology: Introduce web mapping as a methodology of inquiry, and explain why this medium was chosen.
 We chose web mapping as a method because it can best show the locations of the public art.
 ## Workflow:
@@ -73,14 +74,14 @@ We chose web mapping as a method because it can best show the locations of the p
 </table> 
 
 ## Technical scope: Introduce the technologies that project will use (Git, Leaflet, HTML, Javascript, etc) and what role each one will play (a diagram might be helpful)
-Git: sharing code between each other
-Leaflet: needed for mapping
-HTML: publishing the map online
-Javascript: need to code in Javascript to work with Leaflet, increase interactivity
-css: stylize the page
+Git: sharing code between each other  
+Leaflet: needed for mapping  
+HTML: publishing the map online  
+Javascript: need to code in Javascript to work with Leaflet, increase interactivity  
+CSS: stylize the page
 
 ## Geographic scope: Introduce the geographic scale that your project will take (global, USA, California, Los Angeles County, multi-scale, etc)
-We will be focusing on the Los Angeles County.
+We will be focusing on the Los Angeles County because as students at UCLA, we are interested in exploring more of the art/culture that surrounds the area.
 
 ## The data we will be using:
 <ul>
