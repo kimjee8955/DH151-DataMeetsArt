@@ -28,7 +28,7 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
 Our group's project will focus on introducing public art installations around the Los Angeles area by combining multiple datasets. As we did some initial research, we found that there wasn't a comprehensive resource that visualized and clearly described this information. Thus, we think this is an important project because our mapping website can be an illustrative guide to people who want to explore more around the city, especially given that LA is a popular travel destination.
 
 ## Methodology: Introduce web mapping as a methodology of inquiry, and explain why this medium was chosen.
-We chose web mapping as a method because it can best show the locations of the public art.
+Mapping is a great visualization method of location-based data. Given that we want to showcase public art around Los Angeles, we think web mapping will be a fun, interactive way for users to enjoy our content. Mapping has advantages over traditional charts and graphs in that it is extremely versatile in incorporating multi-dimensional data, including spatial and temporal variables. We hope this will allow users to get a deeper understanding of the significance of public art installations in relation to where they exist around LA.
 ## Workflow:
 <table>
   <tr>
