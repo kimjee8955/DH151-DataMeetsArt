@@ -28,7 +28,7 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
 ## Overview:
 Our group's project will focus on introducing public art installations around the Los Angeles area by combining multiple datasets. As we did some initial research, we found that there wasn't a comprehensive resource that visualized and clearly described this information. Thus, we think this is an important project because our mapping website can be an illustrative guide to people who want to explore more around the city, especially given that LA is a popular travel destination.
 
-## Methodology: Introduce web mapping as a methodology of inquiry, and explain why this medium was chosen.
+## Methodology:
 Mapping is a great visualization method of location-based data. Given that we want to showcase public art around Los Angeles, we think web mapping will be a fun, interactive way for users to enjoy our content. Mapping has advantages over traditional charts and graphs in that it is extremely versatile in incorporating multi-dimensional data, including spatial and temporal variables. We hope this will allow users to get a deeper understanding of the significance of public art installations in relation to where they exist around LA.
 ## Workflow:
 <table>
@@ -74,14 +74,14 @@ Mapping is a great visualization method of location-based data. Given that we wa
   </tr>
 </table> 
 
-## Technical scope: Introduce the technologies that project will use (Git, Leaflet, HTML, Javascript, etc) and what role each one will play (a diagram might be helpful)
+## Technical scope:
 Git: sharing code between each other  
 Leaflet: needed for mapping  
 HTML: publishing the map online  
 Javascript: need to code in Javascript to work with Leaflet, increase interactivity  
 CSS: stylize the page
 
-## Geographic scope: Introduce the geographic scale that your project will take (global, USA, California, Los Angeles County, multi-scale, etc)
+## Geographic scope: 
 We will be focusing on the Los Angeles County because as students at UCLA, we are interested in exploring more of the art/culture that surrounds the area.
 
 ## The data we will be using:
