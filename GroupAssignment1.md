@@ -10,7 +10,7 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
   </tr>
   <tr>
     <td><img src="https://media.discordapp.net/attachments/694477786131202048/829939480735645737/image0.jpg" alt = "avatar_Annmarie" width="250"/></td>
-    <td><img src="https://media.discordapp.net/attachments/694477786131202048/829939480735645737/image0.jpg" alt = "avatar_Annmarie" width="250"/></td>
+    <td><img src="https://drive.google.com/file/d/1NPQVXdvYc7wubfMGaRlNkCOYQH7nmf8V/view?usp=sharing" alt = "pic_Eustina" width="250"/></td>
     <td><img src="https://user-images.githubusercontent.com/56007288/114282980-28c8f900-99fc-11eb-887e-d67a16ef429e.png" alt = "avatar_Michelle" width="250"/></td>
   </tr>
   <tr>
