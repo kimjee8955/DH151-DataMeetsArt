@@ -1,7 +1,7 @@
 # Datart
 ## Introduction:
 We are Datart. We will be mapping the public art around the Los Angeles County. Although Los Angeles is known to be a culturally rich city, not many people know about the art that surrounds them. We hope to create a website that bring awareness to users about the diverse arts and culture that encompasses Los Angeles.
-## Team members: Introduce each member of the team (include a photo/avatar), their titles, roles, and a short blurb.
+## Team members:
 <table>
   <tr>
     <th>Annmarie Cong</th>
