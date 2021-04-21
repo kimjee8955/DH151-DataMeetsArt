@@ -1,6 +1,9 @@
 # Group Assignment 2, Part 2 UX Design
 
 ## Mindmaps from each group member, and brief reactions
+### Annmarie
+![Annmarie Mindmap](https://files.slack.com/files-pri/T01SSA5NZGD-F01V61P8C2D/image_from_ios.jpg)
+
 ## Crazy eights from each group member, and brief reactions
 ## A storyboard collection with wireframes
 * Site map: An over arching wireframe of the site structure that includes all key pages
