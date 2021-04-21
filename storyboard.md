@@ -2,7 +2,7 @@
 
 ## Mindmaps from each group member, and brief reactions
 ### Annmarie
-<img src="https://files.slack.com/files-pri/T01SSA5NZGD-F01V61P8C2D/image_from_ios.jpg" alt = "avatar_Annmarie" width="250"/>
+<img src="https://media.discordapp.net/attachments/694477786131202048/834266695169867786/image_from_ios.png?width=508&height=677" alt = "mindmap_ann" width="250"/>
 
 ## Crazy eights from each group member, and brief reactions
 ## A storyboard collection with wireframes
