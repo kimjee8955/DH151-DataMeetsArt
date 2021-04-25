@@ -22,4 +22,4 @@
 * Annotations: notes on aspects that are not obvious visually, such as usability elements and possible interactions
 * Interactivity: use wireframes to convey interactive components
 
-<img src="https://media.discordapp.net/attachments/694477786131202048/835774519406100480/Flow.png?width=1446&height=513" alt="Flow" width="550"/>
+<img src="https://media.discordapp.net/attachments/694477786131202048/835774519406100480/Flow.png?width=1446&height=513" alt="Flow" width="750"/>
