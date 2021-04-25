@@ -1,8 +1,8 @@
 # Data Plan Update (Group Assignment #2)
 
 ## List of Datasets
-Dataset 1: [Nancy Tovar East LA Mural Collection](https://docs.google.com/spreadsheets/d/1evnaHh-HV6cwoFSC8Jy_wAuR9916uogwbV_4nGCjb-A/edit#gid=450383580)
-Dataset 2: [Urban Art Locations - City of West Hollywood](https://data.weho.org/Art/Urban-Art-Locations/twt6-v6gc)
+Dataset 1: [Nancy Tovar East LA Mural Collection](https://docs.google.com/spreadsheets/d/1evnaHh-HV6cwoFSC8Jy_wAuR9916uogwbV_4nGCjb-A/edit#gid=450383580)  
+Dataset 2: [Urban Art Locations - City of West Hollywood](https://data.weho.org/Art/Urban-Art-Locations/twt6-v6gc)  
 Dataset 3: [Robin Dunitz Slides of Los Angeles Murals, 1925-2002](https://raw.githubusercontent.com/yohman/21S-DH151/main/Weeks/Week04/Lab/data/dunitz.csv)
 
 ## Description on How the Data Will Be Used
