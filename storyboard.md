@@ -23,11 +23,15 @@
 * Interactivity: use wireframes to convey interactive components
 
 ### Our Initial Sketches
-We first sketched out more coherently, after our mindmap and crazy8 discussion, of how the site would look like. 
+We first sketched out more coherently, after our mindmap and crazy8 discussion, of how the site would look like. After these 
+sketches, we discussed about the main features we would need and the features we would like to have. 
+<br>
 <img src="https://media.discordapp.net/attachments/694477786131202048/835776462669348874/image_from_ios.png?width=881&height=661" alt="Ann's Sketch" width="750"/>
 
 <img src="https://media.discordapp.net/attachments/694477786131202048/835776512547749928/image_from_ios.png?width=881&height=285" alt="Eustina's Sketch" width="750"/>
 
 <img src="https://cdn.discordapp.com/attachments/694477786131202048/835778201619005440/unknown.png" alt="Michelle's Sketch" width="750"/>
 
+### Wireframe Flow
+This is the "site map" of our incoming site. <br>
 <img src="https://media.discordapp.net/attachments/694477786131202048/835774519406100480/Flow.png?width=1446&height=513" alt="Flow" width="1050"/>
