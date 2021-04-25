@@ -1,5 +1,7 @@
 # Group Assignment 2, Part 2 UX Design
 
+# Group Assignment 2, Part 2 UX Design
+
 ## Mindmaps and Crazy Eights from each group member, and brief reactions
 ### Annmarie
 <img src="https://media.discordapp.net/attachments/694477786131202048/834266695169867786/image_from_ios.png?width=508&height=677" alt = "mindmap_ann" width="250"/>
@@ -7,13 +9,15 @@
 
 ### Eustina 
 <img src="https://media.discordapp.net/attachments/694477786131202048/834267041501675542/img_1303.png?width=508&height=677" alt="Mindmap" width="250"/>
-
 <img src="https://media.discordapp.net/attachments/694477786131202048/834267568876945418/img_1302.png?width=508&height=677" alt="Crazy8" width="250"/>
+
+Eustina's mind map shows the overall framework of the website. It starts out with pages the website should have and branch out into more details of each page. The Crazy Eights mainly showcase drawings of features mentioned in the mind map. The group's favorite features were the landing page with a button that takes the user to the maproom, and the tabs on top of the website.
 
 ### Michelle 
 <img src="https://media.discordapp.net/attachments/694477786131202048/834267591207944202/image_from_ios.png?width=507&height=677" alt="Mindmap" width="250"/>
-
 <img src="https://media.discordapp.net/attachments/694477786131202048/834267744550912000/image_from_ios.png?width=881&height=661" alt="Crazy8" width="250"/>
+
+Michelle's mind map shows the various aspect of the website, such as who the users are, and the general interface of the maproom. The Crazy Eights showcase more specific features such as layers, buttons, and interactivity. The group's favorite features were the map filterlayers by art type, and the side bar that includes information about the art. 
 
 ## A storyboard collection with wireframes
 * Site map: An over arching wireframe of the site structure that includes all key pages
