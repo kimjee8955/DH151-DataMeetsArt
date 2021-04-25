@@ -1,7 +1,5 @@
 # Group Assignment 2, Part 2 UX Design
 
-# Group Assignment 2, Part 2 UX Design
-
 ## Mindmaps and Crazy Eights from each group member, and brief reactions
 ### Annmarie
 <img src="https://media.discordapp.net/attachments/694477786131202048/834266695169867786/image_from_ios.png?width=508&height=677" alt = "mindmap_ann" width="250"/>
