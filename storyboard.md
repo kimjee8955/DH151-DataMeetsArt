@@ -20,12 +20,6 @@ Eustina's mind map shows the overall framework of the website. It starts out wit
 Michelle's mind map shows the various aspect of the website, such as who the users are, and the general interface of the maproom. The Crazy Eights showcase more specific features such as layers, buttons, and interactivity. The group's favorite features were the map filterlayers by art type, and the side bar that includes information about the art. 
 
 ## A storyboard collection with wireframes
-* Site map: An over arching wireframe of the site structure that includes all key pages
-* A sketch of the maproom layout (grid size, spacing, headers/sidebars/footers, content areas, images placeholders) and its intended features (buttons, menus, etc)
-* Additional sketches of specific functions/areas of the site as necessary
-* Annotations: notes on aspects that are not obvious visually, such as usability elements and possible interactions
-* Interactivity: use wireframes to convey interactive components
-
 ### Our Initial Sketches
 We first sketched out more coherently, after our mindmap and crazy8 discussion, of how the site would look like. After these 
 sketches, we discussed about the main features we would need and the features we would like to have. 
