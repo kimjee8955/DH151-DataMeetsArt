@@ -37,6 +37,19 @@ sketches, we discussed about the main features we would need and the features we
 <img src="https://cdn.discordapp.com/attachments/694477786131202048/835778201619005440/unknown.png" alt="Michelle's Sketch" width="750"/>
 
 ### Wireframe Flow
-This is the "site map" of our incoming site.
+This is the "site map" of our incoming site. It shows where each action of the user brings them. 
 
 <img src="https://media.discordapp.net/attachments/694477786131202048/835774519406100480/Flow.png?width=1446&height=513" alt="Flow" width="1050"/>
+
+### Wireframes + Annotations
+<img src="https://media.discordapp.net/attachments/694477786131202048/835774613975728158/Home.png?width=951&height=676" alt="screen 1" width="1050"/>
+<ul>
+  <li>Header of our site name</li>
+  <li>Menu items include: About page, team page and gallery page</li>
+  <li>Sidebar to display clicked items</li>
+  <li>Map content</li>
+  <li>Zoom functions</li>
+  <li>Randomization function</li>
+  <li>Layer filter of sites with images vs no images. </li>
+</ul>
+
