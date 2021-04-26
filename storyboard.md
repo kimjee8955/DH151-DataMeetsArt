@@ -42,7 +42,7 @@ This is the "site map" of our incoming site. It shows where each action of the u
 <img src="https://media.discordapp.net/attachments/694477786131202048/835774519406100480/Flow.png?width=1446&height=513" alt="Flow" width="1050"/>
 
 ### Wireframes + Annotations
-<img src="https://media.discordapp.net/attachments/694477786131202048/835774613975728158/Home.png?width=951&height=676" alt="screen 1" width="1050"/>
+<img src="https://media.discordapp.net/attachments/694477786131202048/835774613975728158/Home.png?width=951&height=676" alt="screen 1" width="951"/>
 <ul>
   <li>Header of our site name</li>
   <li>Menu items include: About page, team page and gallery page</li>
@@ -53,3 +53,23 @@ This is the "site map" of our incoming site. It shows where each action of the u
   <li>Layer filter of sites with images vs no images. </li>
 </ul>
 
+<img src="https://media.discordapp.net/attachments/694477786131202048/835774581721530388/Home-Pin_clicked.png?width=951&height=676" alt="screen 2" width="951"/>
+<ul>
+  <li>This wireframe shows that when a marker is clicked on, the sidebar will display the information of the piece in this manner.</li>
+</ul>
+
+
+<img src="https://media.discordapp.net/attachments/694477786131202048/836077068419858452/Team.png?width=951&height=676" alt="screen 2" width="951"/>
+<ul>
+  <li>Team page including our names, roles, and short description about ourselves.</li>
+</ul>
+
+<img src="https://media.discordapp.net/attachments/694477786131202048/835774606333050931/About.png?width=951&height=676" alt="screen 2" width="951"/>
+<ul>
+  <li>About page which will include our process, overview of our project, and our data sources.</li>
+</ul>
+
+<img src="https://media.discordapp.net/attachments/694477786131202048/835774608295591986/Gallery.png?width=951&height=676" alt="screen 3" width="951"/>
+<ul>
+  <li>Gallery page (we might include) will include all the relevant images paired with hashtags.</li>
+</ul>
