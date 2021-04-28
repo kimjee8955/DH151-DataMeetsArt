@@ -8,6 +8,16 @@
 	<link rel="stylesheet" href="css/style.css">
 
     <!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script src="https://use.fontawesome.com/1f6d93a05c.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+	<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="js/papaparse.min.js"></script>
 
    
 </head>
@@ -15,8 +25,7 @@
 <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
 
 <div id="Map" class="tabcontent">
-    <h3>Map</h3>
-    <p>put map here.</p>
+    <div id="map"></div>
 </div>
 
 <div id="About" class="tabcontent">
@@ -24,6 +33,7 @@
     <p>Datart: Annmarie Cong, Eustina Kim, Michelle Lee.</p>
 </div>
 
+<script src="js/map.js"></script>
 <script src="js/tabs.js"></script>
 
 </html>
