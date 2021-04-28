@@ -42,14 +42,13 @@ function mapCSV(data){
 		// create marker
 		let marker = L.circleMarker([item.latitude,item.longitude])
         .on('mouseover',function(){
-			this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}"><br>${item.latitude},${item.longitude}`).openPopup()
+			this.bindPopup(`${item.title}<br>`).openPopup()
 		})
 
 		// add marker to featuregroup
 		markers.addLayer(marker)
 
         // add entry to sidebar
-		$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" onmouseover="flyToIndex(${index})"><br><br>`)
 	})
 
 	// add featuregroup to map
