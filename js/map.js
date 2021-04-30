@@ -3,7 +3,7 @@ let map;
 let lat = 34.0522;
 let lon = -118.2437;
 let zl = 3;
-let path = "data/Tovar.csv";
+let path = "data/dunitz1.csv";
 let markers = L.featureGroup();
 let csvdata;
 
@@ -43,14 +43,14 @@ function mapCSV(data){
 		// create marker
 		let marker = L.circleMarker([item.latitude,item.longitude])
         .on('mouseover',function(){
-			this.bindPopup(`${item.title}<br><img src="${item.image_url}">`).openPopup()
+			this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
 		})
 
 		// add marker to featuregroup
 		markers.addLayer(marker)
 
         // add entry to sidebar
-		$('.sidebar').append(`${item.title}<br><img src="${item.image_url}" onclick="panToImage(${index})"><br><br>`)
+		$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" onclick="panToImage(${index})"><br><br>`)
 	})
 
 	// add featuregroup to map
