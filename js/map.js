@@ -1,12 +1,10 @@
 // Global variables
 let map;
-let lat = 34.0522;
-let lon = -118.2437;
+let lat = 0;
+let lon = 0;
 let zl = 3;
-let path = "data/dunitz1.csv";
+let path = "data/dunitz.csv";
 let markers = L.featureGroup();
-let csvdata;
-
 
 // initialize
 $( document ).ready(function() {
@@ -30,6 +28,7 @@ function readCSV(path){
 		download: true,
 		complete: function(data) {
 			console.log(data);
+			
 			// map the data
 			mapCSV(data);
 
@@ -37,43 +36,30 @@ function readCSV(path){
 	});
 }
 
-function mapCSV(data){	
-	// loop through each entry
-	data.data.forEach(function(item,index){
-		// create marker
-		let marker = L.circleMarker([item.latitude,item.longitude])
+function mapCSV(data){
+	
+    // circle options
+	let circleOptions = {
+		radius: 5,
+		weight: 1,
+		color: 'white',
+		fillColor: 'dodgerblue',
+		fillOpacity: 1
+	}
+
+    data.data.forEach(function(item, index){
+        let marker = L.circleMarker([item.latitude, 
+            item.longitude], circleOptions)
         .on('mouseover',function(){
-			this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
-		})
+            this.bindPopup(`${item.title}<br><img 
+            src="${item.thumbnail_url}">`).openPopup()
+        })
+    
+        markers.addLayer(marker)
+    })
 
-		// add marker to featuregroup
-		markers.addLayer(marker)
+    markers.addTo(map);
 
-        // add entry to sidebar
-		$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" onclick="panToImage(${index})"><br><br>`)
-	})
-
-	// add featuregroup to map
-	markers.addTo(map)
-
-	// fit markers to map
-	map.fitBounds(markers.getBounds())
-
-	//add button on map for default view
-	L.easyButton('fa-globe', function(btn,map){
-		map.fitBounds(markers.getBounds());
-    }, 	'default view').addTo(map);
+    map.fitBounds(markers.getBounds());
 }
 
-function flyToIndex(index){
-	map.flyTo([item[index].lat,item[index].lon],12)
-	// open the popup
-	myMarkers.getLayers()[index].openPopup()	
-}
-
-function panToImage(index){
-	// zoom to level 17 first
-	map.setZoom(17);
-	// pan to the marker
-	map.panTo(markers.getLayers()[index]._latlng);
-}
