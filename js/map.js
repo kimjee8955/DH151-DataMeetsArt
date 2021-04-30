@@ -3,7 +3,7 @@ let map;
 let lat = 34.0522;
 let lon = -118.2437;
 let zl = 3;
-let path = "data/combined2.csv";
+let path = "data/combined.csv";
 let markers = L.featureGroup();
 let csvdata;
 
