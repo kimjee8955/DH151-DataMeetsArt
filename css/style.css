@@ -1,39 +1,45 @@
-/* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial;
-    width:100%;
-  }
-  
-  /* Style tab links */
-  .tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 50%;
-  }
-  
-  .tablink:hover {
-    background-color: #777;
-  }
-  
-  /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent {
-    color: white;
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-  }
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
 
-  #map {
-    height: 100%;
-  }
+#map {
+	height: 100%;
+}
 
-  #Map {background-color: rgb(129, 153, 230);}
-  #About {background-color: rgb(240, 178, 108);}
+body {
+	display: grid;
+	grid-template-rows: 80px 1fr 40px;
+	grid-template-columns: 20% 80%;
+	grid-template-areas: 
+	"header header"
+	"sidebar content"
+	"footer footer";
+}
+
+.header {
+	grid-area: header;
+	padding:10px;
+	background-color: rgb(204, 153, 105);
+	color: white;
+	font-size: 2em;
+}
+
+.sidebar {
+	color: white;
+	grid-area: sidebar;
+	padding:30px;
+	background-color: rgb(114, 69, 49);
+	overflow: auto;
+}
+
+.content {
+	grid-area: content;
+}
+
+.footer {
+	grid-area: footer;
+	padding:10px;
+	background-color: rgb(175, 175, 175);
+}

@@ -3,8 +3,10 @@ let map;
 let lat = 34.0522;
 let lon = -118.2437;
 let zl = 3;
-let path = "data/art_loc.csv";
+let path = "data/combined2.csv";
 let markers = L.featureGroup();
+let csvdata;
+
 
 // initialize
 $( document ).ready(function() {
@@ -28,7 +30,6 @@ function readCSV(path){
 		download: true,
 		complete: function(data) {
 			console.log(data);
-			
 			// map the data
 			mapCSV(data);
 
@@ -49,6 +50,7 @@ function mapCSV(data){
 		markers.addLayer(marker)
 
         // add entry to sidebar
+		$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" onclick="panToImage(${index})"><br><br>`)
 	})
 
 	// add featuregroup to map
@@ -67,4 +69,11 @@ function flyToIndex(index){
 	map.flyTo([item[index].lat,item[index].lon],12)
 	// open the popup
 	myMarkers.getLayers()[index].openPopup()	
+}
+
+function panToImage(index){
+	// zoom to level 17 first
+	map.setZoom(17);
+	// pan to the marker
+	map.panTo(markers.getLayers()[index]._latlng);
 }
