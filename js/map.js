@@ -3,7 +3,7 @@ let map;
 let lat = 34.0522;
 let lon = -118.2437;
 let zl = 3;
-let path = "data/dunitz.csv";
+let path = "data/Tovar.csv";
 let markers = L.featureGroup();
 let csvdata;
 
