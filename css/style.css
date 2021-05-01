@@ -1,3 +1,73 @@
+body{
+	font-family: 'Nunito', sans-serif;
+	color: #353535;
+}
+
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+/* Logo of site*/ 
+#D {
+	color: #F23847;
+}
+
+.a {
+	color: #03A688;
+}
+
+.t {
+	color: #BFB41B;
+}
+
+#r {
+	color: #0460D9;
+}
+
+/*Typography*/
+h1 {
+	font-size: 48px;
+	line-height: 72px;
+}
+
+h2 {
+	font-size: 36px;
+	line-height: 48px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 24px;
+	font-style: italic;
+}
+
+p {
+	font-size: 18px;
+	line-height: 28px;
+} 
+
+/* Navbar items */
+.navbar {
+	height: 88px;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #F23847;
+	font-weight: 900;
+}
+
+
+/* Main items */
 body,html {
 	margin:0;
 	height:100%;
@@ -10,27 +80,22 @@ body,html {
 
 body {
 	display: grid;
-	grid-template-rows: 80px 1fr 50px;
-	grid-template-columns: 50% 50%;
+	grid-template-rows: 88px 1fr;
+	grid-template-columns: 280px;
 	grid-template-areas: 
 	"header header"
-	"sidebar content"
-	"footer footer";
+	"sidebar content";
 }
 
 .header {
 	grid-area: header;
-	padding:10px;
-	background-color: #333;
-	color: white;
-	font-size: 2em;
 }
 
 .sidebar {
-	color: white;
+	color: #353535;
 	grid-area: sidebar;
 	padding:10px;
-	background-color: #555;
+	background-color: hsla(170, 97%, 13%, 0.293);
 	overflow: auto;
 }
 
@@ -38,8 +103,6 @@ body {
 	grid-area: content;
 }
 
-.footer {
-	grid-area: footer;
-	padding:10px;
-	background-color: rgb(175, 175, 175);
+.sidebar img {
+    width: 200px;
 }
