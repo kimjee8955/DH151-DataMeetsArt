@@ -61,10 +61,15 @@ function mapCSV(data){
 		if(item.year < 2000){
 			let marker = L.circleMarker([item.latitude, item.longitude],circBefore)
 			.on('mouseover',function(){
-				this.bindPopup(`<img src="${item.thumbnail_url}">`).openPopup()
+				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
 			})
 			.on('click',function(){
-				$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
+				let sidebar = document.getElementById('sideContent');
+				sidebar.innerHTML = (
+					`<h3> ${item.title} </h3>
+					<img src="${item.thumbnail_url}" width=600px>`
+				)
+				//$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
 			})
 			befores.addLayer(marker)
 			markers.addLayer(marker)
@@ -72,10 +77,14 @@ function mapCSV(data){
 		else{
 			let marker = L.circleMarker([item.latitude, item.longitude],circAfter)
 			.on('mouseover',function(){
-				this.bindPopup(`<img src="${item.thumbnail_url}">`).openPopup()
+				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
 			})
 			.on('click',function(){
-				$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
+				let sidebar = document.getElementById('sideContent');
+				sidebar.innerHTML = (
+					`<h3> ${item.title} </h3>
+					<img src="${item.thumbnail_url}" width=600px>`
+				)
 			})
 			afters.addLayer(marker)
 			markers.addLayer(marker)
