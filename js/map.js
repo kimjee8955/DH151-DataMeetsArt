@@ -98,6 +98,11 @@ function mapCSV(data){
 
     map.fitBounds(markers.getBounds());
 
+	//add button on map for default view
+	L.easyButton('fa-globe', function(btn,map){
+		map.fitBounds(markers.getBounds());
+}, 		'default view').addTo(map);	
+
 
 	let addedlayers = {
         "Before 2000": befores,
