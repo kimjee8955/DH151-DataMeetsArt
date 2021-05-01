@@ -3,7 +3,7 @@ let map;
 let lat = 0;
 let lon = 0;
 let zl = 3;
-let path = "data/dunitz.csv";
+let path = "data/art_loc.csv";
 let markers = L.featureGroup();
 
 // initialize
