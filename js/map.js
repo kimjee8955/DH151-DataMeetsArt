@@ -4,8 +4,9 @@ let lat = 0;
 let lon = 0;
 let zl = 3;
 let path = "data/art_loc.csv";
-let befores = L.featureGroup();
-let afters = L.featureGroup();
+let markers = L.markerClusterGroup();
+let befores = L.layerGroup();
+let afters = L.layerGroup();
 
 // initialize
 $( document ).ready(function() {
@@ -55,44 +56,45 @@ function mapCSV(data){
 		fillOpacity: 1
 	}
 
-    data.data.forEach(function(item, index){
-        if(item.year < 2000){
-			let before2000 = L.circleMarker([item.latitude, 
-				item.longitude], circBefore)
+    data.data.forEach(function(item, index){		
+
+		if(item.year < 2000){
+			let marker = L.circleMarker([item.latitude, item.longitude],circBefore)
 			.on('mouseover',function(){
 				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
 			})
 			.on('click',function(){
 				$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
 			})
-		
-			befores.addLayer(before2000)
-			//$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px onmouseover="panToImage(${index},${item.year},${before2000})"><br><br>`)
+			befores.addLayer(marker)
+			markers.addLayer(marker)
 		}
 		else{
-			let after2000 = L.circleMarker([item.latitude, 
-				item.longitude], circAfter)
+			let marker = L.circleMarker([item.latitude, item.longitude],circAfter)
 			.on('mouseover',function(){
 				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
 			})
 			.on('click',function(){
 				$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
 			})
-		
-			afters.addLayer(after2000)
-			//$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px onmouseover="panToImage(${index},${item.year},${after2000})"><br><br>`)
+			afters.addLayer(marker)
+			markers.addLayer(marker)
 		}
+	
     })
-
-    befores.addTo(map);
+	
+	//add layers to map
+	befores.addTo(map);
 	afters.addTo(map);
 
-    map.fitBounds(afters.getBounds());
+    map.fitBounds(markers.getBounds());
+
 
 	let addedlayers = {
         "Before 2000": befores,
-        "2000 ~": afters
-    }
+		"2000 ~": afters,
+		"Clustered": markers
+	}
 
 	// add layer control box. 
 	L.control.layers(null,addedlayers).addTo(map);
