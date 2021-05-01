@@ -1,0 +1,89 @@
+body{
+	font-family: 'Nunito', sans-serif;
+	color: #353535;
+}
+
+/* Logo of site*/ 
+#D {
+	color: #F23847;
+}
+
+.a {
+	color: #03A688;
+}
+
+.t {
+	color: #BFB41B;
+}
+
+#r {
+	color: #0460D9;
+}
+
+/*Typography*/
+h1 {
+	font-size: 48px;
+	line-height: 72px;
+}
+
+h2 {
+	font-size: 36px;
+	line-height: 48px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 24px;
+	font-style: italic;
+}
+
+p {
+	font-size: 18px;
+	line-height: 28px;
+} 
+
+/* Navbar items */
+.navbar {
+	height: 80px;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #F23847;
+	font-weight: 900;
+}
+/* 
+nav {
+	background: white;
+} */
+
+/* Main items */
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#coverPhoto {
+	padding-top: 24px;
+	opacity: .8;
+}
+
+article {
+	padding: 8px;
+}
+
+.centerh2 {
+    text-align: center;
+}
+
+#aboutUs {
+	margin-bottom: 24px;
+}
