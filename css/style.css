@@ -68,12 +68,6 @@ p {
 
 
 /* Main items */
-body,html {
-	margin:0;
-	height:100%;
-	width:100%;
-}
-
 #map {
 	height: 100%;
 }
@@ -81,7 +75,7 @@ body,html {
 body {
 	display: grid;
 	grid-template-rows: 88px 1fr;
-	grid-template-columns: 280px;
+	grid-template-columns: 320px;
 	grid-template-areas: 
 	"header header"
 	"sidebar content";
