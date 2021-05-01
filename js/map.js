@@ -40,18 +40,25 @@ function readCSV(path){
 function mapCSV(data){
 	
     // circle options
-	let circleOptions = {
+	let circBefore = {
 		radius: 5,
 		weight: 1,
 		color: 'white',
-		fillColor: 'dodgerblue',
+		fillColor: '#0460D9',
+		fillOpacity: 1
+	}
+	let circAfter = {
+		radius: 5,
+		weight: 1,
+		color: 'white',
+		fillColor: '#F23847',
 		fillOpacity: 1
 	}
 
     data.data.forEach(function(item, index){
         if(item.year < 2000){
 			let before2000 = L.circleMarker([item.latitude, 
-				item.longitude], circleOptions)
+				item.longitude], circBefore)
 			.on('mouseover',function(){
 				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
 			})
@@ -61,7 +68,7 @@ function mapCSV(data){
 		}
 		else{
 			let after2000 = L.circleMarker([item.latitude, 
-				item.longitude], circleOptions)
+				item.longitude], circAfter)
 			.on('mouseover',function(){
 				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
 			})
