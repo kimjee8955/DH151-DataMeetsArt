@@ -4,7 +4,8 @@ let lat = 0;
 let lon = 0;
 let zl = 3;
 let path = "data/art_loc.csv";
-let markers = L.featureGroup();
+let befores = L.featureGroup();
+let afters = L.featureGroup();
 
 // initialize
 $( document ).ready(function() {
@@ -48,18 +49,40 @@ function mapCSV(data){
 	}
 
     data.data.forEach(function(item, index){
-        let marker = L.circleMarker([item.latitude, 
-            item.longitude], circleOptions)
-        .on('mouseover',function(){
-            this.bindPopup(`${item.title}<br><img 
-            src="${item.thumbnail_url}">`).openPopup()
-        })
-    
-        markers.addLayer(marker)
+        if(item.year < 2000){
+			let before2000 = L.circleMarker([item.latitude, 
+				item.longitude], circleOptions)
+			.on('mouseover',function(){
+				this.bindPopup(`${item.title}<br><img 
+				src="${item.thumbnail_url}">`).openPopup()
+			})
+		
+			befores.addLayer(before2000)
+		}
+		else{
+			let after2000 = L.circleMarker([item.latitude, 
+				item.longitude], circleOptions)
+			.on('mouseover',function(){
+				this.bindPopup(`${item.title}<br><img 
+				src="${item.thumbnail_url}">`).openPopup()
+			})
+		
+			afters.addLayer(after2000)
+		}
     })
 
-    markers.addTo(map);
+    befores.addTo(map);
+	afters.addTo(map);
 
-    map.fitBounds(markers.getBounds());
+    map.fitBounds(afters.getBounds());
+
+	let addedlayers = {
+        "Before 2000": befores,
+        "2000 ~": afters
+    }
+
+	// add layer control box. 
+	L.control.layers(null,addedlayers).addTo(map);
+
 }
 
