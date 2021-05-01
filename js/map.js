@@ -53,21 +53,21 @@ function mapCSV(data){
 			let before2000 = L.circleMarker([item.latitude, 
 				item.longitude], circleOptions)
 			.on('mouseover',function(){
-				this.bindPopup(`${item.title}<br><img 
-				src="${item.thumbnail_url}">`).openPopup()
+				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
 			})
 		
 			befores.addLayer(before2000)
+			$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" onmouseover="panToImage(${index},${item.year},${before2000})"><br><br>`)
 		}
 		else{
 			let after2000 = L.circleMarker([item.latitude, 
 				item.longitude], circleOptions)
 			.on('mouseover',function(){
-				this.bindPopup(`${item.title}<br><img 
-				src="${item.thumbnail_url}">`).openPopup()
+				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
 			})
 		
 			afters.addLayer(after2000)
+			$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" onmouseover="panToImage(${index},${item.year},${after2000})"><br><br>`)
 		}
     })
 
@@ -84,5 +84,19 @@ function mapCSV(data){
 	// add layer control box. 
 	L.control.layers(null,addedlayers).addTo(map);
 
+}
+
+function panToImage(index,year,marker){
+	// zoom to level 17 first
+	map.setZoom(17);
+	// pan to the marker
+	if(year < 2000){
+		map.panTo(befores.getLayers()[index]._latlng);
+		marker.openPopup();
+	}
+	else{
+		map.panTo(afters.getLayers()[index]._latlng);
+		marker.openPopup();
+	}
 }
 
