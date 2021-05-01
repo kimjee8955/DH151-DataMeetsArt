@@ -57,7 +57,7 @@ function mapCSV(data){
 			})
 		
 			befores.addLayer(before2000)
-			$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" onmouseover="panToImage(${index},${item.year},${before2000})"><br><br>`)
+			$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px onmouseover="panToImage(${index},${item.year},${before2000})"><br><br>`)
 		}
 		else{
 			let after2000 = L.circleMarker([item.latitude, 
@@ -67,7 +67,7 @@ function mapCSV(data){
 			})
 		
 			afters.addLayer(after2000)
-			$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" onmouseover="panToImage(${index},${item.year},${after2000})"><br><br>`)
+			$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px onmouseover="panToImage(${index},${item.year},${after2000})"><br><br>`)
 		}
     })
 
