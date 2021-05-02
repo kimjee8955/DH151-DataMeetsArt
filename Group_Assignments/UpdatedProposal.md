@@ -26,11 +26,11 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
 </table> 
 
 ## Overview:
-Our group's project will focus on introducing public art installations around the Los Angeles area by combining multiple datasets. As we did some initial research, we found that there wasn't a comprehensive resource that visualized and clearly described this information. We hope to create a website that brings awareness to users about the diverse arts and culture that encompasses Los Angeles, while providing context regarding the art pieces to the best of our abilities depending on available data. 
-
+Our group's project will focus on introducing public art installations around the Los Angeles area by combining multiple datasets. As we did some initial research, we found that there wasn't a comprehensive resource that visualized and clearly described this information. Our website will serve as a guide that helps users discover the richness of LA's culture that surrounds them. 
 
 ## Methodology:
 Mapping is a great visualization method of location-based data. Given that we want to showcase public art around Los Angeles, we think web mapping will be a fun, interactive way for users to enjoy our content. Mapping has advantages over traditional charts and graphs in that it is extremely versatile in incorporating multi-dimensional data, including spatial and temporal variables. We hope this will allow users to get a deeper understanding of the significance of public art installations in relation to where they exist around LA.
+
 ## Workflow:
 <table>
   <tr>
