@@ -3,7 +3,7 @@ let map;
 let lat = 0;
 let lon = 0;
 let zl = 3;
-let path = "data/art_loc.csv";
+let path = "data/Urban_Art.csv";
 let markers = L.markerClusterGroup();
 let befores = L.layerGroup();
 let afters = L.layerGroup();
@@ -61,13 +61,14 @@ function mapCSV(data){
 		if(item.year < 2000){
 			let marker = L.circleMarker([item.latitude, item.longitude],circBefore)
 			.on('mouseover',function(){
-				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px>`).openPopup()
+				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px><br>Artist(s): ${item.artist_name}, ${item.year}`).openPopup()
 			})
 			.on('click',function(){
 				let sidebar = document.getElementById('sideContent');
 				sidebar.innerHTML = (
 					`<h3> ${item.title} </h3>
-					<img src="${item.thumbnail_url}" width=600px>`
+					<img src="${item.thumbnail_url}" width=600px>
+					<h6> Artist(s): ${item.artist_name}, ${item.year}</h6>`
 				)
 				//$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
 			})
@@ -77,13 +78,14 @@ function mapCSV(data){
 		else{
 			let marker = L.circleMarker([item.latitude, item.longitude],circAfter)
 			.on('mouseover',function(){
-				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px>`).openPopup()
+				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px><br>Artist(s): ${item.artist_name}, ${item.year}`).openPopup()
 			})
 			.on('click',function(){
 				let sidebar = document.getElementById('sideContent');
 				sidebar.innerHTML = (
 					`<h3> ${item.title} </h3>
-					<img src="${item.thumbnail_url}" width=600px>`
+					<img src="${item.thumbnail_url}" width=600px>
+					<h6> Artist(s): ${item.artist_name}, ${item.year}</h6>`
 				)
 			})
 			afters.addLayer(marker)
