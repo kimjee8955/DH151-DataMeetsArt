@@ -27,10 +27,12 @@ We are Datart. We will be mapping the public art around the Los Angeles County. 
 </table> 
 
 ## Overview:
-Public art installations are important to promote a community's identity and culture, as well as help to acknowledge the work of local artists. Our website, Datart, aims to visualize public art installations through mapping. Compiling three datasets of spatial data and metadata of different public art installations, we were able to illustrate the location, title, artist name, year, and image for each art piece. Specifically, we chose to focus on the Los Angeles County because as students at UCLA, we are interested in exploring more of the art/culture that surrounds the area.  Our website will serve as a guide that helps users discover the richness of LA's culture that surrounds them, through mapping.
+Public art installations are important to promote a community's identity and culture, as well as help to acknowledge the work of local artists. Our website Datart aims to visualize public art installations through mapping. Compiling three datasets of spatial data and metadata of different public art installations, we were able to illustrate the location, title, artist name, year, and image for each art piece. Specifically, we chose to focus on the Los Angeles County because as students at UCLA, we are interested in exploring more of the art/culture that surrounds the area.  Our website will serve as a guide that helps users discover the richness of LA's culture that surrounds them, through mapping.
 
 ## Methodology:
 Mapping is a great visualization method of location-based data. Given that we want to showcase public art around Los Angeles, we think web mapping will be a fun, interactive way for users to enjoy our content. Mapping has advantages over traditional charts and graphs in that it is extremely versatile in incorporating multi-dimensional data, including spatial and temporal variables. We hope this will allow users to get a deeper understanding of the significance of public art installations in relation to where they exist around LA.
+
+Our workflow, data plan, and UX design sections below describes how we ideated and developed our website in more detail.
 
 ## Workflow:
 <table>
