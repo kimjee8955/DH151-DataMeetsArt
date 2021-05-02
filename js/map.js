@@ -21,6 +21,12 @@ function createMap(lat,lon,zl){
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
+
+	// Welcome message and instructions
+	$('#sideContent').append(`
+		<h2>Welcome</h2>
+		<p>To get started, click on any pin and information about it will appear here!</p>
+	`);
 }
 
 // function to read csv data
@@ -56,7 +62,7 @@ function mapCSV(data){
 		fillOpacity: 1
 	}
 
-    data.data.forEach(function(item, index){		
+    data.data.forEach(function(item, index){	
 
 		if(item.year < 2000){
 			let marker = L.circleMarker([item.latitude, item.longitude],circBefore)
@@ -64,8 +70,8 @@ function mapCSV(data){
 				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px><br>Artist(s): ${item.artist_name}, ${item.year}`).openPopup()
 			})
 			.on('click',function(){
-				let sidebar = document.getElementById('sideContent');
-				sidebar.innerHTML = (
+				let sideContent = document.getElementById('sideContent');
+				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
 					<img src="${item.thumbnail_url}" width=600px>
 					<h6> Artist(s): ${item.artist_name}, ${item.year}</h6>`
@@ -81,8 +87,8 @@ function mapCSV(data){
 				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px><br>Artist(s): ${item.artist_name}, ${item.year}`).openPopup()
 			})
 			.on('click',function(){
-				let sidebar = document.getElementById('sideContent');
-				sidebar.innerHTML = (
+				let sideContent = document.getElementById('sideContent');
+				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
 					<img src="${item.thumbnail_url}" width=600px>
 					<h6> Artist(s): ${item.artist_name}, ${item.year}</h6>`
