@@ -96,6 +96,8 @@ Our datasets will be downloaded as csv files from the links above. Each dataset 
 For next steps, we hope to add additional interactivty to our mapping website with a randomize art button, #Gallery art wall, chloropleth map layer, and time slider. 
 
 ## UX Design
+After engaging in a few UX Design activities (mindmaps and crazy eights) to brainstorm how our map might look like, we combined our ideas and came up with the following design.
+
 ### Wireframe Flow
 This is the "site map" of our incoming site. It shows where each action of the user brings them. 
 
