@@ -38,20 +38,20 @@ h2 {
 }
 
 h3 {
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 36px;
-	font-weight: 600;
+	font-weight: 550;
 }
 
 h4 {
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 20px;
+	line-height: 36px;
 	font-style: italic;
 }
 
 p {
-	font-size: 18px;
-	line-height: 28px;
+	font-size: 16px;
+	line-height: 24px;
 } 
 
 /* Navbar items */
@@ -68,12 +68,6 @@ p {
 
 
 /* Main items */
-body,html {
-	margin:0;
-	height:100%;
-	width:100%;
-}
-
 #map {
 	height: 100%;
 }
@@ -81,8 +75,8 @@ body,html {
 body {
 	display: grid;
 	grid-template-rows: 88px 1fr;
-	grid-template-columns: 20% 80%;
-	grid-template-areas: 
+	grid-template-columns: 20%;
+	grid-template-areas:
 	"header header"
 	"sidebar content";
 }
@@ -94,9 +88,9 @@ body {
 .sidebar {
 	color: #353535;
 	grid-area: sidebar;
-	padding:18px;
+	padding:10px;
 	background-color: hsla(170, 97%, 13%, 0.293);
-	overflow: auto;
+	
 }
 
 .content {
@@ -104,5 +98,24 @@ body {
 }
 
 .sidebar img {
-    width: 100%;
+    width: 80%;
+	margin-bottom: 24px;
+}
+
+#sideContent {
+	height: 500px;
+	border: 1px solid black;
+	overflow: auto;
+}
+.container {
+	border: 1px solid black;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 56px;
+	display: flex;
+}
+.container .btn-holder {
+	overflow: auto;
+	justify-content: flex-end;
+	display: flex;
 }

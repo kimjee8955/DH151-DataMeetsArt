@@ -93,8 +93,8 @@ function mapCSV(data){
 				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
 					<img src="${item.thumbnail_url}" width=600px>
-					<p>Artist(s): ${item.artist_name}</p>
-					<p>Year Created: ${item.year}</p>`
+					<p><b>Artist(s):</b> ${item.artist_name}</p>
+					<p><b>Year Created:</b> ${item.year}</p>`
 				)
 			})
 			afters.addLayer(marker)
