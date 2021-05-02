@@ -84,7 +84,7 @@ Leaflet: needed for generating the maproom
 HTML: publishing the map online  
 Javascript: need to code in Javascript to work with Leaflet, increase interactivity  
 CSS: stylize the page  
-Figma: storyboardings and planning UI/UX website components
+Figma: wireframing and planning UI/UX website and feature components
 
 ## Geographic scope: 
 We will be focusing on the Los Angeles County because as students at UCLA, it is a relevant location of interest among us, and we are interested in exploring more of the art/culture that surrounds the area.
