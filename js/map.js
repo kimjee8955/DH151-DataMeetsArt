@@ -61,7 +61,7 @@ function mapCSV(data){
 		if(item.year < 2000){
 			let marker = L.circleMarker([item.latitude, item.longitude],circBefore)
 			.on('mouseover',function(){
-				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
+				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px>`).openPopup()
 			})
 			.on('click',function(){
 				let sidebar = document.getElementById('sideContent');
@@ -77,7 +77,7 @@ function mapCSV(data){
 		else{
 			let marker = L.circleMarker([item.latitude, item.longitude],circAfter)
 			.on('mouseover',function(){
-				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
+				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px>`).openPopup()
 			})
 			.on('click',function(){
 				let sidebar = document.getElementById('sideContent');
