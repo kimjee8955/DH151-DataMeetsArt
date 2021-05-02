@@ -75,7 +75,7 @@ p {
 body {
 	display: grid;
 	grid-template-rows: 88px 1fr;
-	grid-template-columns: 20% 80%;
+	grid-template-columns: 20%;
 	grid-template-areas:
 	"header header"
 	"sidebar content";
@@ -98,5 +98,5 @@ body {
 }
 
 .sidebar img {
-    width: 100%;
+    width: 80%;
 }
