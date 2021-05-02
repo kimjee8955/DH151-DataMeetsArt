@@ -67,7 +67,7 @@ function mapCSV(data){
 		if(item.year < 2000){
 			let marker = L.circleMarker([item.latitude, item.longitude],circBefore)
 			.on('mouseover',function(){
-				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px><br>Artist(s): ${item.artist_name}, ${item.year}`).openPopup()
+				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px>`).openPopup()
 			})
 			.on('click',function(){
 				let sideContent = document.getElementById('sideContent');
@@ -84,14 +84,17 @@ function mapCSV(data){
 		else{
 			let marker = L.circleMarker([item.latitude, item.longitude],circAfter)
 			.on('mouseover',function(){
-				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px><br>Artist(s): ${item.artist_name}, ${item.year}`).openPopup()
+				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=150px>`).openPopup()
 			})
 			.on('click',function(){
 				let sideContent = document.getElementById('sideContent');
 				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
 					<img src="${item.thumbnail_url}" width=600px>
-					<h6> Artist(s): ${item.artist_name}, ${item.year}</h6>`
+					<ul> 
+						<li>Artist(s): ${item.artist_name}</li>
+						<li>Year Created: ${item.year}</li>
+					</ul>`
 				)
 			})
 			afters.addLayer(marker)
