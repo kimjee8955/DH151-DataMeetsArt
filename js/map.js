@@ -63,7 +63,6 @@ function mapCSV(data){
 	}
 
     data.data.forEach(function(item, index){	
-
 		if(item.year < 2000){
 			let marker = L.circleMarker([item.latitude, item.longitude],circBefore)
 			.on('mouseover',function(){
@@ -77,6 +76,7 @@ function mapCSV(data){
 					<ul> 
 						<li>Artist(s): ${item.artist_name}</li>
 						<li>Year Created: ${item.year}</li>
+						<li>Address: ${item.address}</li>
 					</ul>`
 				)
 				//$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
@@ -97,6 +97,7 @@ function mapCSV(data){
 					<ul> 
 						<li>Artist(s): ${item.artist_name}</li>
 						<li>Year Created: ${item.year}</li>
+						<li>Address: ${item.address}</li>
 					</ul>`
 				)
 			})
@@ -129,7 +130,7 @@ function mapCSV(data){
 
 }
 
-function panToImage(index,year,marker){
+/*function panToImage(index,year,marker){
 	// zoom to level 17 first
 	map.setZoom(17);
 	// pan to the marker
@@ -141,5 +142,5 @@ function panToImage(index,year,marker){
 		map.panTo(afters.getLayers()[index]._latlng);
 		marker.openPopup();
 	}
-}
+}*/
 
