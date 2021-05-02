@@ -96,7 +96,16 @@ Our datasets will be downloaded as csv files from the links above. Each dataset 
 For next steps, we hope to add additional interactivty to our mapping website with a randomize art button, #Gallery art wall, chloropleth map layer, and time slider. 
 
 ## UX Design
-After engaging in a few UX Design activities (mindmaps and crazy eights) to brainstorm how our map might look like, we combined our ideas and came up with the following design.
+## A storyboard collection with wireframes
+### Our Initial Sketches
+We first sketched out more coherently, after our mindmap and crazy8 discussion, of how the site would look like. After these 
+sketches, we discussed about the main features we would need and the features we would like to have. 
+
+<img src="https://media.discordapp.net/attachments/694477786131202048/835776462669348874/image_from_ios.png?width=881&height=661" alt="Ann's Sketch" width="750"/>
+
+<img src="https://media.discordapp.net/attachments/694477786131202048/835776512547749928/image_from_ios.png?width=881&height=285" alt="Eustina's Sketch" width="750"/>
+
+<img src="https://cdn.discordapp.com/attachments/694477786131202048/835778201619005440/unknown.png" alt="Michelle's Sketch" width="750"/>
 
 ### Wireframe Flow
 This is the "site map" of our incoming site. It shows where each action of the user brings them. 
