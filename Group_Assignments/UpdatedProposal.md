@@ -80,7 +80,7 @@ Git: sharing code between each other
 Leaflet: needed for generating the maproom 
 HTML: publishing the map online  
 Javascript: need to code in Javascript to work with Leaflet, increase interactivity  
-CSS: stylize the page
+CSS: stylize the page  
 Figma: storyboardings and planning UI/UX website components
 
 ## Geographic scope: 
@@ -96,5 +96,39 @@ Our datasets will be downloaded as csv files from the links above. Each dataset 
 For next steps, we hope to add additional interactivty to our mapping website with a randomize art button, #Gallery art wall, chloropleth map layer, and time slider. 
 
 ## UX Design
+### Wireframe Flow
+This is the "site map" of our incoming site. It shows where each action of the user brings them. 
 
+<img src="https://media.discordapp.net/attachments/694477786131202048/835774519406100480/Flow.png?width=1446&height=513" alt="Flow" width="1050"/>
 
+### Wireframes + Annotations
+<img src="https://media.discordapp.net/attachments/694477786131202048/835774613975728158/Home.png?width=951&height=676" alt="screen 1" width="750"/>
+<ul>
+  <li>Header of our site name</li>
+  <li>Menu items include: About page, team page and gallery page</li>
+  <li>Sidebar to display clicked items</li>
+  <li>Map content</li>
+  <li>Zoom functions</li>
+  <li>Randomization function</li>
+  <li>Layer filter of sites with images vs no images. </li>
+</ul>
+<hr>
+<img src="https://media.discordapp.net/attachments/694477786131202048/835774581721530388/Home-Pin_clicked.png?width=951&height=676" alt="screen 2" width="750"/>
+<ul>
+  <li>This wireframe shows that when a marker is clicked on, the sidebar will display the information of the piece in this manner.</li>
+</ul>
+<hr>
+<img src="https://media.discordapp.net/attachments/694477786131202048/836077068419858452/Team.png?width=951&height=676" alt="screen 2" width="750"/>
+<ul>
+  <li>Team page including our names, roles, and short description about ourselves.</li>
+</ul>
+<hr>
+<img src="https://media.discordapp.net/attachments/694477786131202048/835774606333050931/About.png?width=951&height=676" alt="screen 2" width="750"/>
+<ul>
+  <li>About page which will include our process, overview of our project, and our data sources.</li>
+</ul>
+<hr>
+<img src="https://media.discordapp.net/attachments/694477786131202048/835774608295591986/Gallery.png?width=951&height=676" alt="screen 3" width="750"/>
+<ul>
+  <li>Gallery page (we might include) will include all the relevant images paired with hashtags.</li>
+</ul>
