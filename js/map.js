@@ -66,7 +66,7 @@ function mapCSV(data){
 			.on('click',function(){
 				let sidebar = document.getElementById('sideContent');
 				sidebar.innerHTML = (
-					`<h3> ${item.title} </h3>
+					`<p> ${item.title} </p>
 					<img src="${item.thumbnail_url}" width=600px>`
 				)
 				//$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
