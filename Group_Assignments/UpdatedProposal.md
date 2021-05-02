@@ -95,7 +95,7 @@ Dataset 3: [Robin Dunitz Slides of Los Angeles Murals, 1925-2002](https://raw.gi
 
 Our datasets will be downloaded as csv files from the links above. Each dataset has columns of latitude and longitude information for mapping location. Images of each art piece will be displayed on the pop up menu and sidebar, as well as the title, artist(s), and year, which were columns in our datasets. We used layers on the map to filter by year (blue = Before 2000, red = after 2000). Also, we incorpoated a "Clustered" feature as a map layer, which displayed visual groupings and count of art installations that were in close proximity. We hoped that by adding clusters, it would allow users to see "hot spots" of art and make for a more exciting experience using the site.
 
-For next steps, we hope to add additional interactivty to our mapping website with a randomize art button, #Gallery art wall, chloropleth map layer, and time slider. 
+For next steps, we plan to add additional interactivty to our mapping website with a randomize art button, #Gallery art wall, chloropleth map layer, and time slider. 
 
 ## UX Design
 ### Our Initial Sketches
