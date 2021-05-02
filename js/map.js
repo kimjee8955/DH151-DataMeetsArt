@@ -76,7 +76,8 @@ function mapCSV(data){
 					`<h3> ${item.title} </h3>
 					<img src="${item.thumbnail_url}" width=600px>
 					<p><b>Artist(s):</b> ${item.artist_name}</p>
-					<p><b>Year Created:</b> ${item.year}</p>`
+					<p><b>Year Created:</b> ${item.year}</p>
+					<p><b>Address:</b> ${item.address}</p>`
 				)
 				//$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
 			})
@@ -94,7 +95,8 @@ function mapCSV(data){
 					`<h3> ${item.title} </h3>
 					<img src="${item.thumbnail_url}" width=600px>
 					<p><b>Artist(s):</b> ${item.artist_name}</p>
-					<p><b>Year Created:</b> ${item.year}</p>`
+					<p><b>Year Created:</b> ${item.year}</p>
+					<p><b>Address:</b> ${item.address}</p>`
 				)
 			})
 			afters.addLayer(marker)
@@ -126,7 +128,7 @@ function mapCSV(data){
 
 }
 
-function panToImage(index,year,marker){
+/*function panToImage(index,year,marker){
 	// zoom to level 17 first
 	map.setZoom(17);
 	// pan to the marker
@@ -138,5 +140,5 @@ function panToImage(index,year,marker){
 		map.panTo(afters.getLayers()[index]._latlng);
 		marker.openPopup();
 	}
-}
+}*/
 
