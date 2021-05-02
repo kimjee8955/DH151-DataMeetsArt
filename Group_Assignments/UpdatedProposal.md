@@ -31,6 +31,8 @@ Public art installations are important to promote a community's identity and cul
 ## Methodology:
 Mapping is a great visualization method of location-based data. Given that we want to showcase public art around Los Angeles, we think web mapping will be a fun, interactive way for users to enjoy our content. Mapping has advantages over traditional charts and graphs in that it is extremely versatile in incorporating multi-dimensional data, including spatial and temporal variables. We hope this will allow users to get a deeper understanding of the significance of public art installations in relation to where they exist around LA.
 
+Our workflow, data plan, and UX design sections below describes how we ideated and developed our website in more detail.
+
 ## Workflow:
 <table>
   <tr>
