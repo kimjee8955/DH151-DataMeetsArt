@@ -63,6 +63,8 @@ function mapCSV(data){
 	}
 
     data.data.forEach(function(item, index){	
+
+		// Before 2000's layer 
 		if(item.year < 2000){
 			let marker = L.circleMarker([item.latitude, item.longitude],circBefore)
 			.on('mouseover',function(){
@@ -73,18 +75,16 @@ function mapCSV(data){
 				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
 					<img src="${item.thumbnail_url}" width=600px>
-					<ul> 
-						<li>Artist(s): ${item.artist_name}</li>
-						<li>Year Created: ${item.year}</li>
-						<li>Address: ${item.address}</li>
-					</ul>`
+					<p><b>Artist(s):</b> ${item.artist_name}</p>
+					<p><b>Year Created:</b> ${item.year}</p>
+					<p><b>Address:</b> ${item.address}</p>`
 				)
 				//$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
 			})
 			befores.addLayer(marker)
 			markers.addLayer(marker)
 		}
-		else{
+		else{ // after 2000's layer 
 			let marker = L.circleMarker([item.latitude, item.longitude],circAfter)
 			.on('mouseover',function(){
 				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=150px>`).openPopup()
@@ -94,11 +94,9 @@ function mapCSV(data){
 				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
 					<img src="${item.thumbnail_url}" width=600px>
-					<ul> 
-						<li>Artist(s): ${item.artist_name}</li>
-						<li>Year Created: ${item.year}</li>
-						<li>Address: ${item.address}</li>
-					</ul>`
+					<p>Artist(s): ${item.artist_name}</p>
+					<p>Year Created: ${item.year}</p>
+					<p><b>Address:</b> ${item.address}</p>`
 				)
 			})
 			afters.addLayer(marker)
