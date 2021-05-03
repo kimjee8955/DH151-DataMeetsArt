@@ -126,6 +126,13 @@ function mapCSV(data){
 	// add layer control box. 
 	L.control.layers(null,addedlayers).addTo(map);
 
+	// (Please get your own Client ID on https://www.mapillary.com/app/settings/developers)
+    L.streetView({ position: 'topleft', mapillaryId: 'RC1ZRTBfaVlhWmJmUGVqRk5CYnAxQTpmMGE3OTU0MzM0MTljZTA4' }).addTo(map);
+    // Add a marker to the centre of the map
+    var marker = L.marker(map.getCenter()).addTo(map);
+    // Make sure the marker stays in the centre when the map is moved
+    map.on('move', function() { marker.setLatLng(map.getCenter()); });
+
 }
 
 /*function panToImage(index,year,marker){
