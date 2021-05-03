@@ -130,6 +130,8 @@ function mapCSV(data){
     L.streetView({ position: 'topleft'}).addTo(map);
     // Add a marker to the centre of the map
     var marker = L.marker(map.getCenter(),{draggable:true,autoPan:true}).addTo(map);
+	//Make sure marker stays on center when map is zoomed
+	map.on('zoom', function() { marker.setLatLng(map.getCenter()); });
 
 }
 
