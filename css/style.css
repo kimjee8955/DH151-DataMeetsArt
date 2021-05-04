@@ -27,7 +27,7 @@ body,html {
 }
 
 /*Typography*/
-h1 {
+/* h1 {
 	font-size: 48px;
 	line-height: 72px;
 }
@@ -50,9 +50,135 @@ h4 {
 }
 
 p {
-	font-size: 16px;
+	font-size: 1rem; 
 	line-height: 24px;
-} 
+}  */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	h1 {
+			font-size: 36px;
+			line-height: 48px;
+		}
+	h2 {
+			font-size: 26px;
+			line-height: 36px;
+		}
+	h3 {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	h4 {
+			font-size: 20px;
+			line-height: 24px;
+			font-style: italic;
+		}
+	p {
+			font-size: 1rem; 
+			line-height: 24px;
+		}
+ }
+ 
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	h1 {
+			font-size: 36px;
+			line-height: 48px;
+		}
+	h2 {
+			font-size: 26px;
+			line-height: 36px;
+		}
+	h3 {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	h4 {
+			font-size: 20px;
+			line-height: 24px;
+			font-style: italic;
+		}
+	p {
+			font-size: 1rem; 
+			line-height: 24px;
+		}
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	h1 {
+		font-size: 48px;
+		line-height: 72px;
+	}
+	h2 {
+		font-size: 36px;
+		line-height: 48px;
+	}
+	h3 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	h4 {
+		font-size: 20px;
+		line-height: 24px;
+		font-style: italic;
+	}
+	p {
+		font-size: 1rem; 
+		line-height: 24px;
+	}
+ } 
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	h1 {
+		 font-size: 48px;
+		 line-height: 72px;
+	}
+	h2 {
+		 font-size: 36px;
+		 line-height: 48px;
+	}
+   h3 {
+		 font-size: 20px;
+		 line-height: 24px;
+	}
+   h4 {
+		 font-size: 20px;
+		 line-height: 24px;
+		 font-style: italic;
+	 }
+   p {
+		 font-size: 1rem; 
+		 line-height: 24px;
+	}
+ } 
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   h1 {
+		 font-size: 48px;
+		 line-height: 72px;
+	}
+   h2 {
+		 font-size: 36px;
+		 line-height: 48px;
+	}
+   h3 {
+		 font-size: 20px;
+		 line-height: 24px;
+	}
+   h4 {
+		 font-size: 20px;
+		 line-height: 24px;
+		 font-style: italic;
+	}
+   p {
+		 font-size: 1rem; 
+		 line-height: 24px;
+	}
+ }
+
 
 /* Navbar items */
 .navbar {
@@ -75,7 +201,7 @@ p {
 body {
 	display: grid;
 	grid-template-rows: 88px 1fr;
-	grid-template-columns: 20%;
+	grid-template-columns: 280px;
 	grid-template-areas:
 	"header header"
 	"sidebar content";
