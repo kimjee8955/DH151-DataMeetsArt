@@ -64,34 +64,39 @@ function mapCSV(data){
 
     data.data.forEach(function(item, index){	
 
+		// Before 2000's layer 
 		if(item.year < 2000){
 			let marker = L.circleMarker([item.latitude, item.longitude],circBefore)
 			.on('mouseover',function(){
-				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px><br>Artist(s): ${item.artist_name}, ${item.year}`).openPopup()
+				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=150px>`).openPopup()
 			})
 			.on('click',function(){
 				let sideContent = document.getElementById('sideContent');
 				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
 					<img src="${item.thumbnail_url}" width=600px>
-					<h6> Artist(s): ${item.artist_name}, ${item.year}</h6>`
+					<p><b>Artist(s):</b> ${item.artist_name}</p>
+					<p><b>Year Created:</b> ${item.year}</p>
+					<p><b>Address:</b> ${item.address}</p>`
 				)
 				//$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
 			})
 			befores.addLayer(marker)
 			markers.addLayer(marker)
 		}
-		else{
+		else{ // after 2000's layer 
 			let marker = L.circleMarker([item.latitude, item.longitude],circAfter)
 			.on('mouseover',function(){
-				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=120px><br>Artist(s): ${item.artist_name}, ${item.year}`).openPopup()
+				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=150px>`).openPopup()
 			})
 			.on('click',function(){
 				let sideContent = document.getElementById('sideContent');
 				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
 					<img src="${item.thumbnail_url}" width=600px>
-					<h6> Artist(s): ${item.artist_name}, ${item.year}</h6>`
+					<p><b>Artist(s):</b> ${item.artist_name}</p>
+					<p><b>Year Created:</b> ${item.year}</p>
+					<p><b>Address:</b> ${item.address}</p>`
 				)
 			})
 			afters.addLayer(marker)
@@ -121,9 +126,16 @@ function mapCSV(data){
 	// add layer control box. 
 	L.control.layers(null,addedlayers).addTo(map);
 
+	// StreetView
+    L.streetView({ position: 'topleft'}).addTo(map);
+    // Add a marker to the centre of the map
+    var marker = L.marker(map.getCenter(),{draggable:true,autoPan:true}).addTo(map);
+	//Make sure marker stays on center when map is zoomed
+	map.on('zoom', function() { marker.setLatLng(map.getCenter()); });
+
 }
 
-function panToImage(index,year,marker){
+/*function panToImage(index,year,marker){
 	// zoom to level 17 first
 	map.setZoom(17);
 	// pan to the marker
@@ -135,5 +147,5 @@ function panToImage(index,year,marker){
 		map.panTo(afters.getLayers()[index]._latlng);
 		marker.openPopup();
 	}
-}
+}*/
 
