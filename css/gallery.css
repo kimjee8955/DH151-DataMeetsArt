@@ -1,3 +1,171 @@
+body{
+	font-family: 'Nunito', sans-serif;
+	color: #353535;
+}
+
+/* Logo of site*/ 
+#D {
+	color: #F23847;
+}
+
+.a {
+	color: #03A688;
+}
+
+.t {
+	color: #BFB41B;
+}
+
+#r {
+	color: #0460D9;
+}
+
+/*Typography*/
+/* h1 {
+	font-size: 48px;
+	line-height: 72px;
+}
+
+h2 {
+	font-size: 36px;
+	line-height: 48px;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 550;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 36px;
+	font-style: italic;
+}
+
+p {
+	font-size: 1rem; 
+	line-height: 24px;
+}  */
+
+
+/** Base and fixed size for all small devices **/
+h1 {
+	font-size: 36px;
+	line-height: 48px;
+}
+h2 {
+	font-size: 28px;
+	line-height: 36px;
+}
+h3 {
+	font-size: 22px;
+	line-height: 24px;
+}
+h4 {
+	font-size: 22px;
+	line-height: 24px;
+	font-style: italic;
+}
+p {
+	font-size: 16px; 
+	line-height: 24px;
+}
+/**Fluid size for all screens, larger than 500px**/
+/* @media (min-width: 900px) {
+	h1 {
+		font-size: 4vw;
+		line-height: 48px;
+	}
+	h2 {
+		font-size: 3.5vw;
+		line-height: 36px;
+	}
+	h3 {
+		font-size: 3vw;
+		line-height: 24px;
+	}
+	h4 {
+		font-size: 3vw;
+		line-height: 24px;
+		font-style: italic;
+	}
+} */
+/** You can do the same for a maximum size if you wish **/
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 48px;
+		line-height: 72px;
+	}
+
+	h2 {
+		font-size: 36px;
+		line-height: 48px;
+	}
+
+	h3 {
+		font-size: 20px;
+		line-height: 36px;
+		font-weight: 550;
+	}
+
+	h4 {
+		font-size: 20px;
+		line-height: 36px;
+		font-style: italic;
+	}
+
+	p {
+		font-size: 1rem; 
+		line-height: 24px;
+	}
+}
+/* Navbar items */
+.navbar {
+	height: 88px;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #F23847;
+	font-weight: 900;
+}
+/* 
+nav {
+	background: white;
+} */
+
+/* Main items */
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+article {
+	padding: 8px;
+}
+
+.col-sm > h3, .col-sm > h4 {
+    text-align: center;
+}
+
+.col-sm > h3 {
+    padding-top: 8px;
+}
+
+.col-sm > img {
+    border-radius: 50%;
+}
+
+#h2_ourTeam {
+    margin-bottom: 48px;
+}
+.centerh2 {
+    text-align: center;
+}
+/* Gallery page specific stylings */
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
