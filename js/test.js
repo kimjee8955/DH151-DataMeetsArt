@@ -133,7 +133,7 @@ function mapCSV(data){
     // Add a marker to the centre of the map
     var marker = L.marker(map.getCenter(),{draggable:true,autoPan:true}).addTo(map);
 
-	//add button on map for default view
+	//Randomize
 	L.easyButton('<i class="fas fa-dice"></i>', function(btn,map){
 		map.fitBounds(markers.getBounds());
 }, 		'Surprise Me').addTo(map);	

@@ -3,7 +3,9 @@ let map;
 let lat = 0;
 let lon = 0;
 let zl = 3;
-let path = "data/Urban_Art.csv";
+const path = "data/Urban_Art.csv";
+const path2 = "data/LaController.csv";
+const combined_csv = "data/combined.csv";
 let markers = L.markerClusterGroup();
 let befores = L.layerGroup();
 let afters = L.layerGroup();
@@ -43,6 +45,30 @@ function readCSV(path){
 		}
 	});
 }
+
+// parsing csv to json
+let urbanArtCSV;
+let LAControllerCSV;
+
+Papa.parse(path, {
+	header: true,
+	download: true,
+	dynamicTyping: true,
+	complete: function(results) {
+		console.log(results);
+		urbanArtCSV = results.data;
+	}
+});
+
+Papa.parse(path2, {
+	header: true,
+	download: true,
+	dynamicTyping: true,
+	complete: function(results) {
+		console.log(results);
+		LAControllerCSV = results.data;
+	}
+});
 
 function mapCSV(data){
 	
@@ -125,6 +151,25 @@ function mapCSV(data){
 
 	// add layer control box. 
 	L.control.layers(null,addedlayers).addTo(map);
+
+	//Randomize
+	L.easyButton('<i class="fas fa-dice"></i>', function(){
+		let randData1 = urbanArtCSV[Math.floor(Math.random() * urbanArtCSV.length)];
+		let randData2 = LAControllerCSV[Math.floor(Math.random() * LAControllerCSV.length)];
+
+		const randData_arr = [randData1, randData2];
+
+		let rando_chosen = randData_arr[Math.floor(Math.random() * randData_arr.length)];
+
+		let sideContent = document.getElementById('sideContent');
+				sideContent.innerHTML = (
+					`<h3> ${rando_chosen.title} </h3>
+					<img src="${rando_chosen.thumbnail_url}" width=600px>
+					<p><b>Artist(s):</b> ${rando_chosen.artist_name}</p>
+					<p><b>Year Created:</b> ${rando_chosen.year}</p>
+					<p><b>Address:</b> ${rando_chosen.address}</p>`
+				)
+}, 		'Surprise Me').addTo(map);	
 
 	// StreetView
     L.streetView({ position: 'topleft'}).addTo(map);
