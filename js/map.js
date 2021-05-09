@@ -4,7 +4,7 @@ let lat = 0;
 let lon = 0;
 let zl = 3;
 let path = "data/Urban_Art.csv";
-let path2 = "data/LAController.csv";
+// let path2 = "data/LAController.csv";
 let markers = L.markerClusterGroup();
 let befores = L.layerGroup();
 let afters = L.layerGroup();
@@ -47,7 +47,6 @@ function readCSV(path){
 
 // parsing csv to json
 let urbanArtCSV;
-let LAControllerCSV;
 
 Papa.parse(path, {
 	header: true,
@@ -59,15 +58,6 @@ Papa.parse(path, {
 	}
 });
 
-Papa.parse(path2, {
-	header: true,
-	download: true,
-	dynamicTyping: true,
-	complete: function(results) {
-		console.log(results);
-		LAControllerCSV = results.data;
-	}
-});
 
 function mapCSV(data){
 	
@@ -153,21 +143,23 @@ function mapCSV(data){
 
 	//Randomize
 	L.easyButton('<i class="fas fa-dice"></i>', function(){
+
+		//randomize csv data into 1 variable 
 		let randData1 = urbanArtCSV[Math.floor(Math.random() * urbanArtCSV.length)];
-		let randData2 = LAControllerCSV[Math.floor(Math.random() * LAControllerCSV.length)];
 
-		const randData_arr = [randData1, randData2];
-
-		let rando_chosen = randData_arr[Math.floor(Math.random() * randData_arr.length)];
-
+		//display on sidebar
 		let sideContent = document.getElementById('sideContent');
-				sideContent.innerHTML = (
-					`<h3> ${rando_chosen.title} </h3>
-					<img src="${rando_chosen.thumbnail_url}" width=600px>
-					<p><b>Artist(s):</b> ${rando_chosen.artist_name}</p>
-					<p><b>Year Created:</b> ${rando_chosen.year}</p>
-					<p><b>Address:</b> ${rando_chosen.address}</p>`
-				)
+		sideContent.innerHTML = (
+			`<h3> ${randData1.title} </h3>
+			<img src="${randData1.thumbnail_url}" alt="${randData1.title}" width=600px>
+			<p><b>Artist(s):</b> ${randData1.artist_name}</p>
+			<p><b>Year Created:</b> ${randData1.year}</p>
+			<p><b>Address:</b> ${randData1.address}</p>`
+		);
+
+		let rando_pop = L.popup().setContent(`${randData1.title}<br><img src="${randData1.thumbnail_url}" width=150px>`);
+		rando_pop.setLatLng([randData1.latitude, randData1.longitude]).openOn(map);
+
 }, 		'Surprise Me').addTo(map);	
 
 	// StreetView
