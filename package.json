@@ -1,0 +1,25 @@
+{
+  "name": "Datart",
+  "version": "1.0.0",
+  "description": "[Website](https://kimjee8955.github.io/DH151-Datart/index.html)<br/>\r ## Introduction:\r We are Datart. We will be mapping the public art around the Los Angeles County. Although Los Angeles is known to be a culturally rich city, not many people know about the art that surrounds them. We hope to create a website that bring awareness to users about the diverse arts and culture that encompasses Los Angeles.\r ## Team members:\r <table>\r   <tr>\r     <th>Annmarie Cong</th>\r     <th>Eustina Kim</th> \r     <th>Michelle Lee</th>\r   </tr>\r   <tr>\r     <td><img src=\"https://media.discordapp.net/attachments/694477786131202048/829939480735645737/image0.jpg\" alt = \"avatar_Annmarie\" width=\"250\"/></td>\r     <td><img src=\"https://github.com/kimjee8955/DH151-Datart/blob/main/images/profile_Eustina.JPG\" alt = \"pic_Eustina\" width=\"250\"/></td>\r     <td><img src=\"https://user-images.githubusercontent.com/56007288/114282980-28c8f900-99fc-11eb-887e-d67a16ef429e.png\" alt = \"avatar_Michelle\" width=\"250\"/></td>\r   </tr>\r   <tr>\r     <td><b>UX Designer</b></td>\r     <td><b>Map Specialist</b></td>\r     <td><b>Data Specialist</b></td>\r   </tr>\r   <tr>\r     <td>Annmarie is a fourth year Cognitive Science major specializing in Computing and minoring in Digital Humanities. She has experience in UX, and will be reponsible \r     to make the site as user-friendly as possible.</td>\r     <td>Eustina is a fourth year Statistics major and Digital Humanities minor. For this project, she will be helping with coding interactive maps and doing data analysis.</td>\r     <td>Michelle is a third year Statistics major and Digital Humanities minor. She has experience with data analysis and visualization. For this project, she will help with data preprocessing and providing insights/ideas to build the project.</td>\r </table>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node js/map.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimjee8955/Datart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimjee8955/Datart/issues"
+  },
+  "homepage": "https://github.com/kimjee8955/Datart#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fast-csv": "^4.3.6"
+  }
+}
