@@ -16,7 +16,7 @@ In terms of code development, we are about 70% finished. We have the "meat" of t
 implementing. We also plan to improve the aesthestic of the website and make it more user-friendly to various device types (phone, tablet, computer).
 
 ## What (if any) specific problems do you need the most help with?
-No problems currently, but we may ask for assistance/ideas on implementing a social media sharing feature of art pieces on Twitter or Instagram.
+No problems currently, but we may ask for assistance/ideas on implementing a social media sharing feature of art pieces on Twitter or Instagram. We may also need help moving the Google Street View to the sidebar. 
 
 ## What additional features are you thinking of adding to your project?
 A few features we are planning/considering to add on the project are:
