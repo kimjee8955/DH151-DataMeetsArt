@@ -4,6 +4,7 @@ let lat = 0;
 let lon = 0;
 let zl = 3;
 let path = "data/Urban_Art.csv";
+let markLat;let markLong;
 // let path2 = "data/LAController.csv";
 let markers = L.markerClusterGroup();
 let befores = L.layerGroup();
@@ -94,6 +95,7 @@ function mapCSV(data){
 					<p><b>Year Created:</b> ${item.year}</p>
 					<p><b>Address:</b> ${item.address}</p>`
 				)
+				markLat = item.latitude; markLong = item.longitude;
 				//$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
 			})
 			befores.addLayer(marker)
@@ -113,12 +115,15 @@ function mapCSV(data){
 					<p><b>Year Created:</b> ${item.year}</p>
 					<p><b>Address:</b> ${item.address}</p>`
 				)
+				markLat = item.latitude; markLong = item.longitude;
 			})
 			afters.addLayer(marker)
 			markers.addLayer(marker)
 		}
 	
     })
+	//add google street view button
+	$('.sidebar').append(`<div class = "sidebar-item" onclick = "GSV(${markLat},${markLong})">Street View</div>`);
 	
 	//add layers to map
 	befores.addTo(map);
@@ -162,24 +167,17 @@ function mapCSV(data){
 
 }, 		'Surprise Me').addTo(map);	
 
+
 	// StreetView
-    L.streetView({ position: 'topleft'}).addTo(map);
+    //L.streetView({ position: 'topleft'}).addTo(map);
     // Add a marker to the centre of the map
-    var marker = L.marker(map.getCenter(),{draggable:true,autoPan:true}).addTo(map);
+    //var marker = L.marker(map.getCenter(),{draggable:true,autoPan:true}).addTo(map);
 
 }
 
-/*function panToImage(index,year,marker){
-	// zoom to level 17 first
-	map.setZoom(17);
-	// pan to the marker
-	if(year < 2000){
-		map.panTo(befores.getLayers()[index]._latlng);
-		marker.openPopup();
-	}
-	else{
-		map.panTo(afters.getLayers()[index]._latlng);
-		marker.openPopup();
-	}
-}*/
-
+//Open Google Street View 
+function GSV(latitude,longitude){
+	let url = 'https://www.google.com/maps?layer=c&cbll='+markLat+','+markLong;
+	console.log(url);
+	window.open(url);
+}
