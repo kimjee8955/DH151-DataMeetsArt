@@ -123,7 +123,7 @@ function mapCSV(data){
 	
     })
 	//add google street view button
-	$('.sidebar').append(`<div class = "sidebar-item" onclick = "GSV(${markLat},${markLong})">Street View</div>`);
+	$('.sidebar').append(`<div class = "sidebar-item" onclick = "GSV(${markLat},${markLong})">Current Street View</div>`);
 	
 	//add layers to map
 	befores.addTo(map);
