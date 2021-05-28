@@ -4,7 +4,6 @@ let lat = 0;
 let lon = 0;
 let zl = 3;
 let path = "data/Urban_Art.csv";
-let markLat;let markLong;
 // let path2 = "data/LAController.csv";
 let markers = L.markerClusterGroup();
 let befores = L.layerGroup();
@@ -93,10 +92,9 @@ function mapCSV(data){
 					<img src="${item.thumbnail_url}" width=600px>
 					<p><b>Artist(s):</b> ${item.artist_name}</p>
 					<p><b>Year Created:</b> ${item.year}</p>
-					<p><b>Address:</b> ${item.address}</p>`
+					<p><b>Address:</b> ${item.address}</p>
+					<div class = "sidebar-item" onclick = "GSV(${item.latitude},${item.longitude})">Current Street View</div>`
 				)
-				markLat = item.latitude; markLong = item.longitude;
-				//$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
 			})
 			befores.addLayer(marker)
 			markers.addLayer(marker)
@@ -113,17 +111,15 @@ function mapCSV(data){
 					<img src="${item.thumbnail_url}" width=600px>
 					<p><b>Artist(s):</b> ${item.artist_name}</p>
 					<p><b>Year Created:</b> ${item.year}</p>
-					<p><b>Address:</b> ${item.address}</p>`
+					<p><b>Address:</b> ${item.address}</p>
+					<div class = "sidebar-item" onclick = "GSV(${item.latitude},${item.longitude})">Current Street View</div>`
 				)
-				markLat = item.latitude; markLong = item.longitude;
 			})
 			afters.addLayer(marker)
 			markers.addLayer(marker)
 		}
 	
     })
-	//add google street view button
-	$('.sidebar').append(`<div class = "sidebar-item" onclick = "GSV(${markLat},${markLong})">Current Street View</div>`);
 	
 	//add layers to map
 	befores.addTo(map);
@@ -159,7 +155,8 @@ function mapCSV(data){
 			<img src="${randData1.thumbnail_url}" alt="${randData1.title}" width=600px>
 			<p><b>Artist(s):</b> ${randData1.artist_name}</p>
 			<p><b>Year Created:</b> ${randData1.year}</p>
-			<p><b>Address:</b> ${randData1.address}</p>`
+			<p><b>Address:</b> ${randData1.address}</p>
+			<div class = "sidebar-item" onclick = "GSV(${randData1.latitude},${randData1.longitude})">Current Street View</div>`
 		);
 
 		let rando_pop = L.popup().setContent(`${randData1.title}<br><img src="${randData1.thumbnail_url}" width=150px>`);
@@ -170,7 +167,7 @@ function mapCSV(data){
 
 //Open Google Street View 
 function GSV(latitude,longitude){
-	let url = 'https://www.google.com/maps?layer=c&cbll='+markLat+','+markLong;
+	let url = 'https://www.google.com/maps?layer=c&cbll='+latitude+','+longitude;
 	console.log(url);
 	window.open(url);
 }
