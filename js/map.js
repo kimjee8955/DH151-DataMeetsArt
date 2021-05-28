@@ -166,13 +166,6 @@ function mapCSV(data){
 		rando_pop.setLatLng([randData1.latitude, randData1.longitude]).openOn(map);
 
 }, 		'Surprise Me').addTo(map);	
-
-
-	// StreetView
-    //L.streetView({ position: 'topleft'}).addTo(map);
-    // Add a marker to the centre of the map
-    //var marker = L.marker(map.getCenter(),{draggable:true,autoPan:true}).addTo(map);
-
 }
 
 //Open Google Street View 
