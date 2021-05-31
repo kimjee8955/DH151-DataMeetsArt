@@ -92,9 +92,9 @@ function mapCSV(data){
 					<img src="${item.thumbnail_url}" width=600px>
 					<p><b>Artist(s):</b> ${item.artist_name}</p>
 					<p><b>Year Created:</b> ${item.year}</p>
-					<p><b>Address:</b> ${item.address}</p>`
+					<p><b>Address:</b> ${item.address}</p>
+					<div class = "sidebar-item" onclick = "GSV(${item.latitude},${item.longitude})">Current Street View</div>`
 				)
-				//$('.sidebar').append(`${item.title}<br><img src="${item.thumbnail_url}" width=400px><br>`)
 			})
 			befores.addLayer(marker)
 			markers.addLayer(marker)
@@ -111,7 +111,8 @@ function mapCSV(data){
 					<img src="${item.thumbnail_url}" width=600px>
 					<p><b>Artist(s):</b> ${item.artist_name}</p>
 					<p><b>Year Created:</b> ${item.year}</p>
-					<p><b>Address:</b> ${item.address}</p>`
+					<p><b>Address:</b> ${item.address}</p>
+					<div class = "sidebar-item" onclick = "GSV(${item.latitude},${item.longitude})">Current Street View</div>`
 				)
 			})
 			afters.addLayer(marker)
@@ -154,32 +155,19 @@ function mapCSV(data){
 			<img src="${randData1.thumbnail_url}" alt="${randData1.title}" width=600px>
 			<p><b>Artist(s):</b> ${randData1.artist_name}</p>
 			<p><b>Year Created:</b> ${randData1.year}</p>
-			<p><b>Address:</b> ${randData1.address}</p>`
+			<p><b>Address:</b> ${randData1.address}</p>
+			<div class = "sidebar-item" onclick = "GSV(${randData1.latitude},${randData1.longitude})">Current Street View</div>`
 		);
 
 		let rando_pop = L.popup().setContent(`${randData1.title}<br><img src="${randData1.thumbnail_url}" width=150px>`);
 		rando_pop.setLatLng([randData1.latitude, randData1.longitude]).openOn(map);
 
 }, 		'Surprise Me').addTo(map);	
-
-	// StreetView
-    L.streetView({ position: 'topleft'}).addTo(map);
-    // Add a marker to the centre of the map
-    var marker = L.marker(map.getCenter(),{draggable:true,autoPan:true}).addTo(map);
-
 }
 
-/*function panToImage(index,year,marker){
-	// zoom to level 17 first
-	map.setZoom(17);
-	// pan to the marker
-	if(year < 2000){
-		map.panTo(befores.getLayers()[index]._latlng);
-		marker.openPopup();
-	}
-	else{
-		map.panTo(afters.getLayers()[index]._latlng);
-		marker.openPopup();
-	}
-}*/
-
+//Open Google Street View 
+function GSV(latitude,longitude){
+	let url = 'https://www.google.com/maps?layer=c&cbll='+latitude+','+longitude;
+	console.log(url);
+	window.open(url);
+}

@@ -1,0 +1,506 @@
+[
+ {
+   "County": "Adams-Normandie",
+   "count": 13
+ },
+ {
+   "County": "Alhambra",
+   "count": 2
+ },
+ {
+   "County": "Angelino Heights",
+   "count": 10
+ },
+ {
+   "County": "Arleta",
+   "count": 1
+ },
+ {
+   "County": "Athens",
+   "count": 1
+ },
+ {
+   "County": "Baldwin Hills/Crenshaw",
+   "count": 1
+ },
+ {
+   "County": "Bell",
+   "count": 1
+ },
+ {
+   "County": "Belmont Shore",
+   "count": 3
+ },
+ {
+   "County": "Beverly Grove",
+   "count": 3
+ },
+ {
+   "County": "Beverly Hills",
+   "count": 1
+ },
+ {
+   "County": "Bixby Knolls",
+   "count": 2
+ },
+ {
+   "County": "Boyle Heights",
+   "count": 389
+ },
+ {
+   "County": "Broadway-Manchester",
+   "count": 3
+ },
+ {
+   "County": "Bunker Hill",
+   "count": 4
+ },
+ {
+   "County": "Burbank",
+   "count": 3
+ },
+ {
+   "County": "Calabasas",
+   "count": 1
+ },
+ {
+   "County": "Carson",
+   "count": 3
+ },
+ {
+   "County": "Central-Alameda",
+   "count": 3
+ },
+ {
+   "County": "Century City",
+   "count": 1
+ },
+ {
+   "County": "Chesterfield Square",
+   "count": 1
+ },
+ {
+   "County": "Cheviot Hills",
+   "count": 4
+ },
+ {
+   "County": "Chinatown",
+   "count": 7
+ },
+ {
+   "County": "Claremont",
+   "count": 14
+ },
+ {
+   "County": "Commerce",
+   "count": 5
+ },
+ {
+   "County": "Compton",
+   "count": 5
+ },
+ {
+   "County": "Culver City",
+   "count": 6
+ },
+ {
+   "County": "Del Rey",
+   "count": 6
+ },
+ {
+   "County": "Downey",
+   "count": 1
+ },
+ {
+   "County": "Downtown",
+   "count": 64
+ },
+ {
+   "County": "Duarte",
+   "count": 2
+ },
+ {
+   "County": "Eagle Rock",
+   "count": 3
+ },
+ {
+   "County": "East Hollywood",
+   "count": 18
+ },
+ {
+   "County": "East Los Angeles",
+   "count": 202
+ },
+ {
+   "County": "Echo Park",
+   "count": 21
+ },
+ {
+   "County": "El Segundo",
+   "count": 6
+ },
+ {
+   "County": "Exposition Park",
+   "count": 5
+ },
+ {
+   "County": "Fairfax",
+   "count": 10
+ },
+ {
+   "County": "Glendale",
+   "count": 1
+ },
+ {
+   "County": "Green Meadows",
+   "count": 3
+ },
+ {
+   "County": "Hancock Park",
+   "count": 4
+ },
+ {
+   "County": "Harvard Heights",
+   "count": 3
+ },
+ {
+   "County": "Hawthorne",
+   "count": 1
+ },
+ {
+   "County": "Highland Park",
+   "count": 23
+ },
+ {
+   "County": "Hollywood",
+   "count": 21
+ },
+ {
+   "County": "Hollywood Hills",
+   "count": 2
+ },
+ {
+   "County": "Hollywood Hills West",
+   "count": 1
+ },
+ {
+   "County": "Huntington Park",
+   "count": 1
+ },
+ {
+   "County": "Hyde Park",
+   "count": 2
+ },
+ {
+   "County": "Inglewood",
+   "count": 5
+ },
+ {
+   "County": "Jefferson",
+   "count": 3
+ },
+ {
+   "County": "Jefferson Park",
+   "count": 7
+ },
+ {
+   "County": "La Verne",
+   "count": 2
+ },
+ {
+   "County": "Larchmont",
+   "count": 1
+ },
+ {
+   "County": "Leimert Park",
+   "count": 6
+ },
+ {
+   "County": "Lincoln Heights",
+   "count": 43
+ },
+ {
+   "County": "Little Tokyo",
+   "count": 8
+ },
+ {
+   "County": "Long Beach",
+   "count": 81
+ },
+ {
+   "County": "Los Angeles",
+   "count": 110
+ },
+ {
+   "County": "Los Feliz",
+   "count": 1
+ },
+ {
+   "County": "Manhattan Beach",
+   "count": 1
+ },
+ {
+   "County": "Mar Vista",
+   "count": 3
+ },
+ {
+   "County": "Mid-City",
+   "count": 8
+ },
+ {
+   "County": "Mid-Wilshire",
+   "count": 2
+ },
+ {
+   "County": "Monrovia",
+   "count": 1
+ },
+ {
+   "County": "Montebello",
+   "count": 1
+ },
+ {
+   "County": "Montecito Heights",
+   "count": 6
+ },
+ {
+   "County": "Monterey Park",
+   "count": 13
+ },
+ {
+   "County": "None Found.",
+   "count": 16
+ },
+ {
+   "County": "North Hills",
+   "count": 3
+ },
+ {
+   "County": "North Hollywood",
+   "count": 8
+ },
+ {
+   "County": "North Long Beach",
+   "count": 5
+ },
+ {
+   "County": "Northridge",
+   "count": 4
+ },
+ {
+   "County": "Orange",
+   "count": 1
+ },
+ {
+   "County": "Pacific Palisades",
+   "count": 5
+ },
+ {
+   "County": "Pacoima",
+   "count": 12
+ },
+ {
+   "County": "Palms",
+   "count": 1
+ },
+ {
+   "County": "Panorama City",
+   "count": 4
+ },
+ {
+   "County": "Pasadena",
+   "count": 9
+ },
+ {
+   "County": "Pico-Union",
+   "count": 27
+ },
+ {
+   "County": "Pomona",
+   "count": 8
+ },
+ {
+   "County": "Redondo Beach",
+   "count": 4
+ },
+ {
+   "County": "Reseda",
+   "count": 3
+ },
+ {
+   "County": "Rolling Hills Estates",
+   "count": 1
+ },
+ {
+   "County": "San Bernardino",
+   "count": 1
+ },
+ {
+   "County": "San Dimas",
+   "count": 5
+ },
+ {
+   "County": "San Fernando",
+   "count": 6
+ },
+ {
+   "County": "San Gabriel",
+   "count": 5
+ },
+ {
+   "County": "San Pedro",
+   "count": 1
+ },
+ {
+   "County": "Santa Clarita",
+   "count": 3
+ },
+ {
+   "County": "Santa Fe Springs",
+   "count": 2
+ },
+ {
+   "County": "Santa Monica",
+   "count": 20
+ },
+ {
+   "County": "Sawtelle",
+   "count": 8
+ },
+ {
+   "County": "Sherman Oaks",
+   "count": 1
+ },
+ {
+   "County": "Signal Hill",
+   "count": 1
+ },
+ {
+   "County": "South Gate",
+   "count": 4
+ },
+ {
+   "County": "South Los Angeles",
+   "count": 4
+ },
+ {
+   "County": "South Park",
+   "count": 3
+ },
+ {
+   "County": "South Pasadena",
+   "count": 1
+ },
+ {
+   "County": "Sun Valley",
+   "count": 3
+ },
+ {
+   "County": "Sylmar",
+   "count": 1
+ },
+ {
+   "County": "Thousand Oaks",
+   "count": 1
+ },
+ {
+   "County": "Torrance",
+   "count": 4
+ },
+ {
+   "County": "Tujunga",
+   "count": 1
+ },
+ {
+   "County": "University Park",
+   "count": 2
+ },
+ {
+   "County": "Valley Glen",
+   "count": 4
+ },
+ {
+   "County": "Van Nuys",
+   "count": 12
+ },
+ {
+   "County": "Venice",
+   "count": 42
+ },
+ {
+   "County": "Vermont Square",
+   "count": 1
+ },
+ {
+   "County": "Vermont Vista",
+   "count": 3
+ },
+ {
+   "County": "Vermont-Slauson",
+   "count": 7
+ },
+ {
+   "County": "View Park-Windsor Hills",
+   "count": 1
+ },
+ {
+   "County": "Walnut",
+   "count": 1
+ },
+ {
+   "County": "Walnut Park",
+   "count": 3
+ },
+ {
+   "County": "Watts",
+   "count": 11
+ },
+ {
+   "County": "West Adams",
+   "count": 5
+ },
+ {
+   "County": "West Athens",
+   "count": 1
+ },
+ {
+   "County": "West Hollywood",
+   "count": 70
+ },
+ {
+   "County": "West Los Angeles",
+   "count": 1
+ },
+ {
+   "County": "Westchester",
+   "count": 7
+ },
+ {
+   "County": "Westlake",
+   "count": 29
+ },
+ {
+   "County": "Westmont",
+   "count": 1
+ },
+ {
+   "County": "Westwood",
+   "count": 5
+ },
+ {
+   "County": "Whittier",
+   "count": 1
+ },
+ {
+   "County": "Willowbrook",
+   "count": 3
+ },
+ {
+   "County": "Willowville",
+   "count": 2
+ },
+ {
+   "County": "Winnetka",
+   "count": 3
+ }
+]

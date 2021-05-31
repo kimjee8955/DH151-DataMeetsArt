@@ -3,6 +3,9 @@
 <head>
 	<title>Datart</title>
 
+	<!--Logo-->
+	<link rel="icon" href="https://media.discordapp.net/attachments/694477786131202048/837892559014723594/Datart_Logo.png">
+        
     <!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +20,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<!--Linking CSS file-->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/test.css">
 
 	<!--Fonts-->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,6 +38,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
 
 
+	<!--Icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/0a3370db37.js" crossorigin="anonymous"></script>
+
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -44,7 +51,7 @@
 <body>
 <!--Navbar-->
 	<header class="header">
-		<nav class="navbar navbar-expand-md navbar-light">
+		<nav class="navbar navbar-expand navbar-light">
 			<a class="navbar-brand" href="index.html">
 				<h1><span id="D">D</span><span class="a">a</span><span class="t">t</span><span class="a">a</span><span id="r">r</span><span class="t">t</span>
 					<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,9 +66,9 @@
 				</h1>
 			</a>
 			<!--Responsive menu button-->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
-			</button>
+			</button> -->
 	
 			<div class="collapse navbar-collapse" id="navbarNav">
 			  <ul class="navbar-nav ml-auto">
@@ -69,29 +76,28 @@
 					<a class="nav-link" href="index.html"><span>Home</span><span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" href="#"><span>#Gallery</span></a>
+				  <a class="nav-link" href="gallery.html"><span>#Gallery</span></a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" href="team.html"><span>Our Team</span></a>
+				  <a class="nav-link" href="team.html"><span>Team</span></a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" href="about.html"><span>About Us</span></a>
+				  <a class="nav-link" href="about.html"><span>About</span></a>
 				</li>
 			  </ul>
 			</div>
 		</nav>
 	</header>
+	<div class="regMap">
+		<b>Regular Map</b>
+	</div>
 	<div class="sidebar">
 		<div id="sideContent"></div>
-		<div class="container">
-			<div class="btn-holder">
-			  <button type="button">Click</button>
-			</div>
-		</div>
 	</div>
 	<div class="content">
 		<div id="map"></div>
 	</div>
+	
 
 	<script src="js/map.js"></script>
 
