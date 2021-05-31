@@ -4,13 +4,25 @@ body,html {
 	width:100%;
 	font-family: 'Nunito', sans-serif;
 	color: hsl(0, 0%, 23%);
-	background-color: hsl(167, 39%, 95%);
+	/* background-color: hsl(167, 39%, 98%); */
+	background-color: hsl(355, 100%, 99%);
 }
 
-#map {
-	height: 75%;
-	margin: 24px;
-	border-radius: 12px;
+/* Logo of site*/ 
+#D {
+	color: #F23847;
+}
+
+.a {
+	color: #03A688;
+}
+
+.t {
+	color: #BFB41B;
+}
+
+#r {
+	color: #0460D9;
 }
 
 /** Base and fixed size for all small devices **/
@@ -98,7 +110,7 @@ p {
 }
 
 .navbar-light .navbar-brand {
-    color: hsl(0, 0%, 23%);
+    color: #3b3b3b;
 }
 
 body {
@@ -114,16 +126,28 @@ body {
 	grid-area: content;
 }
 
+#map {
+	height: 75%;
+	margin: 24px;
+	border-radius: 12px;
+	border: 3px solid hsla(169, 96%, 33%, 0.5);
+}
+
 .dashboard {
 	grid-area: dashboard;
 	margin-top: 24px;
 	margin-bottom: 24px;
 	margin-right: 24px;
-	background-color: white;
+	background-color: hsl(56, 75%, 93%);
 	border-radius: 12px;
 	height: 75%;
+	border: 3px solid hsla(169, 96%, 33%, 0.5);
 }
 
+.dashboard h3 {
+	margin-top: 12px;
+	margin-left: 12px;
+}
 .header {
 	grid-area: header;
 }
