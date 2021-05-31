@@ -9,7 +9,7 @@ let count_data;
 let years_data;
 let geojson_data;
 let geojson_layer;
-let fieldtomap = 'Median Household Income (In 2019 Inflation Adjusted Dollars)';
+let fieldtomap;
 
 let brew = new classyBrew();
 let legend = L.control({position: 'topleft'});
@@ -68,6 +68,8 @@ function getGeoJSON(){
                 geojson_data.features[i]["properties"]["count"] = 0;
             } else{
                 geojson_data.features[i]["properties"]["count"] = count_data[key]["count"];
+				geojson_data.features[i]["properties"]["years"] = count_data[key]["years"];
+				geojson_data.features[i]["properties"]["artCountperYear"] = count_data[key]["artCountperYear"];
             }
         }
 
@@ -216,13 +218,13 @@ function createDashboard(properties){
 	console.log(properties)
 
 	// chart title
-	let title = `${properties.name}'s Art Pieces by Year`;
+	let title = `${properties.name}'s Art Pieces by Decade`;
 
 	// data values
-	let data = [27,17,17,20];
+	let data = properties['artCountperYear'];
 
 	// data fields
-	let fields = ['New York Yankees','LA Lakers','Boston Celtics','Manchester United'];
+	let fields = properties['years'];
 
 	// set chart options
 	let options = {
