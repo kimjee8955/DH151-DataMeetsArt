@@ -3,24 +3,20 @@
     "County": "Adams-Normandie",
     "count": 13,
     "years": [
-      "1949",
-      "1990",
-      "1992",
-      "1993"
+      "1940",
+      "1990"
     ],
     "artCountperYear": [
       7,
-      1,
-      4,
-      1
+      6
     ]
   },
   {
     "County": "Alhambra",
     "count": 2,
     "years": [
-      "1939",
-      "1978"
+      "1930",
+      "1970"
     ],
     "artCountperYear": [
       1,
@@ -31,15 +27,13 @@
     "County": "Angelino Heights",
     "count": 10,
     "years": [
-      "1939",
-      "1984",
-      "1986",
+      "1930",
+      "1980",
       "1990"
     ],
     "artCountperYear": [
       1,
-      4,
-      1,
+      5,
       4
     ]
   },
@@ -47,7 +41,7 @@
     "County": "Arleta",
     "count": 1,
     "years": [
-      "1994"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -57,7 +51,7 @@
     "County": "Athens",
     "count": 1,
     "years": [
-      "1995"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -67,7 +61,7 @@
     "County": "Baldwin Hills/Crenshaw",
     "count": 1,
     "years": [
-      "1995"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -77,7 +71,7 @@
     "County": "Bell",
     "count": 1,
     "years": [
-      "1992"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -87,35 +81,31 @@
     "County": "Belmont Shore",
     "count": 3,
     "years": [
-      "1939",
-      "1990",
-      "1994"
+      "1930",
+      "1990"
     ],
     "artCountperYear": [
       1,
-      1,
-      1
+      2
     ]
   },
   {
     "County": "Beverly Grove",
     "count": 3,
     "years": [
-      "1969",
-      "1991",
-      "1994"
+      "1960",
+      "1990"
     ],
     "artCountperYear": [
       1,
-      1,
-      1
+      2
     ]
   },
   {
     "County": "Beverly Hills",
     "count": 1,
     "years": [
-      "1934"
+      "1930"
     ],
     "artCountperYear": [
       1
@@ -125,7 +115,7 @@
     "County": "Bixby Knolls",
     "count": 2,
     "years": [
-      "1989"
+      "1980"
     ],
     "artCountperYear": [
       2
@@ -136,54 +126,14 @@
     "count": 389,
     "years": [
       "1970",
-      "1971",
-      "1973",
-      "1974",
-      "1975",
-      "1976",
-      "1977",
-      "1978",
       "1980",
-      "1982",
-      "1983",
-      "1984",
-      "1987",
-      "1988",
-      "1989",
       "1990",
-      "1991",
-      "1992",
-      "1993",
-      "1994",
-      "1995",
-      "1997",
-      "1999",
       "Unknown"
     ],
     "artCountperYear": [
-      12,
-      10,
-      33,
-      182,
-      34,
-      20,
-      2,
-      9,
-      24,
-      2,
-      2,
-      1,
-      5,
-      1,
-      7,
-      3,
-      16,
-      9,
-      3,
-      6,
-      1,
-      1,
-      1,
+      302,
+      42,
+      40,
       5
     ]
   },
@@ -191,7 +141,7 @@
     "County": "Broadway-Manchester",
     "count": 3,
     "years": [
-      "1978"
+      "1970"
     ],
     "artCountperYear": [
       3
@@ -201,16 +151,14 @@
     "County": "Bunker Hill",
     "count": 4,
     "years": [
-      "1978",
-      "1983",
-      "1990",
-      "1991"
+      "1970",
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       1,
       1,
-      1,
-      1
+      2
     ]
   },
   {
@@ -218,12 +166,10 @@
     "count": 3,
     "years": [
       "1940",
-      "1942",
-      "1998"
+      "1990"
     ],
     "artCountperYear": [
-      1,
-      1,
+      2,
       1
     ]
   },
@@ -231,7 +177,7 @@
     "County": "Calabasas",
     "count": 1,
     "years": [
-      "1989"
+      "1980"
     ],
     "artCountperYear": [
       1
@@ -241,7 +187,7 @@
     "County": "Carson",
     "count": 3,
     "years": [
-      "1992"
+      "1990"
     ],
     "artCountperYear": [
       3
@@ -251,9 +197,9 @@
     "County": "Central-Alameda",
     "count": 3,
     "years": [
-      "1937",
+      "1930",
       "1990",
-      "2001"
+      "2000"
     ],
     "artCountperYear": [
       1,
@@ -265,7 +211,7 @@
     "County": "Century City",
     "count": 1,
     "years": [
-      "1937"
+      "1930"
     ],
     "artCountperYear": [
       1
@@ -275,7 +221,7 @@
     "County": "Chesterfield Square",
     "count": 1,
     "years": [
-      "1992"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -285,7 +231,7 @@
     "County": "Cheviot Hills",
     "count": 4,
     "years": [
-      "1992"
+      "1990"
     ],
     "artCountperYear": [
       4
@@ -295,20 +241,16 @@
     "County": "Chinatown",
     "count": 7,
     "years": [
-      "1941",
-      "1944",
-      "1968",
-      "1976",
-      "1977",
-      "1984",
-      "1991"
+      "1940",
+      "1960",
+      "1970",
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
+      2,
       1,
-      1,
-      1,
-      1,
-      1,
+      2,
       1,
       1
     ]
@@ -318,22 +260,14 @@
     "count": 14,
     "years": [
       "1930",
-      "1946",
+      "1940",
       "1960",
-      "1965",
-      "1966",
-      "1967",
-      "1969",
       "2000"
     ],
     "artCountperYear": [
       3,
       5,
-      1,
-      1,
-      1,
-      1,
-      1,
+      5,
       1
     ]
   },
@@ -341,9 +275,9 @@
     "County": "Commerce",
     "count": 5,
     "years": [
-      "1979",
-      "1983",
-      "1991"
+      "1970",
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       1,
@@ -355,26 +289,22 @@
     "County": "Compton",
     "count": 5,
     "years": [
-      "1936",
-      "1977",
-      "1990",
-      "1995",
-      "1999"
+      "1930",
+      "1970",
+      "1990"
     ],
     "artCountperYear": [
       1,
       1,
-      1,
-      1,
-      1
+      3
     ]
   },
   {
     "County": "Culver City",
     "count": 6,
     "years": [
-      "1979",
-      "1997"
+      "1970",
+      "1990"
     ],
     "artCountperYear": [
       5,
@@ -385,7 +315,7 @@
     "County": "Del Rey",
     "count": 6,
     "years": [
-      "1988"
+      "1980"
     ],
     "artCountperYear": [
       6
@@ -395,7 +325,7 @@
     "County": "Downey",
     "count": 1,
     "years": [
-      "1982"
+      "1980"
     ],
     "artCountperYear": [
       1
@@ -405,62 +335,28 @@
     "County": "Downtown",
     "count": 64,
     "years": [
-      "1926",
+      "1920",
       "1930",
-      "1931",
-      "1935",
-      "1942",
-      "1973",
-      "1974",
-      "1975",
-      "1979",
+      "1940",
+      "1970",
       "1980",
-      "1982",
-      "1983",
-      "1984",
-      "1985",
-      "1986",
-      "1988",
-      "1990",
-      "1991",
-      "1992",
-      "1993",
-      "1994",
-      "1995",
-      "1996"
+      "1990"
     ],
     "artCountperYear": [
       1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      3,
-      4,
-      1,
-      1,
-      1,
-      1,
-      11,
-      1,
       3,
       1,
-      6,
-      6,
-      11,
-      1,
-      4,
-      1,
-      2
+      9,
+      19,
+      31
     ]
   },
   {
     "County": "Duarte",
     "count": 2,
     "years": [
-      "1936",
-      "1971"
+      "1930",
+      "1970"
     ],
     "artCountperYear": [
       1,
@@ -471,14 +367,10 @@
     "County": "Eagle Rock",
     "count": 3,
     "years": [
-      "1983",
-      "1986",
-      "1987"
+      "1980"
     ],
     "artCountperYear": [
-      1,
-      1,
-      1
+      3
     ]
   },
   {
@@ -486,24 +378,14 @@
     "count": 18,
     "years": [
       "1970",
-      "1972",
-      "1976",
-      "1982",
-      "1991",
-      "1992",
-      "1996",
-      "1997",
-      "2002"
+      "1980",
+      "1990",
+      "2000"
     ],
     "artCountperYear": [
+      3,
       1,
-      1,
-      1,
-      1,
-      4,
-      4,
-      1,
-      4,
+      13,
       1
     ]
   },
@@ -511,80 +393,34 @@
     "County": "East Los Angeles",
     "count": 202,
     "years": [
-      "1966",
-      "1967",
-      "1968",
-      "1969",
+      "1960",
       "1970",
-      "1972",
-      "1973",
-      "1974",
-      "1975",
-      "1976",
-      "1977",
-      "1978",
-      "1979",
       "1980",
-      "1984",
-      "1986",
-      "1989",
       "1990",
-      "1991",
-      "1993",
-      "1994",
-      "1995",
-      "1996",
-      "2000",
-      "2001"
+      "2000"
     ],
     "artCountperYear": [
-      2,
-      3,
-      1,
-      1,
-      8,
-      8,
       7,
-      17,
-      58,
-      40,
-      4,
-      11,
+      165,
       12,
-      9,
-      1,
-      1,
-      1,
-      1,
-      7,
-      1,
-      1,
-      3,
-      1,
-      1,
-      3
+      14,
+      4
     ]
   },
   {
     "County": "Echo Park",
     "count": 21,
     "years": [
-      "1975",
-      "1976",
-      "1984",
-      "1992",
-      "1996",
-      "1997",
+      "1970",
+      "1980",
+      "1990",
       "2000",
       "Unknown"
     ],
     "artCountperYear": [
-      4,
-      1,
-      4,
       5,
-      3,
-      2,
+      4,
+      10,
       1,
       1
     ]
@@ -593,22 +429,18 @@
     "County": "El Segundo",
     "count": 6,
     "years": [
-      "1995",
-      "1996",
-      "1997"
+      "1990"
     ],
     "artCountperYear": [
-      4,
-      1,
-      1
+      6
     ]
   },
   {
     "County": "Exposition Park",
     "count": 5,
     "years": [
-      "1975",
-      "1999"
+      "1970",
+      "1990"
     ],
     "artCountperYear": [
       4,
@@ -619,25 +451,19 @@
     "County": "Fairfax",
     "count": 10,
     "years": [
-      "1985",
-      "1991",
-      "1993",
-      "1994",
-      "1998"
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       1,
-      2,
-      2,
-      4,
-      1
+      9
     ]
   },
   {
     "County": "Glendale",
     "count": 1,
     "years": [
-      "1984"
+      "1980"
     ],
     "artCountperYear": [
       1
@@ -648,8 +474,8 @@
     "count": 3,
     "years": [
       "1970",
-      "1995",
-      "2002"
+      "1990",
+      "2000"
     ],
     "artCountperYear": [
       1,
@@ -661,33 +487,29 @@
     "County": "Hancock Park",
     "count": 4,
     "years": [
-      "1985",
-      "1989"
+      "1980"
     ],
     "artCountperYear": [
-      1,
-      3
+      4
     ]
   },
   {
     "County": "Harvard Heights",
     "count": 3,
     "years": [
-      "1985",
-      "1990",
-      "1993"
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       1,
-      1,
-      1
+      2
     ]
   },
   {
     "County": "Hawthorne",
     "count": 1,
     "years": [
-      "1969"
+      "1960"
     ],
     "artCountperYear": [
       1
@@ -697,61 +519,39 @@
     "County": "Highland Park",
     "count": 23,
     "years": [
-      "1978",
-      "1990",
-      "1993",
-      "1994",
-      "1995",
-      "1996",
-      "1997",
-      "1998"
+      "1970",
+      "1990"
     ],
     "artCountperYear": [
       1,
-      9,
-      1,
-      3,
-      2,
-      5,
-      1,
-      1
+      22
     ]
   },
   {
     "County": "Hollywood",
     "count": 21,
     "years": [
-      "1934",
-      "1945",
-      "1969",
+      "1930",
+      "1940",
+      "1960",
       "1970",
-      "1983",
-      "1988",
-      "1989",
-      "1990",
-      "1991",
-      "1994",
-      "1997"
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       1,
       1,
       1,
       1,
-      1,
-      1,
-      1,
-      2,
-      1,
       3,
-      8
+      14
     ]
   },
   {
     "County": "Hollywood Hills",
     "count": 2,
     "years": [
-      "1984",
+      "1980",
       "1990"
     ],
     "artCountperYear": [
@@ -773,7 +573,7 @@
     "County": "Huntington Park",
     "count": 1,
     "years": [
-      "1937"
+      "1930"
     ],
     "artCountperYear": [
       1
@@ -783,12 +583,10 @@
     "County": "Hyde Park",
     "count": 2,
     "years": [
-      "1992",
-      "1993"
+      "1990"
     ],
     "artCountperYear": [
-      1,
-      1
+      2
     ]
   },
   {
@@ -796,21 +594,19 @@
     "count": 5,
     "years": [
       "1940",
-      "1990",
-      "1991"
+      "1990"
     ],
     "artCountperYear": [
       1,
-      3,
-      1
+      4
     ]
   },
   {
     "County": "Jefferson",
     "count": 3,
     "years": [
-      "1976",
-      "1995",
+      "1970",
+      "1990",
       "2000"
     ],
     "artCountperYear": [
@@ -823,26 +619,22 @@
     "County": "Jefferson Park",
     "count": 7,
     "years": [
-      "1926",
-      "1989",
-      "1990",
-      "1991",
-      "1996"
+      "1920",
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       1,
       1,
-      1,
-      1,
-      3
+      5
     ]
   },
   {
     "County": "La Verne",
     "count": 2,
     "years": [
-      "1984",
-      "1995"
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       1,
@@ -853,7 +645,7 @@
     "County": "Larchmont",
     "count": 1,
     "years": [
-      "1992"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -863,46 +655,32 @@
     "County": "Leimert Park",
     "count": 6,
     "years": [
-      "2000",
-      "2001"
+      "2000"
     ],
     "artCountperYear": [
-      3,
-      3
+      6
     ]
   },
   {
     "County": "Lincoln Heights",
     "count": 43,
     "years": [
-      "1972",
-      "1975",
-      "1976",
-      "1977",
-      "1981",
-      "1988",
-      "1990",
-      "1992",
-      "1994"
+      "1970",
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
-      2,
-      2,
-      5,
-      18,
-      1,
-      6,
-      1,
-      3,
-      5
+      27,
+      7,
+      9
     ]
   },
   {
     "County": "Little Tokyo",
     "count": 8,
     "years": [
-      "1964",
-      "1977",
+      "1960",
+      "1970",
       "1980",
       "1990"
     ],
@@ -917,45 +695,19 @@
     "County": "Long Beach",
     "count": 81,
     "years": [
-      "1935",
-      "1939",
+      "1930",
       "1940",
-      "1942",
-      "1979",
-      "1981",
-      "1982",
-      "1986",
-      "1988",
-      "1989",
+      "1970",
+      "1980",
       "1990",
-      "1991",
-      "1992",
-      "1993",
-      "1994",
-      "1995",
-      "1996",
-      "1998",
       "2000"
     ],
     "artCountperYear": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
+      2,
       2,
       1,
-      1,
-      5,
-      18,
-      16,
-      7,
-      6,
-      13,
-      2,
-      1,
-      2,
+      10,
+      65,
       1
     ]
   },
@@ -964,56 +716,16 @@
     "count": 110,
     "years": [
       "1940",
-      "1942",
-      "1973",
-      "1975",
-      "1976",
-      "1978",
-      "1979",
+      "1970",
       "1980",
-      "1982",
-      "1983",
-      "1984",
-      "1987",
-      "1988",
-      "1989",
       "1990",
-      "1991",
-      "1992",
-      "1993",
-      "1994",
-      "1995",
-      "1996",
-      "1997",
-      "1998",
-      "1999",
       "Unknown"
     ],
     "artCountperYear": [
-      1,
-      1,
-      4,
-      1,
-      15,
-      1,
-      11,
-      5,
-      1,
-      1,
       2,
-      1,
-      1,
-      6,
-      10,
-      6,
-      3,
-      8,
-      7,
-      2,
-      8,
-      4,
-      5,
-      1,
+      32,
+      17,
+      54,
       5
     ]
   },
@@ -1021,7 +733,7 @@
     "County": "Los Feliz",
     "count": 1,
     "years": [
-      "1989"
+      "1980"
     ],
     "artCountperYear": [
       1
@@ -1031,7 +743,7 @@
     "County": "Manhattan Beach",
     "count": 1,
     "years": [
-      "1991"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -1041,13 +753,11 @@
     "County": "Mar Vista",
     "count": 3,
     "years": [
-      "1985",
-      "1986",
-      "1993"
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
-      1,
-      1,
+      2,
       1
     ]
   },
@@ -1055,17 +765,11 @@
     "County": "Mid-City",
     "count": 8,
     "years": [
-      "1991",
-      "1992",
-      "1993",
-      "1999",
+      "1990",
       "Unknown"
     ],
     "artCountperYear": [
-      1,
-      1,
-      4,
-      1,
+      7,
       1
     ]
   },
@@ -1073,8 +777,8 @@
     "County": "Mid-Wilshire",
     "count": 2,
     "years": [
-      "1961",
-      "1991"
+      "1960",
+      "1990"
     ],
     "artCountperYear": [
       1,
@@ -1085,7 +789,7 @@
     "County": "Monrovia",
     "count": 1,
     "years": [
-      "1925"
+      "1920"
     ],
     "artCountperYear": [
       1
@@ -1095,7 +799,7 @@
     "County": "Montebello",
     "count": 1,
     "years": [
-      "1957"
+      "1950"
     ],
     "artCountperYear": [
       1
@@ -1105,13 +809,11 @@
     "County": "Montecito Heights",
     "count": 6,
     "years": [
-      "1984",
-      "1988",
-      "1992"
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
-      4,
-      1,
+      5,
       1
     ]
   },
@@ -1119,17 +821,13 @@
     "County": "Monterey Park",
     "count": 13,
     "years": [
-      "1975",
+      "1970",
       "1980",
-      "1981",
-      "1984",
-      "1995"
+      "1990"
     ],
     "artCountperYear": [
       4,
-      5,
-      1,
-      1,
+      7,
       2
     ]
   },
@@ -1137,39 +835,35 @@
     "County": "None Found.",
     "count": 16,
     "years": [
-      "1957",
-      "1989",
-      "1991",
-      "1995"
+      "1950",
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       7,
       3,
-      1,
-      5
+      6
     ]
   },
   {
     "County": "North Hills",
     "count": 3,
     "years": [
-      "1984",
-      "1990",
-      "1996"
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       1,
-      1,
-      1
+      2
     ]
   },
   {
     "County": "North Hollywood",
     "count": 8,
     "years": [
-      "1989",
+      "1980",
       "1990",
-      "2001"
+      "2000"
     ],
     "artCountperYear": [
       1,
@@ -1182,27 +876,23 @@
     "count": 5,
     "years": [
       "1940",
-      "1990",
-      "1992"
+      "1990"
     ],
     "artCountperYear": [
       1,
-      3,
-      1
+      4
     ]
   },
   {
     "County": "Northridge",
     "count": 4,
     "years": [
-      "1983",
-      "1986",
-      "1997",
-      "2001"
+      "1980",
+      "1990",
+      "2000"
     ],
     "artCountperYear": [
-      1,
-      1,
+      2,
       1,
       1
     ]
@@ -1211,7 +901,7 @@
     "County": "Orange",
     "count": 1,
     "years": [
-      "1994"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -1221,7 +911,7 @@
     "County": "Pacific Palisades",
     "count": 5,
     "years": [
-      "1983"
+      "1980"
     ],
     "artCountperYear": [
       5
@@ -1231,19 +921,15 @@
     "County": "Pacoima",
     "count": 12,
     "years": [
-      "1957",
+      "1950",
       "1970",
-      "1983",
-      "1985",
-      "1987",
-      "1992"
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       1,
       1,
-      3,
-      3,
-      1,
+      7,
       3
     ]
   },
@@ -1261,7 +947,7 @@
     "County": "Panorama City",
     "count": 4,
     "years": [
-      "1995"
+      "1990"
     ],
     "artCountperYear": [
       4
@@ -1271,52 +957,30 @@
     "County": "Pasadena",
     "count": 9,
     "years": [
-      "1928",
-      "1929",
-      "1986",
-      "1989",
-      "1991",
-      "1992",
-      "1993",
-      "1995"
+      "1920",
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
-      1,
-      1,
-      1,
       2,
-      1,
-      1,
-      1,
-      1
+      3,
+      4
     ]
   },
   {
     "County": "Pico-Union",
     "count": 27,
     "years": [
-      "1971",
-      "1977",
-      "1984",
-      "1988",
+      "1970",
+      "1980",
       "1990",
-      "1991",
-      "1992",
-      "1997",
-      "1999",
       "2000",
       "Unknown"
     ],
     "artCountperYear": [
-      1,
-      1,
-      1,
-      1,
-      11,
-      7,
-      1,
-      1,
-      1,
+      2,
+      2,
+      21,
       1,
       1
     ]
@@ -1325,17 +989,13 @@
     "County": "Pomona",
     "count": 8,
     "years": [
-      "1956",
-      "1995",
-      "1997",
-      "1999",
+      "1950",
+      "1990",
       "2000"
     ],
     "artCountperYear": [
       1,
-      1,
-      1,
-      1,
+      3,
       4
     ]
   },
@@ -1343,8 +1003,8 @@
     "County": "Redondo Beach",
     "count": 4,
     "years": [
-      "1937",
-      "1991"
+      "1930",
+      "1990"
     ],
     "artCountperYear": [
       3,
@@ -1355,7 +1015,7 @@
     "County": "Reseda",
     "count": 3,
     "years": [
-      "1985"
+      "1980"
     ],
     "artCountperYear": [
       3
@@ -1365,7 +1025,7 @@
     "County": "Rolling Hills Estates",
     "count": 1,
     "years": [
-      "1974"
+      "1970"
     ],
     "artCountperYear": [
       1
@@ -1375,7 +1035,7 @@
     "County": "San Bernardino",
     "count": 1,
     "years": [
-      "1998"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -1385,7 +1045,7 @@
     "County": "San Dimas",
     "count": 5,
     "years": [
-      "1994"
+      "1990"
     ],
     "artCountperYear": [
       5
@@ -1395,21 +1055,17 @@
     "County": "San Fernando",
     "count": 6,
     "years": [
-      "1984",
-      "1986",
-      "1988"
+      "1980"
     ],
     "artCountperYear": [
-      1,
-      4,
-      1
+      6
     ]
   },
   {
     "County": "San Gabriel",
     "count": 5,
     "years": [
-      "1984"
+      "1980"
     ],
     "artCountperYear": [
       5
@@ -1419,7 +1075,7 @@
     "County": "San Pedro",
     "count": 1,
     "years": [
-      "1938"
+      "1930"
     ],
     "artCountperYear": [
       1
@@ -1429,7 +1085,7 @@
     "County": "Santa Clarita",
     "count": 3,
     "years": [
-      "1976"
+      "1970"
     ],
     "artCountperYear": [
       3
@@ -1439,57 +1095,39 @@
     "County": "Santa Fe Springs",
     "count": 2,
     "years": [
-      "1976",
-      "1978"
+      "1970"
     ],
     "artCountperYear": [
-      1,
-      1
+      2
     ]
   },
   {
     "County": "Santa Monica",
     "count": 20,
     "years": [
-      "1935",
+      "1930",
       "1970",
-      "1976",
       "1980",
-      "1981",
-      "1989",
-      "1990",
-      "1991",
-      "1993",
-      "1997",
-      "1998"
+      "1990"
     ],
     "artCountperYear": [
       1,
-      2,
-      1,
-      4,
-      1,
-      1,
-      4,
-      1,
-      1,
-      1,
-      3
+      3,
+      6,
+      10
     ]
   },
   {
     "County": "Sawtelle",
     "count": 8,
     "years": [
-      "1972",
+      "1970",
       "1990",
-      "1999",
-      "2002"
+      "2000"
     ],
     "artCountperYear": [
       1,
-      2,
-      1,
+      3,
       4
     ]
   },
@@ -1497,7 +1135,7 @@
     "County": "Sherman Oaks",
     "count": 1,
     "years": [
-      "1976"
+      "1970"
     ],
     "artCountperYear": [
       1
@@ -1517,10 +1155,10 @@
     "County": "South Gate",
     "count": 4,
     "years": [
-      "1938",
-      "1941",
-      "1988",
-      "1995"
+      "1930",
+      "1940",
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       1,
@@ -1533,7 +1171,7 @@
     "County": "South Los Angeles",
     "count": 4,
     "years": [
-      "1974"
+      "1970"
     ],
     "artCountperYear": [
       4
@@ -1553,7 +1191,7 @@
     "County": "South Pasadena",
     "count": 1,
     "years": [
-      "1937"
+      "1930"
     ],
     "artCountperYear": [
       1
@@ -1563,7 +1201,7 @@
     "County": "Sun Valley",
     "count": 3,
     "years": [
-      "1991"
+      "1990"
     ],
     "artCountperYear": [
       3
@@ -1573,7 +1211,7 @@
     "County": "Sylmar",
     "count": 1,
     "years": [
-      "1991"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -1583,7 +1221,7 @@
     "County": "Thousand Oaks",
     "count": 1,
     "years": [
-      "1972"
+      "1970"
     ],
     "artCountperYear": [
       1
@@ -1593,7 +1231,7 @@
     "County": "Torrance",
     "count": 4,
     "years": [
-      "1979",
+      "1970",
       "1980"
     ],
     "artCountperYear": [
@@ -1605,7 +1243,7 @@
     "County": "Tujunga",
     "count": 1,
     "years": [
-      "1978"
+      "1970"
     ],
     "artCountperYear": [
       1
@@ -1615,8 +1253,8 @@
     "County": "University Park",
     "count": 2,
     "years": [
-      "1932",
-      "1984"
+      "1930",
+      "1980"
     ],
     "artCountperYear": [
       1,
@@ -1627,8 +1265,8 @@
     "County": "Valley Glen",
     "count": 4,
     "years": [
-      "1993",
-      "2001"
+      "1990",
+      "2000"
     ],
     "artCountperYear": [
       3,
@@ -1639,57 +1277,33 @@
     "County": "Van Nuys",
     "count": 12,
     "years": [
-      "1986",
-      "1990",
-      "1991",
-      "1992",
-      "1995"
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       1,
-      8,
-      1,
-      1,
-      1
+      11
     ]
   },
   {
     "County": "Venice",
     "count": 42,
     "years": [
-      "1941",
-      "1953",
-      "1969",
+      "1940",
+      "1950",
+      "1960",
       "1970",
-      "1973",
-      "1975",
-      "1978",
-      "1979",
-      "1984",
-      "1989",
+      "1980",
       "1990",
-      "1991",
-      "1992",
-      "1995",
-      "1996",
-      "2002"
+      "2000"
     ],
     "artCountperYear": [
       2,
       1,
       1,
-      4,
-      1,
-      4,
-      5,
-      1,
-      1,
-      5,
-      2,
-      4,
+      15,
       6,
-      2,
-      1,
+      15,
       2
     ]
   },
@@ -1697,7 +1311,7 @@
     "County": "Vermont Square",
     "count": 1,
     "years": [
-      "1992"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -1707,13 +1321,11 @@
     "County": "Vermont Vista",
     "count": 3,
     "years": [
-      "1994",
-      "1999",
+      "1990",
       "2000"
     ],
     "artCountperYear": [
-      1,
-      1,
+      2,
       1
     ]
   },
@@ -1721,21 +1333,17 @@
     "County": "Vermont-Slauson",
     "count": 7,
     "years": [
-      "1990",
-      "1991",
-      "1998"
+      "1990"
     ],
     "artCountperYear": [
-      5,
-      1,
-      1
+      7
     ]
   },
   {
     "County": "View Park-Windsor Hills",
     "count": 1,
     "years": [
-      "1991"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -1745,7 +1353,7 @@
     "County": "Walnut",
     "count": 1,
     "years": [
-      "1955"
+      "1950"
     ],
     "artCountperYear": [
       1
@@ -1755,7 +1363,7 @@
     "County": "Walnut Park",
     "count": 3,
     "years": [
-      "1975"
+      "1970"
     ],
     "artCountperYear": [
       3
@@ -1765,19 +1373,15 @@
     "County": "Watts",
     "count": 11,
     "years": [
-      "1976",
-      "1988",
-      "1989",
-      "1991",
-      "1995",
+      "1970",
+      "1980",
+      "1990",
       "Unknown"
     ],
     "artCountperYear": [
       1,
-      2,
-      1,
-      2,
-      1,
+      3,
+      3,
       4
     ]
   },
@@ -1785,21 +1389,19 @@
     "County": "West Adams",
     "count": 5,
     "years": [
-      "1989",
-      "1992",
-      "1994"
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
       1,
-      3,
-      1
+      4
     ]
   },
   {
     "County": "West Athens",
     "count": 1,
     "years": [
-      "1997"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -1809,69 +1411,27 @@
     "County": "West Hollywood",
     "count": 70,
     "years": [
-      "1972",
-      "1981",
-      "1987",
-      "1988",
-      "1989",
+      "#VALUE!",
+      "1970",
+      "1980",
       "1990",
-      "1991",
-      "1992",
-      "1995",
-      "1996",
-      "1997",
-      "1998",
-      "1999",
       "2000",
-      "2001",
-      "2002",
-      "2003",
-      "2006",
-      "2008",
-      "2009",
-      "2011",
-      "2012",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "Unknown"
+      "2010"
     ],
     "artCountperYear": [
       1,
       1,
-      7,
-      6,
-      4,
-      2,
-      4,
-      2,
-      3,
-      2,
-      1,
-      1,
-      2,
-      2,
-      2,
-      2,
-      3,
-      1,
-      4,
-      5,
-      3,
-      1,
-      4,
-      2,
-      1,
-      3,
-      1
+      18,
+      17,
+      19,
+      14
     ]
   },
   {
     "County": "West Los Angeles",
     "count": 1,
     "years": [
-      "1997"
+      "1990"
     ],
     "artCountperYear": [
       1
@@ -1881,7 +1441,7 @@
     "County": "Westchester",
     "count": 7,
     "years": [
-      "1984",
+      "1980",
       "1990"
     ],
     "artCountperYear": [
@@ -1893,39 +1453,21 @@
     "County": "Westlake",
     "count": 29,
     "years": [
-      "1972",
-      "1978",
-      "1979",
-      "1984",
-      "1985",
-      "1987",
-      "1989",
-      "1990",
-      "1994",
-      "1995",
-      "1997",
-      "1999"
+      "1970",
+      "1980",
+      "1990"
     ],
     "artCountperYear": [
-      2,
-      1,
-      1,
-      8,
-      1,
-      1,
-      2,
-      2,
-      3,
-      3,
       4,
-      1
+      12,
+      13
     ]
   },
   {
     "County": "Westmont",
     "count": 1,
     "years": [
-      "1975"
+      "1970"
     ],
     "artCountperYear": [
       1
@@ -1935,9 +1477,9 @@
     "County": "Westwood",
     "count": 5,
     "years": [
-      "1968",
+      "1960",
       "1970",
-      "1984"
+      "1980"
     ],
     "artCountperYear": [
       1,
@@ -1949,7 +1491,7 @@
     "County": "Whittier",
     "count": 1,
     "years": [
-      "1937"
+      "1930"
     ],
     "artCountperYear": [
       1
@@ -1959,7 +1501,7 @@
     "County": "Willowbrook",
     "count": 3,
     "years": [
-      "1999"
+      "1990"
     ],
     "artCountperYear": [
       3
@@ -1969,25 +1511,21 @@
     "County": "Willowville",
     "count": 2,
     "years": [
-      "1990",
-      "1994"
+      "1990"
     ],
     "artCountperYear": [
-      1,
-      1
+      2
     ]
   },
   {
     "County": "Winnetka",
     "count": 3,
     "years": [
-      "1966",
-      "1968",
-      "1986"
+      "1960",
+      "1980"
     ],
     "artCountperYear": [
-      1,
-      1,
+      2,
       1
     ]
   }

@@ -213,15 +213,12 @@ function createDashboard(properties){
 	console.log(properties)
 
 	// chart title
-	let title = `${properties.name}'s Art Pieces by Year`;
-	// let title = properties['years'];
+	let title = `${properties.name}'s Art Pieces by Decade`;
 
 	// data values
-	// let data = [27,17,17,20];
 	let data = properties['artCountperYear'];
 
 	// data fields
-	// let fields = ['New York Yankees','LA Lakers','Boston Celtics','Manchester United'];
 	let fields = properties['years'];
 
 	// set chart options
