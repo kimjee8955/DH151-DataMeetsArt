@@ -29,6 +29,11 @@ function createMap(lat,lon,zl){
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
+
+	// Welcome message and instructions
+	$('.dashboard').append(`
+	<h3>Art Pieces by Year Data</h3>
+`);
 }
 
 // function to get the choropleth data

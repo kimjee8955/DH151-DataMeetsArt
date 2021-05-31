@@ -2,46 +2,142 @@ body,html {
 	margin:0;
 	height:100%;
 	width:100%;
+	font-family: 'Nunito', sans-serif;
+	color: hsl(0, 0%, 23%);
+	background-color: hsl(167, 39%, 95%);
 }
 
 #map {
-	height: 100%;
+	height: 75%;
+	margin: 24px;
+	border-radius: 12px;
+}
+
+/** Base and fixed size for all small devices **/
+h1 {
+	font-size: 36px;
+	line-height: 48px;
+}
+h2 {
+	font-size: 28px;
+	line-height: 36px;
+}
+h3 {
+	font-size: 22px;
+	line-height: 24px;
+}
+h4 {
+	font-size: 22px;
+	line-height: 24px;
+	font-style: italic;
+}
+p {
+	font-size: 16px; 
+	line-height: 24px;
+}
+/**Fluid size for all screens, larger than 500px**/
+@media (min-width: 900px) {
+	h1 {
+		font-size: 4vw;
+		line-height: 48px;
+	}
+	h2 {
+		font-size: 3.5vw;
+		line-height: 36px;
+	}
+	h3 {
+		font-size: 3vw;
+		line-height: 24px;
+	}
+	h4 {
+		font-size: 3vw;
+		line-height: 24px;
+		font-style: italic;
+	}
+}
+/** You can do the same for a maximum size if you wish **/
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 48px;
+		line-height: 72px;
+	}
+
+	h2 {
+		font-size: 36px;
+		line-height: 48px;
+	}
+
+	h3 {
+		font-size: 20px;
+		line-height: 36px;
+		font-weight: 550;
+	}
+
+	h4 {
+		font-size: 20px;
+		line-height: 36px;
+		font-style: italic;
+	}
+
+	p {
+		font-size: 1rem; 
+		line-height: 24px;
+	}
+}
+
+/* Navbar items */
+.navbar {
+	height: 88px;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #F23847;
+	font-weight: 900;
+}
+
+.navbar-light .navbar-brand {
+    color: hsl(0, 0%, 23%);
 }
 
 body {
 	display: grid;
-	grid-template-rows: 60px 1fr 1fr;
+	grid-template-rows: 88px 64px 1fr ;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: 
 	"header header"
-	"content dashboard"
-	"footer footer";
+	"subheading subheading"
+	"content dashboard";
+}
+.content {
+	grid-area: content;
 }
 
 .dashboard {
 	grid-area: dashboard;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	margin-right: 24px;
+	background-color: white;
+	border-radius: 12px;
+	height: 75%;
 }
 
 .header {
 	grid-area: header;
 }
 
-.sidebar {
-	color: #353535;
-	grid-area: sidebar;
-	padding:10px;
-	background-color: hsla(170, 97%, 13%, 0.293);
-	overflow: auto;
+.navbar-custom {
+	background-color: hsl(167, 39%, 95%);
 }
 
-.content {
-	grid-area: content;
+.subheading {
+	text-align: center;
 }
 
-.footer {
-	grid-area: footer;
-	padding:10px;
-	background-color: rgb(175, 175, 175);
+.map2_info {
+	text-align: center;
 }
 
 /* legend styles */
