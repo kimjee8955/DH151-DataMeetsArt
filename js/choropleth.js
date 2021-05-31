@@ -211,7 +211,7 @@ function createDashboard(properties){
 	console.log(properties)
 
 	// chart title
-	let title = 'Year x Amount of Art Pieces';
+	let title = `${properties.name}'s Art Pieces by Year`;
 
 	// data values
 	let data = [27,17,17,20];
@@ -233,7 +233,7 @@ function createDashboard(properties){
 		},
 		plotOptions: {
 			bar: {
-				horizontal: true
+				horizontal: false
 			}
 		},
 		series: [
