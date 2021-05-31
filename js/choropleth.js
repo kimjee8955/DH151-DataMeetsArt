@@ -3,7 +3,7 @@ let map;
 let lat = 34.0900;
 let lon = -118.3617;
 let zl = 10;
-let path = 'data/choropleth_chart.json';
+let path = 'data/choropleth_years.json';
 let geojsonPath = 'data/la_county.geojson';
 let count_data;
 let years_data;
