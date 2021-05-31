@@ -1411,20 +1411,20 @@
     "County": "West Hollywood",
     "count": 70,
     "years": [
-      "#VALUE!",
       "1970",
       "1980",
       "1990",
       "2000",
-      "2010"
+      "2010",
+      "Unknown"
     ],
     "artCountperYear": [
-      1,
       1,
       18,
       17,
       19,
-      14
+      14,
+      1
     ]
   },
   {
