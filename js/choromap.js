@@ -110,6 +110,11 @@ function mapChoroGeoJSON(field /*, num_class, etc....*/){
 
     // create the legend. function is created towards bottom of code
 	createLegend();
+	
+	//add button on map for default view
+	L.easyButton('fa-globe', function(btn,choromap){
+		choromap.setView([chorolat, chorolon], chorozl);
+	}, 'default view').addTo(choromap);
 }//end of mapChoroGeoJson function
 
 
