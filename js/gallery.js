@@ -35,7 +35,7 @@ function mapCSV(data){
             <div style="display: inline-block" class="img__wrap">
                 <img class="img__img" src="${item.thumbnail_url}" width=300px height=330px/>
                 <div class="img__description_layer">
-                    <p class="img__description"><b>Title:</b> ${item.title}<br><b>Artist(s):</b> ${item.artist_name}<br><b>County:</b> ${item.County}<br><b>Year:</b> ${item.year}<br></p>
+                    <p class="img__description"><b>Title:</b> ${item.title}<br><b>Artist(s):</b> ${item.artist_name}<br><b>Neighborhood:</b> ${item.County}<br><b>Year:</b> ${item.year}<br></p>
                 </div>
         </div>`)
 	})
