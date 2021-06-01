@@ -22,6 +22,7 @@
 	<!--Fonts-->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- leaflet -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -77,12 +78,11 @@
 	</header>
     <main>
         <h2 class="centerh2" id="h2_ourTeam">#Gallery</h2>
-		<div class="sidebar">
-		
-		</div>
-		<div class="content">
-			<div id="map"></div>
-		</div>
+		<div class = "search-container">
+            <input type="text" id = "searchbox" placeholder="Search for a neighborhood">
+            <button onclick="searchArtist();"><i class="fa fa-search"></i></button>
+        </div>
+		<div class="sidebar"></div>
 		<script src="js/gallery.js"></script>
     </main>
 </body>

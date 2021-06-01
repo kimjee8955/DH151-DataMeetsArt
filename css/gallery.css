@@ -224,3 +224,49 @@ article {
   .img__wrap:hover .img__description {
 	transform: translateY(0);
   }
+
+  .search-container {
+	float: none;
+	margin: auto;
+	text-align: left;
+	height: 100%;
+	width: 35%;
+	box-shadow: 5px 5px 10px gray;
+	margin-bottom: 35px;
+  }
+  
+  .search-container input {
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(100% - 60px);
+	height: 40px;
+	min-width: 30%;
+	border: none;
+	border-radius: 20px;
+	padding-left: 10px;
+	font-size: 1em;
+	outline-width: 0;
+  }
+  
+  .search-container button {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	background: white;
+	border: none;
+	border-radius: 50px;
+  }
+  
+  .search-container button:hover {
+	background: #ccc;
+  }
+  
+  .search-container button:active {
+	background-color: rgb(250, 248, 248, 0.336);
+  }
+  
+  .search-container button i {
+	padding: 1px;
+  }
+  
