@@ -110,7 +110,8 @@ function mapChoroGeoJSON(field /*, num_class, etc....*/){
 
     // create the legend. function is created towards bottom of code
 	createLegend();
-}
+}//end of mapChoroGeoJson function
+
 
 function getChoroStyle(feature){
 	return {
@@ -284,10 +285,14 @@ function createDashboard(properties){
 		},
 		
 	}
-	
-	// create the chart
-	let chart = new ApexCharts(document.querySelector('.dashboard'), options)
-	chart.render();
-	//add total count
-	$('.dashboard').append(`<p class="count">Total Count: ${properties[chorofieldtomap]}</p>`);
+	if(properties[chorofieldtomap] != 0){
+		// create the chart
+		let chart = new ApexCharts(document.querySelector('.dashboard'), options)
+		chart.render();
+		//add total count
+		$('.dashboard').append(`<p class="count">Total Count: ${properties[chorofieldtomap]}</p>`);
+	}else{
+		$('.dashboard').append(`<h3>${properties["name"]}'s Art Pieces by Decade</h3>
+		<p class="count">Total Count: ${properties[chorofieldtomap]}</p>`);
+	}
 }
