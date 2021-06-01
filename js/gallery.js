@@ -19,14 +19,14 @@ function readCSV(path){
 		complete: function(data) {
 			console.log(data);
 			
-			// map the data
-			    mapCSV(data);
+			// display the data
+			    displayCSV(data);
 		}
 	});
 }
 
 // function to display image and metadata
-function mapCSV(data){
+function displayCSV(data){
     
 	// loop through each entry
 	data.data.forEach(function(item,index){
@@ -41,5 +41,16 @@ function mapCSV(data){
 	})
     
 
+}
+
+function filterArt(){
+	const textBox = document.getElementById('searchbox');
+	let query = textBox.value;
+    //Check if null or whitespace or empty search query
+    if(!query || query.length === 0 || /^\s*$/.test(query)) {
+        textBox.value = "";
+        return;
+    }
+	
 }
 
