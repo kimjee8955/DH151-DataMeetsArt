@@ -290,6 +290,7 @@ function createDashboard(properties){
 		},
 		
 	}
+	//create bar chart if count > 0
 	if(properties[chorofieldtomap] != 0){
 		// create the chart
 		let chart = new ApexCharts(document.querySelector('.dashboard'), options)
