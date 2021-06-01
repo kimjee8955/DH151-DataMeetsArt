@@ -23,11 +23,6 @@ function createMap(lat,lon,zl){
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 
-	// Welcome message and instructions
-	$('#sideContent').append(`
-		<h2>Welcome</h2>
-		<p>To get started, click on any pin and information about it will appear here!</p>
-	`);
 }
 
 // function to read csv data

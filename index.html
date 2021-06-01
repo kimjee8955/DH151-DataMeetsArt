@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<title>Datart</title>
-
 	<!--Logo-->
 	<link rel="icon" href="https://media.discordapp.net/attachments/694477786131202048/837892559014723594/Datart_Logo.png">
         
@@ -37,7 +36,6 @@
 	<script src="https://use.fontawesome.com/1f6d93a05c.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
 
-
 	<!--Icons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/0a3370db37.js" crossorigin="anonymous"></script>
@@ -54,6 +52,7 @@
 
     <!-- apex charts -->
 	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
 </head>
 <body>
 <!--Navbar-->
@@ -95,14 +94,40 @@
 			</div>
 		</nav>
 	</header>
+	<div class="regMap">
+		<h2>Main Map</h2>
+		<p>This map contains all of the art pieces from our data with images and descriptions. </p>
+	</div>
 	<div class="sidebar">
-		<div id="sideContent"></div>
+		<div id="sideContent">
+			<h3>How to Use</h3>
+			<p>Click on any pin and information about it will appear here!</p>
+		</div>
 	</div>
 	<div class="content">
 		<div id="map"></div>
 	</div>
-
 	<script src="js/map.js"></script>
+	
+	<!--Choropleth Map-->
+	<div class="Choromap_info">
+		<h2>Choropleth Map</h2>
+		<p >This map shows the number of public art pieces per neighborhood in the LA county, along with an interactive bar chart to show the progression of art over time for each neighborhood.</p>
+	</div>
+		
+	<div class="dashboard">
+		<h3 class="map2_info"><b>Art Pieces by Decade Data</b></h3>
+		<p class="map2_info">To get started, hover on any county and data about it will appear here!</p>
+	</div>
 
+	<div class="Chorocontent">
+		<div id="choromap"></div>
+	</div>
+
+	<script src="js/choromap.js"></script>
+	
+	<footer>
+		<small>This website is &copy; 2021 by Annmarie Cong, Eustina Kim, and Michelle Lee</small>
+	</footer>
 </body>
 </html>

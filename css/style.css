@@ -1,13 +1,13 @@
-body{
-	font-family: 'Nunito', sans-serif;
-	color: #353535;
-}
-
 body,html {
 	margin:0;
 	height:100%;
 	width:100%;
+	font-family: 'Nunito', sans-serif;
+	color: hsl(0, 0%, 23%);
+	background-color: hsl(355, 100%, 99%);
+	overflow: auto;
 }
+
 
 /* Logo of site*/ 
 #D {
@@ -25,35 +25,6 @@ body,html {
 #r {
 	color: #0460D9;
 }
-
-/*Typography*/
-/* h1 {
-	font-size: 48px;
-	line-height: 72px;
-}
-
-h2 {
-	font-size: 36px;
-	line-height: 48px;
-}
-
-h3 {
-	font-size: 20px;
-	line-height: 36px;
-	font-weight: 550;
-}
-
-h4 {
-	font-size: 20px;
-	line-height: 36px;
-	font-style: italic;
-}
-
-p {
-	font-size: 1rem; 
-	line-height: 24px;
-}  */
-
 
 /** Base and fixed size for all small devices **/
 h1 {
@@ -112,7 +83,7 @@ p {
 	h3 {
 		font-size: 20px;
 		line-height: 36px;
-		font-weight: 550;
+		font-weight: 700;
 	}
 
 	h4 {
@@ -140,50 +111,101 @@ p {
 
 
 /* Main items */
-#map {
-	height: 100%;
-}
-
 body {
 	display: grid;
-	grid-template-rows: 88px 1fr;
-	grid-template-columns: 280px;
+	grid-template-rows: 80px 96px 73% 168px 73% 36px;
+	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 	"header header"
-	"sidebar content";
+	"regMap regMap"
+	"content sidebar"
+	"ChoromapInfo ChoromapInfo"
+	"Chorocontent dashboard"
+	"footer footer"
+	;
 }
 
 .header {
 	grid-area: header;
 }
 
+#map {
+	height: 100%;
+	margin-left: 24px;
+	margin-right: 24px;
+	border-radius: 12px;
+	border: 3px solid hsla(169, 96%, 33%, 0.5);
+}
+
+.regMap {
+	grid-area: regMap;
+	text-align: center;
+}
+
 .sidebar {
 	color: #353535;
 	grid-area: sidebar;
-	padding:10px;
+	padding: 12px;
 	background-color: hsla(170, 97%, 13%, 0.293);
 	overflow: auto;
+	margin-right: 24px;
+	background-color: hsl(56, 75%, 93%);
+	border-radius: 12px;
+	height: 100%;
+	border: 3px solid hsla(169, 96%, 33%, 0.5);
 }
-
 
 .content {
 	grid-area: content;
 }
 
 .sidebar img {
-    width: 80%;
+    width: 50%;
 	margin-bottom: 24px;
 }
+
+/**Choropleth Map **/
+.Choromap_info {
+	grid-area: ChoromapInfo;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.ChoroContent {
+	grid-area: ChoroContent;
+	border-radius: 12px;
+
+}
+
+#choromap {
+	height: 100%;
+	margin-left: 24px;
+	margin-right: 24px;
+	border-radius: 12px;
+	border: 3px solid hsla(169, 96%, 33%, 0.5);
+}
+
+.dashboard {
+	grid-area: dashboard;
+	margin-right: 24px;
+	padding: 12px;
+	margin-bottom: 24px;
+	background-color: hsl(56, 75%, 93%);
+	border-radius: 12px;
+	height: 100%;
+	border: 3px solid hsla(169, 96%, 33%, 0.5);
+}
+
 /*button*/
-.sidebar-item {	/* border: 1px solid gray; */
+.sidebar-item {	
 	padding: 10px;	/* background-color: #333; */
 	float:left;
 	cursor:pointer;
 	color: #f6ecf8;
 	font-size: 1em;
-	border: 5px #000000;
-	background-color: #000000;
-	margin: 5px;
+	border: 5px #3b3b3b;
+	background-color: #3b3b3b;
+	margin-bottom: 24px;
 	border-radius: 4px;
 }
 .sidebar-item:hover {
@@ -197,3 +219,37 @@ body {
 	background: gainsboro;
 	transform: translateY(4px);
   }
+
+  /* legend styles */
+.info {
+	padding: 6px 8px;
+	font: 14px/16px Arial, Helvetica, sans-serif;
+	background: white;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	min-width: 250px;
+	min-height: 50px;
+}
+.info h4 {
+	margin: 0 0 5px;
+	color: #777;
+}
+.legend {
+	line-height: 18px;
+	color: #555;
+}
+.legend i {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 8px;
+	opacity: 0.7;
+}
+
+/**Footer**/
+footer {
+	grid-area: footer;
+	margin-top: 12px;
+	text-align: center;
+}

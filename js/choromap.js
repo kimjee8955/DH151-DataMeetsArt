@@ -1,42 +1,44 @@
 // Global variables
-let map;
-let lat = 34.0900;
-let lon = -118.3617;
-let zl = 10;
+let choromap;
+let chorolat = 34.0900;
+let chorolon = -118.3617;
+let chorozl = 10;
 
-let path = 'data/choropleth_years.json';
-let geojsonPath = 'data/la_county.geojson';
+let choroPath = 'data/choropleth_years.json'; //where the geojson file is located
+let chorogeojsonPath = 'data/la_county.geojson';
 
 let count_data;
 let years_data;
-let geojson_data;
-let geojson_layer;
-let fieldtomap;
+
+let chorogeojson_data; //placeholder for data
+let chorogeojson_layer; //placeholder for layer of geojson
 
 let brew = new classyBrew();
+let chorofieldtomap;
+
 let legend = L.control({position: 'topleft'});
 let info_panel = L.control({position:'topleft'});
 
 // initialize
 $( document ).ready(function() {
-    createMap(lat,lon,zl);
+    createChoroMap(chorolat,chorolon,chorozl);
     getJSON();
-	getGeoJSON();
+	getChoroGeoJSON();
 });
 
 // create the map
-function createMap(lat,lon,zl){
-	map = L.map('map').setView([lat,lon], zl);
+function createChoroMap(lat,lon,zl){
+	choromap = L.map('choromap').setView([chorolat,chorolon], chorozl);
 
-	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-	}).addTo(map);
+	}).addTo(choromap);
 }
 
 // function to get the choropleth data
 function getJSON(){
 
-	$.getJSON(path,function(data){
+	$.getJSON(choroPath,function(data){
 		console.log(data)
 
 		// put the data in a global variable
@@ -46,51 +48,51 @@ function getJSON(){
 }
 
 // function to get the geojson data
-function getGeoJSON(){
+function getChoroGeoJSON(){
 
-	$.getJSON(geojsonPath,function(data){
-		console.log(data)
+	$.getJSON(chorogeojsonPath,function(data){
+		console.log(data);
 
 		// put the data in a global variable
-		geojson_data = data;
+		chorogeojson_data = data;
 
         //add count to geojson data
         let counties = []; 
         count_data.forEach(function(item){counties.push(item["County"])});
-        for(let i = 0; i < geojson_data.features.length; i++) {
-            let key = counties.indexOf(geojson_data.features[i]["properties"]["name"]);
+        for(let i = 0; i < chorogeojson_data.features.length; i++) {
+            let key = counties.indexOf(chorogeojson_data.features[i]["properties"]["name"]);
             //console.log(geojson_data.features[i]["properties"]["name"]);
             //console.log(key);
             if (key == -1){
-                geojson_data.features[i]["properties"]["count"] = 0;
+                chorogeojson_data.features[i]["properties"]["count"] = 0;
             } else{
-                geojson_data.features[i]["properties"]["count"] = count_data[key]["count"];
-				geojson_data.features[i]["properties"]["years"] = count_data[key]["years"];
-				geojson_data.features[i]["properties"]["artCountperYear"] = count_data[key]["artCountperYear"];
+                chorogeojson_data.features[i]["properties"]["count"] = count_data[key]["count"];
+				chorogeojson_data.features[i]["properties"]["years"] = count_data[key]["years"];
+				chorogeojson_data.features[i]["properties"]["artCountperYear"] = count_data[key]["artCountperYear"];
             }
         }
 
 		// call the map function
-		mapGeoJSON('count') // add a field to be used
+		mapChoroGeoJSON('count') // add a field to be used
 	})
 }
 
 // function to map a geojson file
-function mapGeoJSON(field){
+function mapChoroGeoJSON(field /*, num_class, etc....*/){
 
 	// clear layers in case it has been mapped already
-	if (geojson_layer){
-		geojson_layer.clearLayers()
+	if (chorogeojson_layer){
+		chorogeojson_layer.clearLayers()
 	}
 	
 	// globalize the field to map
-	fieldtomap = field;
+	chorofieldtomap = field;
 
 	// create an empty array
 	let values = [];
 
 	// based on the provided field, enter each value into the array
-	geojson_data.features.forEach(function(item,index){
+	chorogeojson_data.features.forEach(function(item,index){
 		values.push(item.properties[field])
 	})
 
@@ -100,30 +102,35 @@ function mapGeoJSON(field){
 	brew.setColorCode('YlGnBu');
 	brew.classify('quantiles');
 
-	// create the layer and add to map
-	geojson_layer = L.geoJson(geojson_data, {
-		style: getStyle, //call a function to style each feature
-		onEachFeature: onEachFeature // actions on each feature
-	}).addTo(map);
+    // create the geojson layer
+    chorogeojson_layer = L.geoJson(chorogeojson_data,{
+        style: getChoroStyle,
+        onEachFeature: onEachChoroFeature // actions on each feature
+    }).addTo(choromap);
 
-    createLegend();
-	createInfoPanel();
+    // create the legend. function is created towards bottom of code
+	createLegend();
+
+    // create the infopanel
+	createInfoPanel(); //(not create legend as in the lab)
 }
 
-function getStyle(feature){
+function getChoroStyle(feature){
 	return {
 		stroke: true,
 		color: 'white',
 		weight: 1,
 		fill: true,
-		fillColor: brew.getColorInRange(feature.properties[fieldtomap]),
+		fillColor: brew.getColorInRange(feature.properties[chorofieldtomap]),
 		fillOpacity: 0.9
 	}
 }
 
 function createLegend(){
-	legend.onAdd = function (map) {
+	legend.onAdd = function (choromap) {
+        //creates the html div that holds the info for legend
 		var div = L.DomUtil.create('div', 'info legend'),
+        //brew info that gets put into legend
 		breaks = brew.getBreaks(),
 		labels = [],
 		from, to;
@@ -133,20 +140,19 @@ function createLegend(){
 			to = breaks[i + 1];
 			if(to) {
 				labels.push(
+                    //the numbers that are actually put into the legend
 					'<i style="background:' + brew.getColorInRange(to) + '"></i> ' +
 					from.toFixed(2) + ' &ndash; ' + to.toFixed(2));
 				}
 			}
-			
 			div.innerHTML = labels.join('<br>');
 			return div;
 		};
-		
-		legend.addTo(map);
+		legend.addTo(choromap);
 }
 
 // Function that defines what will happen on user interactions with each feature
-function onEachFeature(feature, layer) {
+function onEachChoroFeature(feature, layer) {
 	layer.on({
 		mouseover: highlightFeature,
 		mouseout: resetHighlight,
@@ -156,32 +162,32 @@ function onEachFeature(feature, layer) {
 
 // on mouse over, highlight the feature
 function highlightFeature(e) {
-	var layer = e.target;
+	var chorolayer = e.target;
 
 	// style to use on mouse over
-	layer.setStyle({
-		weight: 3,
+	chorolayer.setStyle({
+        weight: 3,
 		color: '#3b3b3b',
 		fillOpacity: 0.6
 	});
 
 	if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-		layer.bringToFront();
+		chorolayer.bringToFront();
 	}
-	info_panel.update(layer.feature.properties);
-    createDashboard(layer.feature.properties);
+    //updates the infopanel
+    info_panel.update(chorolayer.feature.properties)
+    createDashboard(chorolayer.feature.properties);
 }
 
 // on mouse out, reset the style, otherwise, it will remain highlighted
 function resetHighlight(e) {
-	geojson_layer.resetStyle(e.target);
-	info_panel.update() // resets infopanel
+	chorogeojson_layer.resetStyle(e.target);
+    info_panel.update(); // resets infopanel when not highlighted, to default
 }
 
 // on mouse click on a feature, zoom in to it
 function zoomToFeature(e) {
-
-	map.fitBounds(e.target.getBounds());
+	choromap.fitBounds(e.target.getBounds());
 }
 
 function createInfoPanel(){
@@ -196,7 +202,7 @@ function createInfoPanel(){
 	info_panel.update = function (properties) {
 		// if feature is highlighted
 		if(properties){
-			this._div.innerHTML = `<b>${properties.name}</b><br>${fieldtomap}: ${properties[fieldtomap]}`;
+			this._div.innerHTML = `<b>${properties.name}</b><br>${chorofieldtomap}: ${properties[chorofieldtomap]}`;
 		}
 		// if feature is not highlighted
 		else
@@ -205,7 +211,8 @@ function createInfoPanel(){
 		}
 	};
 
-	info_panel.addTo(map);
+
+	info_panel.addTo(choromap);
 }
 
 function createDashboard(properties){
