@@ -29,6 +29,11 @@ function createMap(lat,lon,zl){
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
+
+	// Welcome message and instructions
+// 	$('.dashboard').append(`
+// 	<h3>Art Pieces by Year Data</h3>
+// `);
 }
 
 // function to get the choropleth data
@@ -158,9 +163,9 @@ function highlightFeature(e) {
 
 	// style to use on mouse over
 	layer.setStyle({
-		weight: 2,
-		color: '#666',
-		fillOpacity: 0.7
+		weight: 3,
+		color: '#3b3b3b',
+		fillOpacity: 0.6
 	});
 
 	if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
@@ -178,6 +183,7 @@ function resetHighlight(e) {
 
 // on mouse click on a feature, zoom in to it
 function zoomToFeature(e) {
+
 	map.fitBounds(e.target.getBounds());
 }
 
@@ -228,15 +234,71 @@ function createDashboard(properties){
 			height: 300,
 			animations: {
 				enabled: true,
-			}
+			},
+			fontFamily: "'Nunito', sans-serif",
+			foreColor: '#3b3b3b'
 		},
 		title: {
 			text: title,
+			style: {
+				fontSize:  '20px',
+				fontWeight:  'bold',
+				fontFamily: "'Nunito', sans-serif",
+				color:  '#3b3b3b',
+				lineHeight: '36px',
+			},
+		},
+		dataLabels: {
+			enabled: true,
+			enabledOnSeries: undefined,
+			formatter: function (val, opts) {
+				return val
+			},
+			textAnchor: 'middle',
+			distributed: false,
+			offsetX: 0,
+			offsetY: 0,
+			style: {
+				fontSize: '14px',
+				fontFamily: "'Nunito', sans-serif",
+				fontWeight: 'bold',
+				colors: ['#fff'],
+				foreColor: '#000',
+			},
+			background: {
+			  enabled: true,
+			  foreColor: '#000',
+			  color: '#fff',
+			//   padding: 4,
+			  borderRadius: 2,
+			  borderWidth: 1,
+			  borderColor: '#3b3b3b',
+			  opacity: 0.5,
+			  dropShadow: {
+				enabled: false,
+				top: 1,
+				left: 1,
+				blur: 1,
+				color: '#000',
+				opacity: 0.45
+			  }
+			},
+			dropShadow: {
+				enabled: false,
+				top: 1,
+				left: 1,
+				blur: 1,
+				color: '#000',
+				opacity: 0.45
+			}
 		},
 		plotOptions: {
 			bar: {
 				horizontal: false
 			}
+		},
+		fill: {
+			colors: ['#BFB41B'],
 		},
 		series: [
 			{
@@ -245,13 +307,11 @@ function createDashboard(properties){
 		],
 		xaxis: {
 			categories: fields
-		}
+		},
+		
 	}
 	
 	// create the chart
 	let chart = new ApexCharts(document.querySelector('.dashboard'), options)
 	chart.render()
 }
-
-
-
