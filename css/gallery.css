@@ -165,24 +165,61 @@ article {
 .centerh2 {
     text-align: center;
 }
-/* Gallery page specific stylings */
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+
+/* #Gallery Page */
+/* quick reset */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  }
+
+.sidebar {
+	grid-area: sidebar;
+	text-align: center;
+    overflow: auto;
+}
+  
+  /* relevant styles */
+  .img__wrap {
+	position: relative;
+	display: inline-block;
+	width: 300px;
+  }
+
+  .img__img {
+	vertical-align: bottom;
+  }
+
+  .img__description_layer {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #F23847;
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  
+	/* transition effect. not necessary */
+	transition: opacity .2s, visibility .2s;
   }
   
-  div.gallery:hover {
-    border: 1px solid #777;
+  .img__wrap:hover .img__description_layer {
+	visibility: visible;
+	opacity: 0.7;
+  }
+
+  .img__description {
+	transition: .2s;
+	transform: translateY(1em);
+	font-size: 16px;
   }
   
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
+  .img__wrap:hover .img__description {
+	transform: translateY(0);
   }

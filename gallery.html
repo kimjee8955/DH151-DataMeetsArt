@@ -22,7 +22,18 @@
 	<!--Fonts-->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-	
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<!-- papaparse for csv data -->
+	<script src="js/papaparse.min.js"></script>
+
+
 </head>
 <body>
 	<!--Navbar-->
@@ -66,33 +77,13 @@
 	</header>
     <main>
         <h2 class="centerh2" id="h2_ourTeam">#Gallery</h2>
-        <div class="gallery">
-            <a target="_blank" href="images/Dunitz/0.jpeg">
-            <img src="images/Dunitz/0.jpeg" alt="Add title" width="200" height="200">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
-        
-        <div class="gallery">
-            <a target="_blank" href="images/Dunitz/1.jpeg">
-            <img src="images/Dunitz/1.jpeg" alt="Add title" width="200" height="200">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
-        
-        <div class="gallery">
-            <a target="_blank" href="images/Dunitz/2.jpeg">
-            <img src="images/Dunitz/2.jpeg" alt="Add title" width="200" height="200">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
-        
-        <div class="gallery">
-            <a target="_blank" href="images/Dunitz/3.jpeg">
-            <img src="images/Dunitz/3.jpeg" alt="Add title" width="200" height="200">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
+		<div class="sidebar">
+		
+		</div>
+		<div class="content">
+			<div id="map"></div>
+		</div>
+		<script src="js/gallery.js"></script>
     </main>
 </body>
 </html>
