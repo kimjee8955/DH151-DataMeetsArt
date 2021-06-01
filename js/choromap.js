@@ -2,7 +2,7 @@
 let choromap;
 let chorolat = 34.0900;
 let chorolon = -118.3617;
-let chorozl = 10;
+let chorozl = 9;
 
 let choroPath = 'data/choropleth_years.json'; //where the geojson file is located
 let chorogeojsonPath = 'data/la_county.geojson';
@@ -110,9 +110,6 @@ function mapChoroGeoJSON(field /*, num_class, etc....*/){
 
     // create the legend. function is created towards bottom of code
 	createLegend();
-
-    // create the infopanel
-	createInfoPanel(); //(not create legend as in the lab)
 }
 
 function getChoroStyle(feature){
@@ -174,46 +171,19 @@ function highlightFeature(e) {
 	if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
 		chorolayer.bringToFront();
 	}
-    //updates the infopanel
-    //info_panel.update(chorolayer.feature.properties)
+	//make dashboard
     createDashboard(chorolayer.feature.properties);
 }
 
 // on mouse out, reset the style, otherwise, it will remain highlighted
 function resetHighlight(e) {
 	chorogeojson_layer.resetStyle(e.target);
-    //info_panel.update(); // resets infopanel when not highlighted, to default
 }
 
 // on mouse click on a feature, zoom in to it
 function zoomToFeature(e) {
 	choromap.fitBounds(e.target.getBounds());
 }
-
-/*function createInfoPanel(){
-
-	info_panel.onAdd = function (map) {
-		this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-		this.update();
-		return this._div;
-	};
-
-	// method that we will use to update the control based on feature properties passed
-	info_panel.update = function (properties) {
-		// if feature is highlighted
-		if(properties){
-			this._div.innerHTML = `<b>${properties.name}</b><br>${chorofieldtomap}: ${properties[chorofieldtomap]}`;
-		}
-		// if feature is not highlighted
-		else
-		{
-			this._div.innerHTML = 'Hover over a neighborhood to get the count!';
-		}
-	};
-
-
-	info_panel.addTo(choromap);
-}*/
 
 function createDashboard(properties){
 
