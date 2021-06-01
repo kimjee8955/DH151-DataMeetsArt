@@ -16,7 +16,7 @@ let chorogeojson_layer; //placeholder for layer of geojson
 let brew = new classyBrew();
 let chorofieldtomap;
 
-let legend = L.control({position: 'topleft'});
+let legend = L.control({position: 'bottomleft'});
 let info_panel = L.control({position:'topleft'});
 
 // initialize
@@ -175,14 +175,14 @@ function highlightFeature(e) {
 		chorolayer.bringToFront();
 	}
     //updates the infopanel
-    info_panel.update(chorolayer.feature.properties)
+    //info_panel.update(chorolayer.feature.properties)
     createDashboard(chorolayer.feature.properties);
 }
 
 // on mouse out, reset the style, otherwise, it will remain highlighted
 function resetHighlight(e) {
 	chorogeojson_layer.resetStyle(e.target);
-    info_panel.update(); // resets infopanel when not highlighted, to default
+    //info_panel.update(); // resets infopanel when not highlighted, to default
 }
 
 // on mouse click on a feature, zoom in to it
@@ -190,7 +190,7 @@ function zoomToFeature(e) {
 	choromap.fitBounds(e.target.getBounds());
 }
 
-function createInfoPanel(){
+/*function createInfoPanel(){
 
 	info_panel.onAdd = function (map) {
 		this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
@@ -213,7 +213,7 @@ function createInfoPanel(){
 
 
 	info_panel.addTo(choromap);
-}
+}*/
 
 function createDashboard(properties){
 
@@ -317,5 +317,7 @@ function createDashboard(properties){
 	
 	// create the chart
 	let chart = new ApexCharts(document.querySelector('.dashboard'), options)
-	chart.render()
+	chart.render();
+	//add total count
+	$('.dashboard').append(`<p class="count">Total Count: ${properties[chorofieldtomap]}</p>`);
 }
