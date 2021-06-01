@@ -14,7 +14,7 @@ let geojson_layer;
 let fieldtomap;
 
 let brew = new classyBrew();
-let legend = L.control({position: 'topleft'});
+let legend = L.control({position: 'bottomleft'});
 let info_panel = L.control({position:'topleft'});
 
 // initialize
