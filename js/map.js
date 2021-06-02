@@ -9,7 +9,6 @@ let markers = L.markerClusterGroup();
 let befores = L.layerGroup();
 let afters = L.layerGroup();
 // parsing csv to json
-let data;
 let urbanArtCSV;
 
 // initialize
@@ -37,7 +36,7 @@ function readCSV(path){
 			console.log(data);
 			urbanArtCSV = data.data;
 			// map the data
-			mapCSV(data);
+			mapCSV(urbanArtCSV);
 
 		}
 	});
@@ -69,7 +68,7 @@ function mapCSV(data){
 		fillOpacity: 1
 	}
 
-    data.data.forEach(function(item, index){	
+    urbanArtCSV.forEach(function(item, index){	
 
 		// Before 2000's layer 
 		if(item.year < 2000){
