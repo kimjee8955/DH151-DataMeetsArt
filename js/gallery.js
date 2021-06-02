@@ -55,7 +55,7 @@ function filterArt(){
 		console.log("filtering...");
 		$('.sidebar').empty();
 		//filter data
-		filtered_data = json_data.data.filter(item => item.County.toLowerCase() === query);
+		filtered_data = json_data.data.filter(item => item.County.toLowerCase() === lowerQuery);
 		filtered_data.forEach(function(item,index){
 			// add entry to sidebar
 			$('.sidebar').append(` 
