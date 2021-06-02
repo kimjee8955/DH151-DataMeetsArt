@@ -165,7 +165,7 @@ function mapCSV(data){
 		"Clustered": markers
 	}
 
-	// add layer control box. 
+	// add layer control box. (open by default)
 	L.control.layers(null,addedlayers,{collapsed:false}).addTo(map);
 
 	//Randomize
