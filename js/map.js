@@ -75,30 +75,14 @@ function mapCSV(data){
 		if(item.year < 2000){
 			let marker = L.circleMarker([item.latitude, item.longitude],circBefore)
 			.on('mouseover',function(){
-				let sideContent = document.getElementById('sideContent');
-				sideContent.innerHTML = (
-					`<h3> ${item.title} </h3>
-					<img src="${item.thumbnail_url}" width=600px>
-					<p><b>Artist(s):</b> ${item.artist_name}</p>
-					<p><b>Year Created:</b> ${item.year}</p>
-					<p><b>Address:</b> ${item.address}</p>
-					<div class = "sidebar-item" onclick = "GSV(${item.latitude},${item.longitude})">Current Street View</div>`
-				);
+				populatePanel(item);
 				marker.setStyle(circHover);
 			})
 			.on('mouseout',function(){
 				marker.setStyle(circBefore)
 			})
 			.on('click',function(){
-				let sideContent = document.getElementById('sideContent');
-				sideContent.innerHTML = (
-					`<h3> ${item.title} </h3>
-					<img src="${item.thumbnail_url}" width=600px>
-					<p><b>Artist(s):</b> ${item.artist_name}</p>
-					<p><b>Year Created:</b> ${item.year}</p>
-					<p><b>Address:</b> ${item.address}</p>
-					<div class = "sidebar-item" onclick = "GSV(${item.latitude},${item.longitude})">Current Street View</div>`
-				)
+				populatePanel(item);
 			})
 			befores.addLayer(marker)
 			markers.addLayer(marker)
@@ -106,30 +90,14 @@ function mapCSV(data){
 		else{ // after 2000's layer 
 			let marker = L.circleMarker([item.latitude, item.longitude],circAfter)
 			.on('mouseover',function(){
-				let sideContent = document.getElementById('sideContent');
-				sideContent.innerHTML = (
-					`<h3> ${item.title} </h3>
-					<img src="${item.thumbnail_url}" width=600px>
-					<p><b>Artist(s):</b> ${item.artist_name}</p>
-					<p><b>Year Created:</b> ${item.year}</p>
-					<p><b>Address:</b> ${item.address}</p>
-					<div class = "sidebar-item" onclick = "GSV(${item.latitude},${item.longitude})">Current Street View</div>`
-				);
+				populatePanel(item);
 				marker.setStyle(circHover);
 			}) 
 			.on('mouseout',function(){
 				marker.setStyle(circAfter)
 			})
 			.on('click',function(){
-				let sideContent = document.getElementById('sideContent');
-				sideContent.innerHTML = (
-					`<h3> ${item.title} </h3>
-					<img src="${item.thumbnail_url}" width=600px>
-					<p><b>Artist(s):</b> ${item.artist_name}</p>
-					<p><b>Year Created:</b> ${item.year}</p>
-					<p><b>Address:</b> ${item.address}</p>
-					<div class = "sidebar-item" onclick = "GSV(${item.latitude},${item.longitude})">Current Street View</div>`
-				)
+				populatePanel(item);
 			})
 			afters.addLayer(marker)
 			markers.addLayer(marker)
@@ -165,15 +133,7 @@ function mapCSV(data){
 		let randData1 = urbanArtCSV[Math.floor(Math.random() * urbanArtCSV.length)];
 
 		//display on sidebar
-		let sideContent = document.getElementById('sideContent');
-		sideContent.innerHTML = (
-			`<h3> ${randData1.title} </h3>
-			<img src="${randData1.thumbnail_url}" alt="${randData1.title}" width=600px>
-			<p><b>Artist(s):</b> ${randData1.artist_name}</p>
-			<p><b>Year Created:</b> ${randData1.year}</p>
-			<p><b>Address:</b> ${randData1.address}</p>
-			<div class = "sidebar-item" onclick = "GSV(${randData1.latitude},${randData1.longitude})">Current Street View</div>`
-		);
+		populatePanel(randData1);
 
 		// add a marker to the map
 		let randomarker = L.circleMarker([randData1.latitude,randData1.longitude],circHover);
@@ -182,7 +142,7 @@ function mapCSV(data){
 		}, 1000);
 		
 		randomarker.addTo(map);
-		map.setView([randData1.latitude,randData1.longitude], 12);
+		map.setView([randData1.latitude,randData1.longitude], 15);
 		
 		
 
@@ -196,4 +156,27 @@ function GSV(latitude,longitude){
 	let url = 'https://www.google.com/maps?layer=c&cbll='+latitude+','+longitude;
 	console.log(url);
 	window.open(url);
+}
+
+//Zoom to art by ID
+function zoomToArt(id){
+    // find the art by id
+    filtered = urbanArtCSV.filter(item => item.artID === id)[0]
+    // zoom
+	map.setView([filtered.latitude,filtered.longitude], 15);
+	//populate panel
+	populatePanel(filtered);
+}
+
+//populate the side panel
+function populatePanel(inputData){
+	let sideContent = document.getElementById('sideContent');
+	sideContent.innerHTML = (
+		`<h3> ${inputData.title} </h3>
+		<img src="${inputData.thumbnail_url}" alt="${inputData.title}" width=600px>
+		<p><b>Artist(s):</b> ${inputData.artist_name}</p>
+		<p><b>Year Created:</b> ${inputData.year}</p>
+		<p><b>Address:</b> ${inputData.address}</p>
+		<div class = "sidebar-item" onclick = "GSV(${inputData.latitude},${inputData.longitude})">Current Street View</div>`
+	);	
 }
