@@ -75,7 +75,7 @@ function mapCSV(data){
 		radius: 8,
 		weight: 2,
 		color: '#7ECFB3',
-		fillColor: '#FFFAB5',
+		fillColor: '#FFF687',
 		fillOpacity: 1
 	}
 
