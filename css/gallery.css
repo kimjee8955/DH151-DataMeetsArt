@@ -225,6 +225,13 @@ article {
 	transform: translateY(0);
   }
 
+  .img__wrap:hover {
+	  cursor:pointer;
+  }
+  .img__wrap:active {
+	transform: translateY(4px);
+  }
+
   .search-container {
 	float: none;
 	margin: auto;
