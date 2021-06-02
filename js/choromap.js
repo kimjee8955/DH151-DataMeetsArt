@@ -157,7 +157,7 @@ function createLegend(){
 // Function that defines what will happen on user interactions with each feature
 function onEachChoroFeature(feature, layer) {
 	layer.on({
-		click: highlightFeature,
+		mouseover: highlightFeature,
 		mouseout: resetHighlight,
 	});
 }
