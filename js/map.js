@@ -88,7 +88,7 @@ function mapCSV(data){
 				let sideContent = document.getElementById('sideContent');
 				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
-					<img src="${item.thumbnail_url}" width=400px height=170px>
+					<img src="${item.thumbnail_url}" width=600px>
 					<p><b>Artist(s):</b> ${item.artist_name}</p>
 					<p><b>Year Created:</b> ${item.year}</p>
 					<p><b>Address:</b> ${item.address}</p>
@@ -103,7 +103,7 @@ function mapCSV(data){
 				let sideContent = document.getElementById('sideContent');
 				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
-					<img src="${item.thumbnail_url}" width=400px height=170px>
+					<img src="${item.thumbnail_url}" width=600px>
 					<p><b>Artist(s):</b> ${item.artist_name}</p>
 					<p><b>Year Created:</b> ${item.year}</p>
 					<p><b>Address:</b> ${item.address}</p>
@@ -119,7 +119,7 @@ function mapCSV(data){
 				let sideContent = document.getElementById('sideContent');
 				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
-					<img src="${item.thumbnail_url}" width=400px height=170px>
+					<img src="${item.thumbnail_url}" width=600px>
 					<p><b>Artist(s):</b> ${item.artist_name}</p>
 					<p><b>Year Created:</b> ${item.year}</p>
 					<p><b>Address:</b> ${item.address}</p>
@@ -134,7 +134,7 @@ function mapCSV(data){
 				let sideContent = document.getElementById('sideContent');
 				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
-					<img src="${item.thumbnail_url}" width=400px height=170px>
+					<img src="${item.thumbnail_url}" width=600px>
 					<p><b>Artist(s):</b> ${item.artist_name}</p>
 					<p><b>Year Created:</b> ${item.year}</p>
 					<p><b>Address:</b> ${item.address}</p>
@@ -178,7 +178,7 @@ function mapCSV(data){
 		let sideContent = document.getElementById('sideContent');
 		sideContent.innerHTML = (
 			`<h3> ${randData1.title} </h3>
-			<img src="${randData1.thumbnail_url}" alt="${randData1.title}" width=400px height=170px>
+			<img src="${randData1.thumbnail_url}" alt="${randData1.title}" width=600px>
 			<p><b>Artist(s):</b> ${randData1.artist_name}</p>
 			<p><b>Year Created:</b> ${randData1.year}</p>
 			<p><b>Address:</b> ${randData1.address}</p>
