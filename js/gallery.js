@@ -3,6 +3,7 @@ let path = "data/Urban_Art.csv";
 let neighbor = [];
 let json_data;
 let query; 
+const searchBar = document.getElementById('searchBar');
 // initialize
 $( document ).ready(function() {
 	readCSV(path);
@@ -43,14 +44,13 @@ function displayCSV(){
 
 }
 
+//filter art by neighborhood
 function filterArt(){
-	const textBox = document.getElementById('searchBar');
-	query = textBox.value;
+	query = searchBar.value;
 	console.log(query);
     //Check if null or whitespace or empty search query
     if(!query || query.length === 0 || /^\s*$/.test(query)) {
 		$('.sidebar').replaceWith(`<p style="text-align:center">Please enter a valid neighborhood.</p>`);
-		return;
     }else if(neighbor.includes(query)){
 		console.log("filtering...");
 		$('.sidebar').empty();
@@ -66,8 +66,12 @@ function filterArt(){
 					</div>
 			</div>`);
 		});
-	}
-	
-	
-}
+	}	
+};
 
+//filter art when user presses enter also
+searchBar.addEventListener("keyup", e => {
+	if(e.which==13){
+		filterArt();
+	}
+  });
