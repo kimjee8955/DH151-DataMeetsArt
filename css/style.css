@@ -11,7 +11,7 @@ body,html {
 
 
 /* Logo of site*/ 
-#D {
+.D {
 	color: hsl(355, 80%, 50%);
 }
 
@@ -23,7 +23,7 @@ body,html {
 	color: #BFB41B;
 }
 
-#r {
+.r {
 	color: #0460D9;
 }
 
@@ -131,6 +131,20 @@ body {
 .header {
 	grid-area: header;
 	background-color: hsl(169, 100%, 95%);
+}
+#D_hover:hover {
+	color: hsl(355, 80%, 50%);
+}
+.a_hover:hover {
+	color: #03A688;
+}
+
+.t_hover:hover {
+	color: #BFB41B;
+}
+
+#r_hover:hover {
+	color: #0460D9;
 }
 
 .intro {
