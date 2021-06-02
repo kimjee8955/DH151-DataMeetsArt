@@ -166,7 +166,7 @@ function mapCSV(data){
 	}
 
 	// add layer control box. 
-	L.control.layers(null,addedlayers).addTo(map);
+	L.control.layers(null,addedlayers,{collapsed:false}).addTo(map);
 
 	//Randomize
 	L.easyButton('<i class="fas fa-dice"></i>', function(){
