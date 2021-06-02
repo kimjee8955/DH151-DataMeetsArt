@@ -94,7 +94,34 @@
 			</div>
 		</nav>
 	</header>
-	<div class="regMap">
+	<article class="intro">
+		<div class="container">
+			<h1>We are Datart.</h1>
+			<p>
+				We are interested in mapping old public art around the Los Angeles County. Los Angeles is filled 
+				with public art, thus making it a culturally rich city. Public art pieces always comes and 
+				goes, and we hope to create a simple website that highlights the progression of public art 
+				throughout time and the development of the city of Los Angeles.
+			</p>
+			<p>
+				We created two maps: the <b>main map</b> and the <b>choropleth map</b>. The main map contains all of the art pieces from our datasets with images and descriptions.
+				The choropleth map shows the number of public art pieces per neighborhood in the LA county, along with an interactive bar chart to show the 
+				progression of art over time for each neighborhood.
+			</p>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-6 d-flex justify-content-center">
+					<a href="#mainmapSection"><button id="mainmap_but">Main map</button></a>
+				</div>
+				<div class="col-6 d-flex justify-content-center">
+					<a href="#choromapSection"><button id="choromap_but">Choropleth map</button></a>
+				</div>
+			  </div>
+		</div>
+	</article>
+	<div id="mainmapSection" class="regMap">
 		<h2>Main Map</h2>
 		<p>This map contains all of the art pieces from our data with images and descriptions. </p>
 	</div>
@@ -110,7 +137,7 @@
 	<script src="js/map.js"></script>
 	
 	<!--Choropleth Map-->
-	<div class="Choromap_info">
+	<div id="choromapSection" class="Choromap_info">
 		<h2>Choropleth Map</h2>
 		<p >This map shows the number of public art pieces per neighborhood in the LA county, along with an interactive bar chart to show the progression of art over time for each neighborhood.</p>
 	</div>

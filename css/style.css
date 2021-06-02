@@ -3,15 +3,16 @@ body,html {
 	height:100%;
 	width:100%;
 	font-family: 'Nunito', sans-serif;
-	color: hsl(0, 0%, 23%);
-	background-color: hsl(355, 100%, 99%);
+	color: #3b3b3b;
+	background-color: hsl(355, 100%, 100%);
 	overflow: auto;
+	scroll-behavior: smooth;
 }
 
 
 /* Logo of site*/ 
 #D {
-	color: #F23847;
+	color: hsl(355, 80%, 50%);
 }
 
 .a {
@@ -105,7 +106,8 @@ p {
 }
 
 .navbar-light .navbar-nav .active>.nav-link{
-    color: #F23847;
+    color: hsl(355, 80%, 50%);
+	text-decoration: underline;
 	font-weight: 900;
 }
 
@@ -113,10 +115,11 @@ p {
 /* Main items */
 body {
 	display: grid;
-	grid-template-rows: 80px 96px 73% 168px 73% 36px;
+	grid-template-rows: 80px 1fr 1fr 73% 1fr 73% 36px;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 	"header header"
+	"intro intro"
 	"regMap regMap"
 	"content sidebar"
 	"ChoromapInfo ChoromapInfo"
@@ -127,13 +130,49 @@ body {
 
 .header {
 	grid-area: header;
+	background-color: hsl(169, 100%, 95%);
+}
+
+.intro {
+	grid-area: intro;
+	padding-top: 56px;
+	background-color: hsl(169, 100%, 95%);
+}
+
+#mainmap_but, #choromap_but{
+	padding: 12px;
+	border-radius: 8px;
+	width: 200px;
+	height: 56px;
+	font-family: 'Nunito', sans-serif;
+	color: #fff;
+
+	background-color: hsl(169, 50%, 53%);
+	border: 3px solid hsl(169, 50%, 53%);
+	
+	margin-bottom: 24px;
+
+	transition: 0.3s;
+}
+
+#mainmap_but:hover, #choromap_but:hover {
+	/* box-shadow:  1px 2px 4px hsla(355, 88%, 68%, 0.5);
+	background-color: hsl(355, 100%, 94%);
+	color: #3b3b3b;
+	font-weight: 900px; */
+	box-shadow: 0 8px 12px 0 hsl(169, 100%, 17%, 0.23), 0 12px 40px 0 hsl(169, 100%, 17%, 0.27);
+
+}
+
+article {
+	padding: 8px;
 }
 
 #map {
 	height: 100%;
 	margin-left: 24px;
 	margin-right: 24px;
-	border-radius: 12px;
+	border-radius: 8px;
 	border: 3px solid hsla(169, 96%, 33%, 0.5);
 }
 
@@ -143,14 +182,14 @@ body {
 }
 
 .sidebar {
-	color: #353535;
+	color: #3b3b3b;
 	grid-area: sidebar;
 	padding: 12px;
 	background-color: hsla(170, 97%, 13%, 0.293);
 	overflow: auto;
 	margin-right: 24px;
-	background-color: hsl(56, 75%, 93%);
-	border-radius: 12px;
+	background-color: hsl(169, 100%, 99%);
+	border-radius: 8px;
 	height: 100%;
 	border: 3px solid hsla(169, 96%, 33%, 0.5);
 }
@@ -173,7 +212,7 @@ body {
 
 .ChoroContent {
 	grid-area: ChoroContent;
-	border-radius: 12px;
+	border-radius: 8px;
 
 }
 
@@ -181,7 +220,7 @@ body {
 	height: 100%;
 	margin-left: 24px;
 	margin-right: 24px;
-	border-radius: 12px;
+	border-radius: 8px;
 	border: 3px solid hsla(169, 96%, 33%, 0.5);
 }
 
@@ -190,7 +229,7 @@ body {
 	margin-right: 24px;
 	padding: 12px;
 	margin-bottom: 24px;
-	background-color: hsl(56, 75%, 93%);
+	background-color: hsl(169, 100%, 99%);
 	border-radius: 12px;
 	height: 100%;
 	border: 3px solid hsla(169, 96%, 33%, 0.5);
@@ -209,7 +248,7 @@ body {
 	border-radius: 4px;
 }
 .sidebar-item:hover {
-	background-color: #F23847;
+	background-color: hsl(355, 80%, 50%);
 	-webkit-transition: all 0.4s;
   	-moz-transition: all 0.4s;
   	transition: all 0.4s;

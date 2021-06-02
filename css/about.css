@@ -1,12 +1,12 @@
 body{
 	font-family: 'Nunito', sans-serif;
 	color: #353535;
-	background-color: hsl(355, 100%, 99%);
+	background-color: #fff
 }
 
 /* Logo of site*/ 
 #D {
-	color: #F23847;
+	color: hsl(355, 80%, 50%);
 }
 
 .a {
@@ -130,7 +130,8 @@ p {
 }
 
 .navbar-light .navbar-nav .active>.nav-link{
-    color: #F23847;
+    color: hsl(355, 80%, 50%);
+	text-decoration: underline;
 	font-weight: 900;
 }
 /* 
