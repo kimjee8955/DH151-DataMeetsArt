@@ -8,6 +8,9 @@ let path = "data/Urban_Art.csv";
 let markers = L.markerClusterGroup();
 let befores = L.layerGroup();
 let afters = L.layerGroup();
+// parsing csv to json
+let data;
+let urbanArtCSV;
 
 // initialize
 $( document ).ready(function() {
@@ -32,26 +35,13 @@ function readCSV(path){
 		download: true,
 		complete: function(data) {
 			console.log(data);
-			
+			urbanArtCSV = data.data;
 			// map the data
 			mapCSV(data);
 
 		}
 	});
-}
-
-// parsing csv to json
-let urbanArtCSV;
-
-Papa.parse(path, {
-	header: true,
-	download: true,
-	dynamicTyping: true,
-	complete: function(results) {
-		console.log(results);
-		urbanArtCSV = results.data;
-	}
-});
+};
 
 
 function mapCSV(data){
