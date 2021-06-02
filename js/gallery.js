@@ -30,8 +30,10 @@ function displayCSV(){
 	// loop through each entry
 	json_data.data.forEach(function(item,index){
 		// add entry to sidebar
+		console.log(item.title);
+		let title = String(item.title)
         $('.sidebar').append(` 
-            <div style="display: inline-block" class="img__wrap" onclick="redirect()">
+            <div style="display: inline-block" class="img__wrap" onclick="redirect(${title})">
                 <img class="img__img" src="${item.thumbnail_url}" width=300px height=330px/>
                 <div class="img__description_layer">
                     <p class="img__description"><b>Title:</b> ${item.title}<br><b>Artist(s):</b> ${item.artist_name}<br><b>Neighborhood:</b> ${item.County}<br><b>Year:</b> ${item.year}<br></p>
@@ -58,8 +60,9 @@ function filterArt(){
 		filtered_data = json_data.data.filter(item => item.County.toLowerCase() === query);
 		filtered_data.forEach(function(item,index){
 			// add entry to sidebar
+			let title = String(item.title);
 			$('.sidebar').append(` 
-				<div style="display: inline-block" class="img__wrap" onclick="redirect">
+				<div style="display: inline-block" class="img__wrap" onclick="redirect(${title})">
 					<img class="img__img" src="${item.thumbnail_url}" width=300px height=330px/>
 					<div class="img__description_layer">
 						<p class="img__description"><b>Title:</b> ${item.title}<br><b>Artist(s):</b> ${item.artist_name}<br><b>Neighborhood:</b> ${item.County}<br><b>Year:</b> ${item.year}<br></p>
@@ -77,8 +80,13 @@ searchBar.addEventListener("keyup", e => {
 });
 
 //redirect to mapping page when photo clicked
-function redirect(){
+function redirect(art_name){
+	console.log(art_name);
 	//location.href = "/index.html"
-	window.open("/index.html");
+	//window.open("/index.html");
+
+	//let pop_up = L.popup.setContent("here!");
+	//pop_up.setLatLng([]).openOn(map);
+
 }
 
