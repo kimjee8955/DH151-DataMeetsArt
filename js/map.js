@@ -60,16 +60,22 @@ function mapCSV(data){
 	let circBefore = {
 		radius: 5,
 		weight: 1,
-		color: 'white',
+		color: '#FBF9EF',
 		fillColor: '#0460D9',
 		fillOpacity: 1
 	}
 	let circAfter = {
 		radius: 5,
 		weight: 1,
-		color: 'white',
+		color: '#FBF9EF',
 		fillColor: '#F23847',
 		fillOpacity: 1
+	}
+	let circHover = {
+		radius: 8,
+		weight: 2,
+		color: '#7ECFB3',
+		fillColor: '#FFFAB5'
 	}
 
     data.data.forEach(function(item, index){	
@@ -78,13 +84,25 @@ function mapCSV(data){
 		if(item.year < 2000){
 			let marker = L.circleMarker([item.latitude, item.longitude],circBefore)
 			.on('mouseover',function(){
-				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=150px>`).openPopup()
+				let sideContent = document.getElementById('sideContent');
+				sideContent.innerHTML = (
+					`<h3> ${item.title} </h3>
+					<img src="${item.thumbnail_url}" width=400px height=170px>
+					<p><b>Artist(s):</b> ${item.artist_name}</p>
+					<p><b>Year Created:</b> ${item.year}</p>
+					<p><b>Address:</b> ${item.address}</p>
+					<div class = "sidebar-item" onclick = "GSV(${item.latitude},${item.longitude})">Current Street View</div>`
+				);
+				marker.setStyle(circHover);
+			})
+			.on('mouseout',function(){
+				marker.setStyle(circBefore)
 			})
 			.on('click',function(){
 				let sideContent = document.getElementById('sideContent');
 				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
-					<img src="${item.thumbnail_url}" width=600px>
+					<img src="${item.thumbnail_url}" width=400px height=170px>
 					<p><b>Artist(s):</b> ${item.artist_name}</p>
 					<p><b>Year Created:</b> ${item.year}</p>
 					<p><b>Address:</b> ${item.address}</p>
@@ -97,13 +115,25 @@ function mapCSV(data){
 		else{ // after 2000's layer 
 			let marker = L.circleMarker([item.latitude, item.longitude],circAfter)
 			.on('mouseover',function(){
-				this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}" width=150px>`).openPopup()
+				let sideContent = document.getElementById('sideContent');
+				sideContent.innerHTML = (
+					`<h3> ${item.title} </h3>
+					<img src="${item.thumbnail_url}" width=400px height=170px>
+					<p><b>Artist(s):</b> ${item.artist_name}</p>
+					<p><b>Year Created:</b> ${item.year}</p>
+					<p><b>Address:</b> ${item.address}</p>
+					<div class = "sidebar-item" onclick = "GSV(${item.latitude},${item.longitude})">Current Street View</div>`
+				);
+				marker.setStyle(circHover);
+			}) 
+			.on('mouseout',function(){
+				marker.setStyle(circAfter)
 			})
 			.on('click',function(){
 				let sideContent = document.getElementById('sideContent');
 				sideContent.innerHTML = (
 					`<h3> ${item.title} </h3>
-					<img src="${item.thumbnail_url}" width=600px>
+					<img src="${item.thumbnail_url}" width=400px height=170px>
 					<p><b>Artist(s):</b> ${item.artist_name}</p>
 					<p><b>Year Created:</b> ${item.year}</p>
 					<p><b>Address:</b> ${item.address}</p>
@@ -147,13 +177,12 @@ function mapCSV(data){
 		let sideContent = document.getElementById('sideContent');
 		sideContent.innerHTML = (
 			`<h3> ${randData1.title} </h3>
-			<img src="${randData1.thumbnail_url}" alt="${randData1.title}" width=600px>
+			<img src="${randData1.thumbnail_url}" alt="${randData1.title}" width=400px height=170px>
 			<p><b>Artist(s):</b> ${randData1.artist_name}</p>
 			<p><b>Year Created:</b> ${randData1.year}</p>
 			<p><b>Address:</b> ${randData1.address}</p>
 			<div class = "sidebar-item" onclick = "GSV(${randData1.latitude},${randData1.longitude})">Current Street View</div>`
 		);
-
 		let rando_pop = L.popup().setContent(`${randData1.title}<br><img src="${randData1.thumbnail_url}" width=150px>`);
 		rando_pop.setLatLng([randData1.latitude, randData1.longitude]).openOn(map);
 

@@ -157,16 +157,15 @@ function createLegend(){
 // Function that defines what will happen on user interactions with each feature
 function onEachChoroFeature(feature, layer) {
 	layer.on({
-		mouseover: highlightFeature,
+		click: highlightFeature,
 		mouseout: resetHighlight,
-		click: zoomToFeature
 	});
 }
 
 // on mouse over, highlight the feature
 function highlightFeature(e) {
 	var chorolayer = e.target;
-
+	
 	// style to use on mouse over
 	chorolayer.setStyle({
         weight: 3,
@@ -177,8 +176,10 @@ function highlightFeature(e) {
 	if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
 		chorolayer.bringToFront();
 	}
+
 	//make dashboard
     createDashboard(chorolayer.feature.properties);
+
 }
 
 // on mouse out, reset the style, otherwise, it will remain highlighted
