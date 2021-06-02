@@ -10,11 +10,17 @@ let befores = L.layerGroup();
 let afters = L.layerGroup();
 // parsing csv to json
 let urbanArtCSV;
+const QueryString = window.location.search; 
+const urlParams = new URLSearchParams(QueryString); 
 
 // initialize
 $( document ).ready(function() {
     createMap(lat,lon,zl);
     readCSV(path);
+	if(urlParams.has('artID')){
+		ID = //get ID using string regex; 
+		zoomToArt(ID);
+	}
 });
 
 // create the map
@@ -153,7 +159,6 @@ function mapCSV(data){
 //Open Google Street View 
 function GSV(latitude,longitude){
 	let url = 'https://www.google.com/maps?layer=c&cbll='+latitude+','+longitude;
-	console.log(url);
 	window.open(url);
 }
 
