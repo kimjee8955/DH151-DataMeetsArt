@@ -77,5 +77,8 @@ searchBar.addEventListener("keyup", e => {
 });
 
 //redirect to mapping page when photo clicked
-
+function redirect(){
+	//location.href = "/index.html"
+	window.open("/index.html");
+}
 
