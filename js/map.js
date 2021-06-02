@@ -75,7 +75,8 @@ function mapCSV(data){
 		radius: 8,
 		weight: 2,
 		color: '#7ECFB3',
-		fillColor: '#FFFAB5'
+		fillColor: '#FFFAB5',
+		fillOpacity: 1
 	}
 
     data.data.forEach(function(item, index){	
@@ -183,9 +184,20 @@ function mapCSV(data){
 			<p><b>Address:</b> ${randData1.address}</p>
 			<div class = "sidebar-item" onclick = "GSV(${randData1.latitude},${randData1.longitude})">Current Street View</div>`
 		);
-		let rando_pop = L.popup().setContent(`${randData1.title}<br><img src="${randData1.thumbnail_url}" width=150px>`);
-		rando_pop.setLatLng([randData1.latitude, randData1.longitude]).openOn(map);
 
+		// add a marker to the map
+		let randomarker = L.circleMarker([randData1.latitude,randData1.longitude],circHover);
+		setTimeout(function(){
+			randomarker.remove(map);
+		}, 1000);
+		
+		randomarker.addTo(map);
+		map.setView([randData1.latitude,randData1.longitude], 12);
+		
+		
+
+		
+		
 }, 		'Surprise Me').addTo(map);	
 }
 
