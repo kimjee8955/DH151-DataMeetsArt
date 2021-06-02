@@ -160,7 +160,8 @@ function GSV(latitude,longitude){
 //Zoom to art by ID
 function zoomToArt(id){
     // find the art by id
-    filtered = urbanArtCSV.filter(item => item.artID === id)[0]
+    filtered = urbanArtCSV.filter(item => item.artID === String(id))[0];
+	console.log(filtered);
     // zoom
 	map.setView([filtered.latitude,filtered.longitude], 15);
 	//populate panel
