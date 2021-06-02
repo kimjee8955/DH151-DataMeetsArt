@@ -2,7 +2,7 @@
 let path = "data/Urban_Art.csv";
 let neighbor = [];
 let json_data;
-let query; 
+let query; let lowerQuery;
 const searchBar = document.getElementById('searchBar');
 // initialize
 $( document ).ready(function() {
@@ -31,14 +31,14 @@ function displayCSV(){
 	json_data.data.forEach(function(item,index){
 		// add entry to sidebar
         $('.sidebar').append(` 
-            <div style="display: inline-block" class="img__wrap">
+            <div style="display: inline-block" class="img__wrap" onclick="redirect()">
                 <img class="img__img" src="${item.thumbnail_url}" width=300px height=330px/>
                 <div class="img__description_layer">
                     <p class="img__description"><b>Title:</b> ${item.title}<br><b>Artist(s):</b> ${item.artist_name}<br><b>Neighborhood:</b> ${item.County}<br><b>Year:</b> ${item.year}<br></p>
                 </div>
         </div>`)
-		// make an array of neighborhood and thumnail_url
-		neighbor.push(item.County);
+		// make an array of neighborhood 
+		neighbor.push(item.County.toLowerCase());
 	})
     
 
@@ -47,19 +47,19 @@ function displayCSV(){
 //filter art by neighborhood
 function filterArt(){
 	query = searchBar.value;
-	console.log(query);
+	lowerQuery = query.toLowerCase();
     //Check if null or whitespace or empty search query
     if(!query || query.length === 0 || /^\s*$/.test(query)) {
 		$('.sidebar').replaceWith(`<p style="text-align:center">Please enter a valid neighborhood.</p>`);
-    }else if(neighbor.includes(query)){
+    }else if(neighbor.includes(lowerQuery)){
 		console.log("filtering...");
 		$('.sidebar').empty();
 		//filter data
-		filtered_data = json_data.data.filter(item => item.County === query);
+		filtered_data = json_data.data.filter(item => item.County.toLowerCase() === query);
 		filtered_data.forEach(function(item,index){
 			// add entry to sidebar
 			$('.sidebar').append(` 
-				<div style="display: inline-block" class="img__wrap">
+				<div style="display: inline-block" class="img__wrap" onclick="redirect">
 					<img class="img__img" src="${item.thumbnail_url}" width=300px height=330px/>
 					<div class="img__description_layer">
 						<p class="img__description"><b>Title:</b> ${item.title}<br><b>Artist(s):</b> ${item.artist_name}<br><b>Neighborhood:</b> ${item.County}<br><b>Year:</b> ${item.year}<br></p>
@@ -74,4 +74,8 @@ searchBar.addEventListener("keyup", e => {
 	if(e.which==13){
 		filterArt();
 	}
-  });
+});
+
+//redirect to mapping page when photo clicked
+
+
