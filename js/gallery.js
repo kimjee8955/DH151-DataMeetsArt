@@ -81,10 +81,10 @@ searchBar.addEventListener("keyup", e => {
 
 //redirect to mapping page when photo clicked
 function redirect(ID){
-	let link = "/index.html#mainmapSection";
-	//location.href = "/index.html"
-	window.open(link);
-	console.log(link);
+	//let link = "/Datart/index.html#mainmapSection";
+	location.href = "/index.html#mainmapSection"
+	//window.open(link);
+	//console.log(link);
 	// Set the variable
 	localStorage.setItem( 'artID',ID);
 }
