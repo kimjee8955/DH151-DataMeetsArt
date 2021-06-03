@@ -162,7 +162,7 @@ article {
 }
 
 #h2_ourTeam {
-    margin-bottom: 48px;
+    margin-bottom: 30px;
 }
 .centerh2 {
     text-align: center;
@@ -235,12 +235,12 @@ article {
 
   .search-container {
 	float: none;
-	margin: auto;
+	margin: 30px 35px;
+	transform: translate(87%);
 	text-align: left;
 	height: 100%;
 	width: 35%;
 	box-shadow: 5px 5px 10px gray;
-	margin-bottom: 35px;
   }
   
   .search-container input {
