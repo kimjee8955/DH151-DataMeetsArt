@@ -48,13 +48,13 @@ function filterArt(){
 	lowerQuery = query.toLowerCase();
     //Check if null or whitespace or empty search query
     if(!query || query.length === 0 || /^\s*$/.test(query)) {
-		$('.sidebar').replaceWith(`<p style="text-align:center">Please enter a valid neighborhood.</p>`);
+		$('.sidebar').empty();
+		$('.sidebar').append(`<p style="text-align:center">Please enter a valid neighborhood.</p>`);
 
 	};
 	//filter data
 	filtered_data = json_data.data.filter(item => item.County.toLowerCase().includes(lowerQuery));
 	if(filtered_data.length!=0){
-		console.log("filtering...");
 		$('.sidebar').empty();
 		filtered_data.forEach(function(item,index){
 			// add entry to sidebar
@@ -66,8 +66,9 @@ function filterArt(){
 					</div>
 			</div>`);
 		});
-	}else{
-		$('.sidebar').replaceWith(`<p style="text-align:center">Our data does not have art from ${query}.</p>`)	
+	}else if(filtered_data.length==0){
+		$('.sidebar').empty();
+		$('.sidebar').append(`<p style="text-align:center">Our data does not have art from ${query}.</p>`)	
 	}
 };
 
