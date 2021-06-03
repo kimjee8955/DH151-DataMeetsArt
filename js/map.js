@@ -47,9 +47,10 @@ function readCSV(path){
 			urbanArtCSV = data.data;
 			// map the data
 			mapCSV(urbanArtCSV);
-			//check for urlParam
+			//check for artID
 			if(localStorage['artID']!=null){
 				ID = String(localStorage['artID']);
+				localStorage.removeItem( 'artID' ); //clear local storage
 				console.log(ID);
 				zoomToArt(ID);
 			};
