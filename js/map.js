@@ -12,6 +12,13 @@ let afters = L.layerGroup();
 let urbanArtCSV;
 const QueryString = window.location.search; 
 const urlParams = new URLSearchParams(QueryString); 
+let circHover = {
+	radius: 8,
+	weight: 2,
+	color: '#7ECFB3',
+	fillColor: '#FFF687',
+	fillOpacity: 1
+};
 
 // initialize
 $( document ).ready(function() {
@@ -66,13 +73,6 @@ function mapCSV(data){
 		weight: 1,
 		color: '#FBF9EF',
 		fillColor: '#F23847',
-		fillOpacity: 1
-	}
-	let circHover = {
-		radius: 8,
-		weight: 2,
-		color: '#7ECFB3',
-		fillColor: '#FFF687',
 		fillOpacity: 1
 	}
 
@@ -166,6 +166,17 @@ function zoomToArt(id){
 	console.log(filtered);
     // zoom
 	map.setView([filtered.latitude,filtered.longitude], 15);
+	//change color
+	let marker = L.circleMarker([filtered.latitude, filtered.longitude],circHover)
+	.on('mouseover',function(){
+		populatePanel(filtered);
+		marker.setStyle(circHover);
+	})
+	.on('click',function(){
+		populatePanel(filtered);
+	})
+	marker.bindPopup("Art is here!",{autoClose:false}).openPopup();
+	marker.addTo(map);
 	//populate panel
 	populatePanel(filtered);
 }
