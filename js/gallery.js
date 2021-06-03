@@ -51,12 +51,11 @@ function filterArt(){
 		$('.sidebar').replaceWith(`<p style="text-align:center">Please enter a valid neighborhood.</p>`);
 
 	};
+	//filter data
 	filtered_data = json_data.data.filter(item => item.County.toLowerCase().includes(lowerQuery));
 	if(filtered_data.length!=0){
 		console.log("filtering...");
 		$('.sidebar').empty();
-		//filter data
-		filtered_data = json_data.data.filter(item => item.County.toLowerCase().includes(lowerQuery));
 		filtered_data.forEach(function(item,index){
 			// add entry to sidebar
 			$('.sidebar').append(` 
