@@ -86,4 +86,3 @@ function redirect(ID){
 	window.open(link);
 	console.log(link);
 }
-
