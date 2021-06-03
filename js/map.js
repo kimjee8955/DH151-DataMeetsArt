@@ -44,7 +44,7 @@ function readCSV(path){
 			console.log(data);
 			urbanArtCSV = data.data;
 			// map the data
-			mapCSV(urbanArtCSV);
+			mapCSV();
 			//check for artID
 			if(localStorage.getItem('artID')!=null){
 				ID = String(localStorage.getItem('artID'));
@@ -58,7 +58,7 @@ function readCSV(path){
 };
 
 
-function mapCSV(data){
+function mapCSV(){
 	
     // circle options
 	let circBefore = {
