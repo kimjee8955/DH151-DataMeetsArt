@@ -51,7 +51,10 @@ function filterArt(){
     //Check if null or whitespace or empty search query
     if(!query || query.length === 0 || /^\s*$/.test(query)) {
 		$('.sidebar').replaceWith(`<p style="text-align:center">Please enter a valid neighborhood.</p>`);
-    }else if(neighbor.includes(lowerQuery)){
+    }else if(!neighbor.includes(lowerQuery)){
+		"Our dataset has no art from this neighborhood."
+	}
+	else if(neighbor.includes(lowerQuery)){
 		console.log("filtering...");
 		$('.sidebar').empty();
 		//filter data

@@ -12,6 +12,7 @@ let afters = L.layerGroup();
 let urbanArtCSV;
 const QueryString = window.location.search; 
 const urlParams = new URLSearchParams(QueryString); 
+//circleoption
 let circHover = {
 	radius: 8,
 	weight: 2,
