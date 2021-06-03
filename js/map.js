@@ -48,8 +48,8 @@ function readCSV(path){
 			// map the data
 			mapCSV(urbanArtCSV);
 			//check for artID
-			if(localStorage['artID']!=null){
-				ID = String(localStorage['artID']);
+			if(localStorage.getItem('artID')!=null){
+				ID = String(localStorage.getItem('artID'));
 				localStorage.removeItem( 'artID' ); //clear local storage
 				console.log(ID);
 				zoomToArt(ID);
