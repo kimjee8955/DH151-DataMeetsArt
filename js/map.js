@@ -190,6 +190,8 @@ function populatePanel(inputData){
 		<p><b>Artist(s):</b> ${inputData.artist_name}</p>
 		<p><b>Year Created:</b> ${inputData.year}</p>
 		<p><b>Address:</b> ${inputData.address}</p>
-		<div class = "sidebar-item" onclick = "GSV(${inputData.latitude},${inputData.longitude})">Current Street View</div>`
+		<div id="CurrentStreetView" class = "sidebar-item" onclick = "GSV(${inputData.latitude},${inputData.longitude})">Current Street View</div>
+		<br><br>
+		`
 	);	
 }

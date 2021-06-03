@@ -215,7 +215,8 @@ article {
 }
 
 .sidebar img {
-    width: 50%;
+    width: 30%;
+	height: 30%;
 	margin-bottom: 24px;
 }
 
@@ -229,7 +230,6 @@ article {
 .ChoroContent {
 	grid-area: ChoroContent;
 	border-radius: 8px;
-
 }
 
 #choromap {
@@ -260,7 +260,6 @@ article {
 	font-size: 1em;
 	border: 5px #3b3b3b;
 	background-color: #3b3b3b;
-	margin-bottom: 24px;
 	border-radius: 4px;
 }
 .sidebar-item:hover {
@@ -270,6 +269,11 @@ article {
   	transition: all 0.4s;
 	
 }
+
+#CurrentStreetView {
+	margin-bottom: 100px;
+}
+
 .sidebar-item:active {
 	background: gainsboro;
 	transform: translateY(4px);
