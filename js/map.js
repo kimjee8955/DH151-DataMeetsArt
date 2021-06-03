@@ -17,11 +17,6 @@ const urlParams = new URLSearchParams(QueryString);
 $( document ).ready(function() {
     createMap(lat,lon,zl);
     readCSV(path);
-	if(urlParams.has('artID')){
-		ID = QueryString.match(/\d+$/)[0];
-		console.log(ID);
-		zoomToArt(ID);
-	}
 });
 
 // create the map
@@ -44,6 +39,12 @@ function readCSV(path){
 			urbanArtCSV = data.data;
 			// map the data
 			mapCSV(urbanArtCSV);
+			//check for urlParam
+			if(urlParams.has('artID')){
+				ID = QueryString.match(/\d+$/)[0];
+				console.log(ID);
+				zoomToArt(ID);
+			};
 
 		}
 	});
@@ -148,13 +149,8 @@ function mapCSV(data){
 		}, 1000);
 		
 		randomarker.addTo(map);
-		map.setView([randData1.latitude,randData1.longitude], 15);
-		
-		
-
-		
-		
-}, 		'Surprise Me').addTo(map);	
+		map.setView([randData1.latitude,randData1.longitude], 15);		
+	}, 'Surprise Me').addTo(map);	
 }
 
 //Open Google Street View 
