@@ -50,6 +50,7 @@ function filterArt(){
     if(!query || query.length === 0 || /^\s*$/.test(query)) {
 		$('.sidebar').empty();
 		$('.sidebar').append(`<p style="text-align:center">Please enter a valid neighborhood.</p>`);
+		return; //end function if empty search
 
 	};
 	//filter data
