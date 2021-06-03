@@ -151,6 +151,7 @@ body {
 	grid-area: intro;
 	padding-top: 56px;
 	background-color: hsl(169, 100%, 95%);
+	height: 100vh;
 }
 
 #mainmap_but, #choromap_but{
@@ -165,7 +166,7 @@ body {
 	border: 3px solid hsl(169, 50%, 53%);
 	
 	margin-bottom: 24px;
-
+	margin-top: 80px;
 	transition: 0.3s;
 }
 
@@ -193,6 +194,7 @@ article {
 .regMap {
 	grid-area: regMap;
 	text-align: center;
+	margin-top: 36px;
 }
 
 .sidebar {
