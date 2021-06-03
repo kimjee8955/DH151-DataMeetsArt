@@ -81,8 +81,10 @@ searchBar.addEventListener("keyup", e => {
 
 //redirect to mapping page when photo clicked
 function redirect(ID){
-	let link = "/index.html"+"?artID="+ID+"#mainmapSection";
+	let link = "/index.html#mainmapSection";
 	//location.href = "/index.html"
 	window.open(link);
 	console.log(link);
+	// Set the variable
+	localStorage.setItem( 'artID',ID);
 }

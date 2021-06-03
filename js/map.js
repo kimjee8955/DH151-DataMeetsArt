@@ -48,8 +48,8 @@ function readCSV(path){
 			// map the data
 			mapCSV(urbanArtCSV);
 			//check for urlParam
-			if(urlParams.has('artID')){
-				ID = QueryString.match(/\d+$/)[0];
+			if(localStorage['artID']!=null){
+				ID = String(localStorage['artID']);
 				console.log(ID);
 				zoomToArt(ID);
 			};
