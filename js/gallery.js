@@ -36,10 +36,8 @@ function displayCSV(){
                 <div class="img__description_layer">
                     <p class="img__description"><b>Title:</b> ${item.title}<br><b>Artist(s):</b> ${item.artist_name}<br><b>Neighborhood:</b> ${item.County}<br><b>Year:</b> ${item.year}<br></p>
                 </div>
-        </div>`)
-		// make an array of neighborhood 
-		neighbor.push(item.County.toLowerCase());
-	})
+        </div>`);
+	});
     
 
 }
@@ -51,14 +49,14 @@ function filterArt(){
     //Check if null or whitespace or empty search query
     if(!query || query.length === 0 || /^\s*$/.test(query)) {
 		$('.sidebar').replaceWith(`<p style="text-align:center">Please enter a valid neighborhood.</p>`);
-    }else if(!neighbor.includes(lowerQuery)){
-		"Our dataset has no art from this neighborhood."
-	}
-	else if(neighbor.includes(lowerQuery)){
+
+	};
+	filtered_data = json_data.data.filter(item => item.County.toLowerCase().includes(lowerQuery));
+	if(filtered_data.length!=0){
 		console.log("filtering...");
 		$('.sidebar').empty();
 		//filter data
-		filtered_data = json_data.data.filter(item => item.County.toLowerCase() === lowerQuery);
+		filtered_data = json_data.data.filter(item => item.County.toLowerCase().includes(lowerQuery));
 		filtered_data.forEach(function(item,index){
 			// add entry to sidebar
 			$('.sidebar').append(` 
@@ -69,7 +67,9 @@ function filterArt(){
 					</div>
 			</div>`);
 		});
-	}	
+	}else{
+		$('.sidebar').replaceWith(`<p style="text-align:center">Our data does not have art from ${query}.</p>`)	
+	}
 };
 
 //filter art when user presses enter also
