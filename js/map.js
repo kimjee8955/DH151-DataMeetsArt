@@ -10,8 +10,6 @@ let befores = L.layerGroup();
 let afters = L.layerGroup();
 // parsing csv to json
 let urbanArtCSV;
-const QueryString = window.location.search; 
-const urlParams = new URLSearchParams(QueryString); 
 //circleoption
 let circHover = {
 	radius: 8,
