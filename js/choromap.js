@@ -159,6 +159,7 @@ function onEachChoroFeature(feature, layer) {
 	layer.on({
 		mouseover: highlightFeature,
 		mouseout: resetHighlight,
+		click: zoomToFeature
 	});
 }
 
@@ -302,4 +303,17 @@ function createDashboard(properties){
 		$('.dashboard').append(`<h3>${properties["name"]}'s Art Pieces by Decade</h3>
 		<p class="count">Total Count: ${properties[chorofieldtomap]}</p>`);
 	}
+}
+
+function createBarChart(props,fieltomap){
+	if(props[fieldtomap] != 0){
+		// create the chart
+		let chart = new ApexCharts(document.querySelector('.dashboard'), options)
+		chart.render();
+		//add total count
+		$('.dashboard').append(`<p class="count">Total Count: ${props[fieldtomap]}</p>`);
+	}else{
+		$('.dashboard').append(`<h3>${props["name"]}'s Art Pieces by Decade</h3>
+		<p class="count">Total Count: ${props[fieldtomap]}</p>`);
+	}	
 }
