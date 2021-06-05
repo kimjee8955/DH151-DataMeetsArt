@@ -134,7 +134,8 @@ function mapCSV(){
 	L.control.layers(null,addedlayers,{collapsed:false}).addTo(map);
 
 	//Randomize
-	L.easyButton('<i class="fas fa-dice"></i>', function(){
+	
+	let randomize = L.easyButton('<img src="images/randomizeButton.svg" style="width:50px">', function(){
 
 		//randomize csv data into 1 variable 
 		let randData1 = urbanArtCSV[Math.floor(Math.random() * urbanArtCSV.length)];
@@ -150,7 +151,9 @@ function mapCSV(){
 		
 		randomarker.addTo(map);
 		map.setView([randData1.latitude,randData1.longitude], 15);		
-	}, 'Surprise Me').addTo(map);	
+	},'Surprise Me')
+	randomize.button.style.width = '60px';
+	randomize.addTo(map);	
 }
 
 //Open Google Street View 

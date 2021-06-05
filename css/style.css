@@ -220,6 +220,11 @@ article {
 	margin-bottom: 24px;
 }
 
+.randomizeButton {
+	height: 100px; /* easyButton's height default */
+	width: 100px;  /*  easyButton's width default */
+  }
+
 /**Choropleth Map **/
 .Choromap_info {
 	grid-area: ChoromapInfo;
