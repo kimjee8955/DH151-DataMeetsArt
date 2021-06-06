@@ -121,11 +121,11 @@ function mapChoroGeoJSON(field /*, num_class, etc....*/){
 function getChoroStyle(feature){
 	return {
 		stroke: true,
-		color: 'white',
+		color: '#b3b3b3',
 		weight: 1,
 		fill: true,
 		fillColor: brew.getColorInRange(feature.properties[chorofieldtomap]),
-		fillOpacity: 0.9
+		fillOpacity: 0.75
 	}
 }
 
@@ -169,7 +169,7 @@ function highlightFeature(e) {
 	
 	// style to use on mouse over
 	chorolayer.setStyle({
-        weight: 3,
+        weight: 2,
 		color: '#3b3b3b',
 		fillOpacity: 0.6
 	});
