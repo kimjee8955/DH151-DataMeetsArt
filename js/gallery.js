@@ -49,7 +49,7 @@ function filterArt(){
     //Check if null or whitespace or empty search query
     if(!query || query.length === 0 || /^\s*$/.test(query)) {
 		$('.sidebar').empty();
-		$('.sidebar').append(`<p style="text-align:center">Please enter a valid neighborhood.</p>`);
+		displayCSV();
 		return; //end function if empty search
 
 	};
