@@ -281,3 +281,27 @@ input:focus {
 #searchArt:active {
 	border: none;
 }
+/* Scroll to Top button */
+#back2Top {
+    width: 35px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 60px;
+    right: 0;
+	padding-inline-end: 40px;
+    background-color: hsl(white, 100%, 0%);
+    color: #03A688;
+    font-size: 40px;
+    text-decoration: none;
+	border: 3px solid #03A688;
+	border-radius: 30%;
+}
+#back2Top:hover {
+    background-color: #03A688;
+    color: white;
+}
