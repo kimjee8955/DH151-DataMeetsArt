@@ -174,12 +174,15 @@ function zoomToArt(id){
 	.on('mouseover',function(){
 		populatePanel(filtered);
 		marker.setStyle(circHover);
+
 	})
 	.on('click',function(){
 		populatePanel(filtered);
 	})
-	marker.bindPopup("Art is here!",{autoClose:false}).openPopup();
+	marker.bindPopup("Art is here!",{autoClose:false});
 	marker.addTo(map);
+	marker.openPopup();
+	
 	//populate panel
 	populatePanel(filtered);
 }
