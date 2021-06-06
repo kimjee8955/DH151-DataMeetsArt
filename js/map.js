@@ -149,7 +149,9 @@ function mapCSV(){
 			randomarker.remove(map);
 		}, 1000);
 		
+		randomarker.bindPopup("Art is here!",{autoClose:false});
 		randomarker.addTo(map);
+		randomarker.openPopup();
 		map.setView([randData1.latitude,randData1.longitude], 15);		
 	},'Surprise Me')
 	randomize.button.style.width = '60px';
@@ -182,7 +184,7 @@ function zoomToArt(id){
 	marker.bindPopup("Art is here!",{autoClose:false});
 	marker.addTo(map);
 	marker.openPopup();
-	
+
 	//populate panel
 	populatePanel(filtered);
 }
