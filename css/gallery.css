@@ -278,9 +278,10 @@ input:focus {
 	padding: 8px;
 } 
 
-#searchArt:active {
-	border: none;
+#searchArt {
+	outline: none;
 }
+
 /* Scroll to Top button */
 #back2Top {
     width: 35px;
@@ -305,3 +306,4 @@ input:focus {
     background-color: #03A688;
     color: white;
 }
+
