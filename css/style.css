@@ -114,6 +114,9 @@ p {
 
 /* Main items */
 body {
+	backface-visibility: hidden;
+ 	perspective: 1000;
+ 	transform: translate3d(0,0,0);
 	display: grid;
 	grid-template-rows: 80px 1fr 1fr 73% 1fr 73% 36px;
 	grid-template-columns: 1fr 1fr;
@@ -154,6 +157,66 @@ body {
 	height: 100vh;
 }
 
+.animatedheader {
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.animatedheader:first-of-type {  
+	animation: showup 7s infinite;
+}
+
+.animatedheader:last-of-type {
+	width:0px;
+	animation: reveal 7s infinite;
+}
+
+#animated2 {
+	margin-left: 8px;
+}
+
+#animated2 h1 {
+	animation: color-change 5s infinite;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes color-change {
+	0% { color: hsl(355, 80%, 50%); }
+	17% { color: #03A688; }
+	33% { color: #BFB41B; }
+	66% { color: #03A688; }
+	83% { color: #0460D9; }
+	100% { color: #BFB41B; }
+}
+.animatedheader:last-of-type span {
+	margin-left:-1000px;
+	animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+	0% {opacity:0;}
+	20% {opacity:1;}
+	80% {opacity:1;}
+	100% {opacity:0;}
+}
+
+@keyframes slidein {
+	0% { margin-left:-100px; }
+	20% { margin-left:-100px; }
+	35% { margin-left:0px; }
+	100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+	0% {opacity:0;width:0px;}
+	20% {opacity:1;width:0px;}
+	30% {width: 150px;}
+	80% {opacity:1;}
+	100% {opacity:0;width:150px;}
+}
+
+
 #mainmap_but, #choromap_but{
 	padding: 12px;
 	border-radius: 8px;
@@ -171,12 +234,7 @@ body {
 }
 
 #mainmap_but:hover, #choromap_but:hover {
-	/* box-shadow:  1px 2px 4px hsla(355, 88%, 68%, 0.5);
-	background-color: hsl(355, 100%, 94%);
-	color: #3b3b3b;
-	font-weight: 900px; */
 	box-shadow: 0 8px 12px 0 hsl(169, 100%, 17%, 0.23), 0 12px 40px 0 hsl(169, 100%, 17%, 0.27);
-
 }
 
 article {
