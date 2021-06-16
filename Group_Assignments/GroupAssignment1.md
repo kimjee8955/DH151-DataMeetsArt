@@ -50,8 +50,11 @@ Mapping is a great visualization method of location-based data. Given that we wa
   </tr>
   <tr>
     <td>Week 5</td>
-    <td>Clean Data/Code the map</td>
-    <td>Wireframe, Wireflow, High-fidelity prototype</td>
+    <td>
+      Clean Data/Code the map
+  </br>
+      Wireframe, Wireflow, High-fidelity prototype
+    </td>
   </tr> 
   <tr>
     <td>Week 6</td>
