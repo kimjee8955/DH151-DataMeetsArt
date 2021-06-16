@@ -42,15 +42,16 @@ Mapping is a great visualization method of location-based data. Given that we wa
   </tr>
   <tr>
     <td>Week 3</td>
-    <td>Do background research/ Find Data</td>
+    <td>Do background research/primary research</td>
   </tr>
   <tr>
     <td>Week 4</td>
-    <td>Storyboard</td>
+    <td>Brainstorm ideas</td>
   </tr>
   <tr>
     <td>Week 5</td>
-    <td>Clean Data/ Make the map</td>
+    <td>Clean Data/Code the map</td>
+    <td>Wireframe, Wireflow, High-fidelity prototype</td>
   </tr> 
   <tr>
     <td>Week 6</td>
