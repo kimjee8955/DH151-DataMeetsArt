@@ -46,14 +46,18 @@ Mapping is a great visualization method of location-based data. Given that we wa
   </tr>
   <tr>
     <td>Week 4</td>
-    <td>Brainstorm ideas</td>
+    <td>
+      Brainstorm ideas
+      <br/>
+      Wireframe, Wireflow, High-fidelity prototype
+    </td>
   </tr>
   <tr>
     <td>Week 5</td>
     <td>
       Clean Data/Code the map
   </br>
-      Wireframe, Wireflow, High-fidelity prototype
+      Front end developement
     </td>
   </tr> 
   <tr>
@@ -66,7 +70,7 @@ Mapping is a great visualization method of location-based data. Given that we wa
   </tr>
   <tr>
     <td>Week 8</td>
-    <td>Design website</td>
+    <td>Revision from presentation feedback</td>
   </tr>
   <tr>
     <td>Week 9</td>
@@ -74,7 +78,11 @@ Mapping is a great visualization method of location-based data. Given that we wa
   </tr>
   <tr>
     <td>Week 10</td>
-    <td>Final touches</td>
+    <td>
+      Usability test
+      <br/>
+      Revisions
+  </td>
   </tr>
 </table> 
 
